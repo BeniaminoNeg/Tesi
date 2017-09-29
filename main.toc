@@ -1,16 +1,18 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{\numberline {1}Introduzione}{4}{chapter.1}
+\contentsline {chapter}{\numberline {1}CapitoloEsempio}{4}{chapter.1}
 \contentsline {paragraph}{Paragrafo}{4}{section*.2}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{5}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{5}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{5}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{5}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{6}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{6}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{6}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{6}{section*.4}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{6}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{6}{section*.5}
-\contentsline {subsubsection}{Google Chrome}{7}{section*.6}
-\contentsline {subsubsection}{Responsive Testing}{7}{section*.7}
+\contentsline {chapter}{\numberline {2}Introduzione}{5}{chapter.2}
+\contentsline {paragraph}{}{5}{section*.4}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{6}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{6}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{6}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{6}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{7}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{7}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{7}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{7}{section*.5}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{7}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{7}{section*.6}
+\contentsline {subsubsection}{Google Chrome}{8}{section*.7}
+\contentsline {subsubsection}{Responsive Testing}{8}{section*.8}

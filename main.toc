@@ -6,15 +6,17 @@
 \contentsline {paragraph}{}{5}{section*.4}
 \contentsline {paragraph}{}{5}{section*.5}
 \contentsline {paragraph}{}{5}{section*.6}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{6}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{6}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{6}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{6}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{7}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{7}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{7}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{7}{section*.7}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{7}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{7}{section*.8}
-\contentsline {subsubsection}{Google Chrome}{8}{section*.9}
-\contentsline {subsubsection}{Responsive Testing}{8}{section*.10}
+\contentsline {chapter}{\numberline {3}IBM BigFix}{6}{chapter.3}
+\contentsline {paragraph}{BigFix}{6}{section*.7}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{7}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{7}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{7}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{7}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{8}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{8}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{8}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{8}{section*.8}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{8}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{8}{section*.9}
+\contentsline {subsubsection}{Google Chrome}{9}{section*.10}
+\contentsline {subsubsection}{Responsive Testing}{9}{section*.11}

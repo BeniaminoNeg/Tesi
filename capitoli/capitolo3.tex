@@ -26,7 +26,7 @@ La Console permette agli amministratori di interagire con tutti i Client dell'am
 \paragraph{}
 BigFix, da un punto di vista logico, si suddivide in due grandi macro-componenti, la Platform e le Applications. La prima svolge la funzione di layer sulla quale vengono sviluppate tutte le funzionalità dello strato di applications. Questa suddivisione consente una chiara suddivisione delle competenze da parte di progettisti, sviluppatori, tester e assistenti dei clienti. Il team della platform si concentra quindi nel fornire una solida infrastruttura al team delle applications, il quale svilupperà i singoli strumenti al servizio dell'utente.
 \subsection{BigFix Platform}
-La Platform è una tecnologia multi-layer che agisce come colonna portante di tutta l'infrastruttura di BigFix. La Platform svolge infatti funzioni fondamentali, spesso utilizzate anche da altre applicazioni dei layer superiori. La Platform divide le responsabilità.
+La Platform è una tecnologia multi-layer scritta in linguaggio C++ che agisce come colonna portante di tutta l'infrastruttura di BigFix. La Platform svolge infatti funzioni fondamentali, spesso utilizzate anche da altre applicazioni dei layer superiori. La Platform divide le responsabilità.
 \paragraph{Lifecycle Management}
 Include il controllo remoto, la distribuzione dei softawre e il deploy di sistemi operativi.
 \paragraph{Patch Management}
@@ -38,11 +38,9 @@ Raccoglie informazioni peculiari a riguardo dei software installati su ogni disp
 \paragraph{Server Automation}
 Fornisce un Hypervisor per le Virtual Machines. Esso controlla infatti eventuali malfunzionamenti degli ambienti virtuali.
 \subsection{BigFix Applications}
-blablablavlacla isdugfias aiugfiau w aiwegufiue
-\subsection{Potenzialità di BigFix}
-(wiki IBM BigFix)
+Tutti i prodotti applicativi che fanno parte di questo componente consentono di gestire in maniera semplice tutte le operazioni inerenti alla security. A differenza della Platform sono implementate in linguaggio Java ed hanno funzionalità atomiche tra di loro. Sono l'interfaccia principale con il quale interagisce l'amministratore aziendale.
 \subsection{Fixlets}
-(wiki IBM BigFix)
+Le Fixlet sono il metodo attraverso il quale si svolgono tutte le operazioni come distribuzione di software e configurazioni e installazioni di patch. Esse sono dei messaggi inoltrati ai client di BigFix che utilizzano un linguaggio di query specifico
 \subsubsection{Il linguaggio Relevance}
 (wiki IBM BigFix)
 

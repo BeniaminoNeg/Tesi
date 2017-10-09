@@ -40,8 +40,8 @@ Fornisce un Hypervisor per le Virtual Machines. Esso controlla infatti eventuali
 \subsection{BigFix Applications}
 Tutti i prodotti applicativi che fanno parte di questo componente consentono di gestire in maniera semplice tutte le operazioni inerenti alla security. A differenza della Platform sono implementate in linguaggio Java ed hanno funzionalità atomiche tra di loro. Sono l'interfaccia principale con il quale interagisce l'amministratore aziendale.
 \subsection{Fixlets}
-Le Fixlet sono il metodo attraverso il quale si svolgono tutte le operazioni come distribuzione di software e configurazioni e installazioni di patch. Esse sono dei messaggi inoltrati ai client di BigFix che utilizzano un linguaggio di query specifico
+Le Fixlet sono il metodo attraverso il quale si svolgono tutte le operazioni come distribuzione di software, installazioni di patch e configurazioni. Esse sono dei messaggi inoltrati ai client di BigFix e utilizzano un linguaggio di query specifico, il Relevance.
 \subsubsection{Il linguaggio Relevance}
-(wiki IBM BigFix)
+Con una Fixlet si può anche ispezionare un desiderato aspetto di un client. Il linguaggio di Relevance consente di interrogare il client identificandone caratteristiche dell'hardware o del software tramite gli Inspectors. Una necessità può essere infatti quella di applicare una Fixlet solamente a dei client con determinate caratteristiche hardware/software oppure che si trovano in stati ben definiti. Si può in questo modo, facilmente identificare il corretto sottoinsieme di client ai quali è destinata una nuova Fixlet ed applicarla solo ad essi.
 
 

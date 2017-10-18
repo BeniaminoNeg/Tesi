@@ -60,4 +60,18 @@ SCRUM utilizza un approccio empirico alla progettazione. La filosofia di fondo d
 \paragraph{} 
 All'inizio del progetto vengono definiti i requisiti del prodotto (item), i quali vengono da un'attenta analisi dei bisogni dell'utente. Ogni bisogno viene modellato con una Epica, che a sua volta viene prioritizzata e aggiunta al product backlog che le indicizza. Le Epiche vengono poi scomposte in User Stories, le quali si suddividono a loro volta in Task, ossia l'elemento atomico del progetto la cui implementazione viene presa in carico da un singolo componente del team.
 \paragraph{}
-L'inizio di uno sprint è sempre caratterizzato da un meeting in cui si pianificano gli obiettivi per il prossimo sprint. 
+L'inizio di uno sprint è sempre caratterizzato da un meeting in cui si pianificano gli obiettivi per il prossimo sprint. In questo contesto si fa sempre riferimento al backlog incentrandosi sulle user stories ancora non coperte. Si cerca quindi di suddividersi i task in modo tale da avere a fine sprint quelle nuove funzionalità usabili e dimostrabili. Demo che viene svolta sempre con la presenza di tutto il team e anche dei colleghi americani.
+\subsection{Sistemi di controllo di versione}
+Da un'organizzazione di questo tipo ne scaturisce la necessità di tool di controllo di versione che permettano una fluida gestione del codice e della programmazione in parallelo tra i diversi componenti del team.
+\paragraph{GitLab}
+A tal scopo si è adottato ormai da tempo, da tutto il team di BigFix, il software di controllo di gestione distribuito Git e una repository aziendale che consiste in una versione enterprise ad hoc per IBM di GitLab, un hosting service molto simile a GitHub. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/GitLabGraph.PNG}
+	\caption{Panoramica degli ultimi contributi nel branch del progetto SaaS}
+\end{figure}
+\paragraph{}
+Il flusso di lavoro è il seguente. Quando inizia il proprio task, il componente del team si pone su un proprio branch personale sul quale effettua i propri commit. Al termine del task viene fatta una merge request sul branch principale, sono una volta che si è testato il codice, per aggiungere i propri contributi al progetto. A questo punto, dopo una review effettuata da componenti del team accreditati, il nuovo branch verrà mergiato con il branch principale.
+\subsection{RTC}
+
+

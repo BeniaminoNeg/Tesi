@@ -37,8 +37,8 @@
 \contentsline {paragraph}{GitLab}{13}{section*.26}
 \contentsline {paragraph}{}{13}{section*.28}
 \contentsline {subsection}{\numberline {3.3.3}RTC}{14}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}CapitoloEsempio}{15}{chapter.4}
-\contentsline {paragraph}{Paragrafo}{15}{section*.30}
+\contentsline {chapter}{\numberline {4}Software as a Service}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Cloud Computing}{15}{section.4.1}
 \contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{16}{appendix.Alph1}
 \contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{16}{section.Alph1.1}
 \contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{16}{section.Alph1.2}
@@ -46,8 +46,8 @@
 \contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{17}{section.Alph1.4}
 \contentsline {subsection}{\numberline {A.4.1}Eclipse}{17}{subsection.Alph1.4.1}
 \contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{17}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{17}{section*.32}
+\contentsline {subsubsection}{XAMPP}{17}{section*.30}
 \contentsline {subsection}{\numberline {A.4.3}Browser Testing}{17}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{17}{section*.33}
-\contentsline {subsubsection}{Google Chrome}{18}{section*.34}
-\contentsline {subsubsection}{Responsive Testing}{18}{section*.35}
+\contentsline {subsubsection}{Mozilla Firefox}{17}{section*.31}
+\contentsline {subsubsection}{Google Chrome}{18}{section*.32}
+\contentsline {subsubsection}{Responsive Testing}{18}{section*.33}

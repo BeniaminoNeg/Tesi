@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  24 OCT 2017 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  27 OCT 2017 17:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -994,13 +994,8 @@ Package pdftex.def Info: capitoli/imgs/CloudComputing.png used on input line 9.
 (pdftex.def)             Requested size: 298.89069pt x 270.58954pt.
  [15
 
-] [16 <./capitoli/imgs/CloudComputing.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 21--22
-
- []
-
-)
-Overfull \hbox (7.03886pt too wide) in paragraph at lines 25--82
+] [16 <./capitoli/imgs/CloudComputing.png>])
+Overfull \hbox (7.03886pt too wide) in paragraph at lines 30--82
 \OT1/cmr/m/n/12 https://www.bucap.it/news/approfondimenti-tematici/prodotti/sig
 nificato-software-
  []
@@ -1046,7 +1041,7 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (22 pages, 517535 bytes).
+Output written on main.pdf (22 pages, 517870 bytes).
 PDF statistics:
  340 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)

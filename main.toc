@@ -1,64 +1,61 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{\numberline {1}CapitoloEsempio}{5}{chapter.1}
-\contentsline {paragraph}{Paragrafo}{5}{section*.2}
-\contentsline {chapter}{\numberline {2}Introduzione}{6}{chapter.2}
-\contentsline {paragraph}{}{6}{section*.4}
+\contentsline {chapter}{\numberline {1}Introduzione}{5}{chapter.1}
+\contentsline {paragraph}{}{5}{section*.2}
+\contentsline {paragraph}{}{5}{section*.3}
+\contentsline {paragraph}{}{5}{section*.4}
+\contentsline {chapter}{\numberline {2}IBM BigFix}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}BigFix}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Architettura}{6}{subsection.2.1.1}
 \contentsline {paragraph}{}{6}{section*.5}
-\contentsline {paragraph}{}{6}{section*.6}
-\contentsline {chapter}{\numberline {3}IBM BigFix}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}BigFix}{7}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Architettura}{7}{subsection.3.1.1}
-\contentsline {paragraph}{}{7}{section*.7}
-\contentsline {paragraph}{Servers}{8}{section*.9}
-\contentsline {paragraph}{Relays}{9}{section*.10}
-\contentsline {paragraph}{Agents}{9}{section*.11}
-\contentsline {paragraph}{Web Reports}{9}{section*.12}
-\contentsline {paragraph}{Consoles}{9}{section*.13}
-\contentsline {paragraph}{}{9}{section*.14}
-\contentsline {subsection}{\numberline {3.1.2}BigFix Platform}{10}{subsection.3.1.2}
-\contentsline {paragraph}{Lifecycle Management}{10}{section*.15}
-\contentsline {paragraph}{Patch Management}{10}{section*.16}
-\contentsline {paragraph}{Core Protection}{10}{section*.17}
-\contentsline {paragraph}{Inventory }{10}{section*.18}
-\contentsline {paragraph}{Server Automation}{10}{section*.19}
-\contentsline {subsection}{\numberline {3.1.3}BigFix Applications}{10}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Fixlets}{10}{subsection.3.1.4}
-\contentsline {subsubsection}{Il linguaggio Relevance}{11}{section*.20}
-\contentsline {section}{\numberline {3.2}IBM}{11}{section.3.2}
+\contentsline {paragraph}{Servers}{7}{section*.7}
+\contentsline {paragraph}{Relays}{8}{section*.8}
+\contentsline {paragraph}{Agents}{8}{section*.9}
+\contentsline {paragraph}{Web Reports}{8}{section*.10}
+\contentsline {paragraph}{Consoles}{8}{section*.11}
+\contentsline {paragraph}{}{8}{section*.12}
+\contentsline {subsection}{\numberline {2.1.2}BigFix Platform}{9}{subsection.2.1.2}
+\contentsline {paragraph}{Lifecycle Management}{9}{section*.13}
+\contentsline {paragraph}{Patch Management}{9}{section*.14}
+\contentsline {paragraph}{Core Protection}{9}{section*.15}
+\contentsline {paragraph}{Inventory }{9}{section*.16}
+\contentsline {paragraph}{Server Automation}{9}{section*.17}
+\contentsline {subsection}{\numberline {2.1.3}BigFix Applications}{9}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Fixlets}{9}{subsection.2.1.4}
+\contentsline {subsubsection}{Il linguaggio Relevance}{10}{section*.18}
+\contentsline {section}{\numberline {2.2}IBM}{10}{section.2.2}
+\contentsline {paragraph}{}{10}{section*.19}
+\contentsline {paragraph}{IBM Security}{10}{section*.20}
+\contentsline {section}{\numberline {2.3}Saas Exploration Project}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Il framework SCRUM}{11}{subsection.2.3.1}
 \contentsline {paragraph}{}{11}{section*.21}
-\contentsline {paragraph}{IBM Security}{11}{section*.22}
-\contentsline {section}{\numberline {3.3}Saas Exploration Project}{12}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Il framework SCRUM}{12}{subsection.3.3.1}
-\contentsline {paragraph}{}{12}{section*.23}
-\contentsline {paragraph}{}{12}{section*.24}
-\contentsline {paragraph}{}{12}{section*.25}
-\contentsline {subsection}{\numberline {3.3.2}Sistemi di controllo di versione}{13}{subsection.3.3.2}
-\contentsline {paragraph}{GitLab}{13}{section*.26}
-\contentsline {paragraph}{}{13}{section*.28}
-\contentsline {subsection}{\numberline {3.3.3}RTC}{14}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Software as a Service}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Cloud Computing}{15}{section.4.1}
-\contentsline {paragraph}{}{15}{section*.30}
-\contentsline {subsection}{\numberline {4.1.1}Vantaggi del Cloud Computing}{17}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Tipologie di servizi Cloud}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}IaaS, Infrastructure as a Service}{18}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}DaaS, Data as a Service}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}PaaS, Platform as a Service}{18}{subsection.4.2.3}
-\contentsline {subsubsection}{IBM Bluemix}{18}{section*.32}
-\contentsline {subsection}{\numberline {4.2.4}SaaS, Software as a Service}{18}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Confronto tra SaaS e On Premise}{18}{section.4.3}
-\contentsline {paragraph}{Vantaggi del Software On Premise}{18}{section*.33}
-\contentsline {paragraph}{}{18}{section*.34}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{19}{appendix.Alph1}
+\contentsline {paragraph}{}{11}{section*.22}
+\contentsline {paragraph}{}{11}{section*.23}
+\contentsline {subsection}{\numberline {2.3.2}Sistemi di controllo di versione}{12}{subsection.2.3.2}
+\contentsline {paragraph}{GitLab}{12}{section*.24}
+\contentsline {paragraph}{}{12}{section*.26}
+\contentsline {subsection}{\numberline {2.3.3}RTC}{13}{subsection.2.3.3}
+\contentsline {chapter}{\numberline {3}Software as a Service}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Cloud Computing}{14}{section.3.1}
+\contentsline {paragraph}{}{14}{section*.28}
+\contentsline {subsection}{\numberline {3.1.1}Vantaggi del Cloud Computing}{16}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Tipologie di servizi Cloud}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}IaaS, Infrastructure as a Service}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}PaaS, Platform as a Service}{17}{subsection.3.2.2}
+\contentsline {subsubsection}{IBM Bluemix}{18}{section*.31}
+\contentsline {subsection}{\numberline {3.2.3}SaaS, Software as a Service}{18}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Confronto tra SaaS e On Premise}{18}{section.3.3}
+\contentsline {paragraph}{Vantaggi del Software On Premise}{18}{section*.32}
+\contentsline {paragraph}{}{18}{section*.33}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{19}{appendix.Alph1}
 \contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{19}{section.Alph1.1}
 \contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{19}{section.Alph1.2}
 \contentsline {section}{\numberline {A.3}Framework}{19}{section.Alph1.3}
 \contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{20}{section.Alph1.4}
 \contentsline {subsection}{\numberline {A.4.1}Eclipse}{20}{subsection.Alph1.4.1}
 \contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{20}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{20}{section*.35}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{20}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{20}{section*.36}
-\contentsline {subsubsection}{Google Chrome}{21}{section*.37}
-\contentsline {subsubsection}{Responsive Testing}{21}{section*.38}
+\contentsline {subsubsection}{XAMPP}{20}{section*.34}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{21}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{21}{section*.35}
+\contentsline {subsubsection}{Google Chrome}{21}{section*.36}
+\contentsline {subsubsection}{Responsive Testing}{21}{section*.37}

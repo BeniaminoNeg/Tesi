@@ -41,22 +41,24 @@
 \contentsline {subsection}{\numberline {3.1.1}Vantaggi del Cloud Computing}{16}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Tipologie di servizi Cloud}{17}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}IaaS, Infrastructure as a Service}{17}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}PaaS, Platform as a Service}{17}{subsection.3.2.2}
-\contentsline {subsubsection}{IBM Bluemix}{18}{section*.31}
-\contentsline {paragraph}{IBM Watson}{18}{section*.33}
+\contentsline {paragraph}{Vantaggi}{17}{section*.31}
+\contentsline {subsection}{\numberline {3.2.2}PaaS, Platform as a Service}{18}{subsection.3.2.2}
+\contentsline {paragraph}{Vantaggi}{18}{section*.32}
+\contentsline {subsubsection}{IBM Bluemix}{19}{section*.33}
+\contentsline {subsubsection}{IBM Watson}{19}{section*.35}
 \contentsline {subsection}{\numberline {3.2.3}SaaS, Software as a Service}{19}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Confronto tra SaaS e On Premise}{19}{section.3.3}
-\contentsline {paragraph}{Vantaggi del Software On Premise}{19}{section*.35}
-\contentsline {paragraph}{}{19}{section*.36}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{20}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{20}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{20}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{20}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{21}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{21}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{21}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{21}{section*.37}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{22}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{22}{section*.38}
-\contentsline {subsubsection}{Google Chrome}{22}{section*.39}
-\contentsline {subsubsection}{Responsive Testing}{22}{section*.40}
+\contentsline {section}{\numberline {3.3}Confronto tra SaaS e On Premise}{20}{section.3.3}
+\contentsline {paragraph}{Vantaggi del Software On Premise}{20}{section*.37}
+\contentsline {paragraph}{}{20}{section*.38}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{21}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{21}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{21}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{21}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{22}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{22}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{22}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{22}{section*.39}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{23}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{23}{section*.40}
+\contentsline {subsubsection}{Google Chrome}{23}{section*.41}
+\contentsline {subsubsection}{Responsive Testing}{23}{section*.42}

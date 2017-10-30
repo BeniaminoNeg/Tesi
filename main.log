@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  30 OCT 2017 19:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  30 OCT 2017 20:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -851,23 +851,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [6
 
 ] [7 <./capitoli/imgs/IEMArchitecture.png>] [8] [9] [10] [11]
-<capitoli/imgs/GitLabGraph.PNG, id=236, 1019.30812pt x 316.18124pt>
+<capitoli/imgs/GitLabGraph.PNG, id=235, 1019.30812pt x 316.18124pt>
 File: capitoli/imgs/GitLabGraph.PNG Graphic file (type png)
 
 <use capitoli/imgs/GitLabGraph.PNG>
-Package pdftex.def Info: capitoli/imgs/GitLabGraph.PNG used on input line 80.
+Package pdftex.def Info: capitoli/imgs/GitLabGraph.PNG used on input line 83.
 (pdftex.def)             Requested size: 426.98857pt x 132.44785pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<capitoli/imgs/rtc2.PNG, id=238, 286.06876pt x 168.63pt>
+ [12]
+<capitoli/imgs/rtc2.PNG, id=245, 286.06876pt x 168.63pt>
 File: capitoli/imgs/rtc2.PNG Graphic file (type png)
 
 <use capitoli/imgs/rtc2.PNG>
-Package pdftex.def Info: capitoli/imgs/rtc2.PNG used on input line 89.
+Package pdftex.def Info: capitoli/imgs/rtc2.PNG used on input line 92.
 (pdftex.def)             Requested size: 426.98857pt x 251.70155pt.
- [12]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -959,7 +956,7 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (29 pages, 997788 bytes).
+Output written on main.pdf (29 pages, 997815 bytes).
 PDF statistics:
  431 PDF objects out of 1000 (max. 8388607)
  374 compressed objects within 4 object streams

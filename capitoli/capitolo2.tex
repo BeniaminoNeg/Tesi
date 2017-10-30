@@ -37,6 +37,7 @@ E' il cuore di tutta la routine di Security. Troviamo quì delle funzionalità a
 Raccoglie informazioni peculiari a riguardo dei software installati su ogni dispositivo. E' in grado di effettuare analisi sugli utilizzi fornendo una base per la decisione sulle licenze da acquistare.
 \paragraph{Server Automation}
 Fornisce un Hypervisor per le Virtual Machines controllando, infatti, infatti eventuali malfunzionamenti degli ambienti virtuali.
+
 \subsection{BigFix Applications}
 Tutti i prodotti applicativi che fanno parte di questo componente consentono di gestire in maniera semplice tutte le operazioni inerenti alla security. A differenza della Platform sono implementate in linguaggio Java ed hanno funzionalità atomiche tra di loro. Sono l'interfaccia principale con il quale interagisce l'amministratore aziendale.
 
@@ -47,7 +48,9 @@ E' l'applicazione che consente la distribuzione di patch sia a livello di applic
 \paragraph{BigFix Compliance}
 Si utilizza questa applicazione per garantire la compliance dei dispositivi, identificare irregolarità e risolverle.
 \paragraph{BigFix Protection}
+Questa applicazione viene adoperata per garantire una protezione real-time contro qualsisi genere di malware (virus, trojan, worms, spyware, rootkits e altre minacce web). Ha ovviamente effetto sia sugli endpoint fisici che sulle maccchine virtuali.
 \paragraph{BigFix Inventory}
+Come dice la parola stessa, questa applicazione si occupa di analizzare gli endpoint e generare un inventario di tutti i software su essi installati, generando dei report ed evidenziando, eventualmente, le irregolarità.
 
 \subsection{Fixlets}
 Le Fixlet sono il metodo attraverso il quale si svolgono tutte le operazioni come distribuzione di software, installazioni di patch e configurazioni. Esse sono dei messaggi inoltrati ai client di BigFix e utilizzano un linguaggio di query specifico, il Relevance.

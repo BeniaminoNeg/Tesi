@@ -10,19 +10,20 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{Il framework SCRUM}{section.2.3}% 10
 \BOOKMARK [2][-]{subsection.2.3.2}{Sistemi di controllo di versione}{section.2.3}% 11
 \BOOKMARK [2][-]{subsection.2.3.3}{RTC}{section.2.3}% 12
-\BOOKMARK [0][-]{chapter.3}{Software as a Service}{}% 13
+\BOOKMARK [0][-]{chapter.3}{Il Cloud e le sue sfaccettature}{}% 13
 \BOOKMARK [1][-]{section.3.1}{Cloud Computing}{chapter.3}% 14
 \BOOKMARK [2][-]{subsection.3.1.1}{Vantaggi del Cloud Computing}{section.3.1}% 15
 \BOOKMARK [1][-]{section.3.2}{Tipologie di servizi Cloud}{chapter.3}% 16
 \BOOKMARK [2][-]{subsection.3.2.1}{IaaS, Infrastructure as a Service}{section.3.2}% 17
 \BOOKMARK [2][-]{subsection.3.2.2}{PaaS, Platform as a Service}{section.3.2}% 18
 \BOOKMARK [2][-]{subsection.3.2.3}{SaaS, Software as a Service}{section.3.2}% 19
-\BOOKMARK [1][-]{section.3.3}{Confronto tra SaaS e On Premise}{chapter.3}% 20
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 21
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 22
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 23
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 24
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 25
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 26
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 27
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 28
+\BOOKMARK [1][-]{section.3.3}{SOA, Service Oriented Architecture}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Il software On Premise}{chapter.3}% 21
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 22
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 23
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 24
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 25
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 26
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 27
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 28
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 29

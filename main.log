@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  29 OCT 2017 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  29 OCT 2017 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -907,15 +907,15 @@ Package pdftex.def Info: capitoli/imgs/watson.png used on input line 66.
 (pdftex.def)             Requested size: 298.89069pt x 201.29973pt.
  [19 <./capitoli/imgs/catalog.png>])
 No file main.bbl.
-[20 <./capitoli/imgs/watson.png>]
+[20 <./capitoli/imgs/watson.png>] [21]
 No file main.gls.
 (./appendici/tecnologie.tex
 Appendice A.
-[21
+[22
 
-] [22]) [23] [24
+] [23]) [24] [25
 
-] [25
+] [26
 
 
 ]
@@ -932,8 +932,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B9E3F6079061440A04AB50964FDA37E2;1978.
  ) 
 Here is how much of TeX's memory you used:
- 11005 strings out of 493089
- 158439 string characters out of 6134842
+ 11006 strings out of 493089
+ 158446 string characters out of 6134842
  523341 words of memory out of 5000000
  14179 multiletter control sequences out of 15000+600000
  14766 words of font info for 48 fonts, out of 8000000 for 9000
@@ -947,10 +947,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (25 pages, 990242 bytes).
+Output written on main.pdf (26 pages, 990864 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 333 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
  271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

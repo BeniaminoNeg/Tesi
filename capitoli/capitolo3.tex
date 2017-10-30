@@ -1,4 +1,4 @@
-\chapter{Software as a Service}
+\chapter{Il Cloud e le sue sfaccettature}
 
 \section{Cloud Computing}
 La differenza tra il possedere e l'utilizzare. E' questo l'aspetto cruciale del cambiamento apportato dal cloud computing rispetto al software tradizionale. Le risorse, che siano esse stesse archiviazione, elaborazione o qualsivoglia risorsa informatica, non sono mai ad hoc per un singolo utente, ma vengono assegnate on demand ai singoli utenti e appartengono ad un insieme condiviso da tutti gli altri utenti del prodotto utenti. Attraverso internet ogni utente può accedere a queste risorse in qualsiasi momento. Tali risorse vengono opportunamente allocate all'utente in maniera dinamica e completamente automatizzata. L'utente può utilizzare così anche software non installati sul proprio computer o usufruire di una memoria di massa accessibile da parte sua da qualsiasi dispositivo.
@@ -53,31 +53,58 @@ Una piattaforma distribuita come servizio (PaaS, Platform as a Service) è un am
 Uno scenario PaaS riduce quindi notevolmente la quantità di codice da scrivere semplificando quindi il lavoro dello sviluppatore e aumentandone la produttività. Inoltre risulta molto più semplice il porting di un prodotto da web a mobile e viceversa. Componenti molto complessi e costossi possono inoltre essere messi a disposizione, con un utilizzo limitato, anche per sviluppatori che altrimenti non potrebbero permetterselo. 
 \subsubsection{IBM Bluemix}
 Troviamo, sempre all'interno di IBM, uno dei principali servizi cloud PaaS presenti sul mercato: IBM BlueMix. L'utente può usufruire di un'astrazione di molte componenti utili allo sviluppo. Si può, ad esempio, fare uso di Database specifici o moduli dedicati all'IoT. Ne vediamo alcuni esempi nella figura 3.3
-\begin{figure}
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{capitoli/imgs/catalog}
-	\caption{Alcuni esempi di moduli presenti nel catalogo BlueMix}
-	\label{fig:catalog}
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/catalog.png}
+	\caption{Esempi di moduli presenti nel catalogo BlueMix}
 \end{figure}
 \subsubsection{IBM Watson}
 Tra le componenti sviluppate da IBM merita una menzione anche Watson. Watson è un sistema di intelligenza artificiale in grado di rispondere a domande espresse in un linguaggio naturale. Tra le funzionalità ricordiamo quelle di elaborazione del linguaggio naturale, information retrieval, rappresentazione della conoscenza, ragionamento automatico e tecnologie di apprendimento automatico.
-\begin{figure}
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{capitoli/imgs/watson}
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/watson.png}
 	\caption{Alcuni moduli appartenenti a Watson}
-	\label{fig:watson}
 \end{figure}
 
 \subsection{SaaS, Software as a Service}
-Il Software as a Service (SaaS) è un modello di distribuzione del software in cui l’applicativo e gli eventuali servizi collegati sono eseguiti in un ambiente centralizzato e gli utenti vi accedono via rete, quasi sempre via Internet e usando un browser come interfaccia. I SaaS sono ormai sempre più diffusi. Tra i più diffusi si ricordano le Google Apps (ad esempio Gmail, Google Drive, Google Calendar) e la suite Microsoft Office 365. Con la metodologia SaaS il provider fornisce tutto il software 
+Il Software as a Service (SaaS) è un modello di distribuzione del software in cui l’applicativo e gli eventuali servizi collegati sono eseguiti in un ambiente centralizzato e gli utenti vi accedono via rete, spesso usando un browser come interfaccia. I SaaS sono ormai sempre più diffusi. Tra i più noti si ricordano le Google Apps (ad esempio Gmail, Google Drive, Google Calendar) e la suite Microsoft Office 365. 
+\paragraph{}
+Spesso un'architettura SaaS è multi-tenant, ossia una sola applicazione server viene utilizzata da più utenti mantenendone, al tempo stesso, separati gli ambienti e i dati. Il concetto di multi-tenancy verrà approfondito maggiormente nei prossimi capitoli.
+\paragraph{}
+Attualmente le principali software house attive nel mondo aziendale traggono dalle offerte SaaS circa il venti percento del loro fatturato, nel giro di tre-quattro anni la maggior parte di loro prevede che i due modelli di distribuzione si equivalgano dal punto di vista del fatturato.
+\subsubsection{Vantaggi}
+\paragraph{}
+Con la metodologia SaaS il provider fornisce il software all'utente già pronto all'uso, l'utente non si deve preoccupare di nient'altro. I clienti, a questo punto, non pagano più per il possesso del software, ma per l'utilizzo del software stesso. In questo modo spesso possono essere notevolmente abbattute le spese iniziali per l'installazione e la configurazione di un prodotto, sostituendole con un costo di funzionamento. Il SaaS comporta quindi una spesa inferiore, ma ricorrente. E' il vendor però a preoccuparsi della manutenzione.
+\paragraph{}
+La caratteristica preponderante del cloud SaaS è proprio quella di poter raggiungere i propri dati personali da qualunque luogo e con qualunque dispositivo. E' questa la vera rivoluzione del cloud nel senso più comune del termine. Quando si ha bisogno di lavorare con i propri dati personali, non si ha più la necessità di avere con sè hardware specifico, il proprio laptop o la propria usb key, ma basta avere le proprie credenziali al accedere così al proprio spazio dedicato. 
+\paragraph{}
+L'accesso alle tecnologie più sofisticate diviene alla portata di tutti. Software come gli ERP (Enterprise Resource Planning) e i CRM(Customer Relationship Management), divengono alla portata anche di quelle organizzazioni che prima non potevano permettersi un investimento di questa portata.
+\paragraph{} 
+Un elemento che contraddistingue il SaaS è il notevole grado di apertura verso altre componenti, il che le rende altamente riusabili e flessibili, il che rappresenta un grande punto di forza in quanto i requisiti dell'utente cambiano in continuazione.
+\paragraph{}
+Gli scenari di aggiornamento cambiano radicalmente. La distribuzione degli aggiornamenti è pressoché immediata e tutti gli utenti hanno la certezza di operare con l'ultima versione del software. L'installazione degli aggiornamenti non comporta più l'assenza del servizio come nella versione on premise. L'utente non si accorge neanche del processo di aggiornamento e si ritrova ad utilizzare il software aggiornato.
+\subsubsection{Svantaggi}
+\paragraph{}
+Il modello ha ovviamente anche i suoi svantaggi, o perlomeno alcune criticità che vanno tenute presenti. La principale sta nella gestione dei dati aziendali, che in teoria sono localizzati nei data center del cloud provider e questo può essere giudicato un rischio per la privacy delle informazioni o addirittura costituire una violazione delle norme che devono osservare le aziende operanti in settori particolari come, ad esempio, la sanità e la difesa.
+\paragraph{}
+Tra gli altri aspetti di cui tenere conto ci sono sicuramente le prestazioni e l'affidabilità delle connessioni, che risultano essere i veri bottleneck non sono delle soluzioni SaaS, ma di tutte le soluzioni cloud. 
+\paragraph{}
+Altre criticità riguardano il provider dei servizi. Bisogna tenere conto quanto sia affidabile e se presenta, ad esempio, il rischio che esca dal mercato o ritiri il prodotto software SaaS. 
 
-\section{Confronto tra SaaS e On Premise}
+\section{SOA, Service Oriented Architecture}
+Il concetto di Service Oriented Architecture è per certi versi affine a quello di SaaS. Un SaaS può rappresentare la percezione da parte dell'utente della modalità di utilizzo di una Architettura Service Oriented. Un servizio ha l’obiettivo di incapsulare una ben precisa funzionalità, per renderla disponibile e accessibile come servizio software sul web. L'Architettura Orientata ai Servizi è quindi uno stile architetturale per la costruzione di una molteplicità di sistemi o applicazioni sulla base della composizione di un insieme di servizi. Spesso, quindi, queste applicazioni non fanno altro che comporre un SaaS, il quale trova in un'architettura di questo tipo la sua più naturale implementazione.
+\section{Il software On Premise}
+Abbiamo appena analizzato le peculiarità delle singole tipologie di servizi cloud. Anche il classico modello on premise però ha i suoi punti di forza.
 \paragraph{Vantaggi del Software On Premise}
 \begin{itemize}
-	\item  Controllo esclusivo su sistemi e dati
+	\item Controllo esclusivo su sistemi e dati
+	\item Alta personalizzazione
 	\item Gestione interna dei dati sensibili
 	\item Alto investimento iniziale ammortizzato nel lungo periodo
 \end{itemize}
 
 \paragraph{}
-Il paradigma di fornitura on premise risulta ancora essere la soluzione più adatta nel caso in cui la gestione diretta dei dati sia fondamentale per policy aziendali oppure sia necessaria una maggiore flessibilità di configurazione per l’integrazione con altre architetture software. Un'altro requisito è che l'architettura fisica del software sia geograficamente localizzata.
+Nel caso in cui si abbiano già a disposizione tutte le infrastrutture necessarie, non risulta più vero che la soluzione cloud sia la più economica per far fronte alla necessità di un determinato applicativo. E' anche necessario però che il software sia abbastanza centralizzato per adottare una soluzione on premise.
+
+\paragraph{}
+Occorre quindi fare un'analisi di quanto sia necessario personalizzare il software di cui si ha bisogno e averne il pieno controllo tenendo conto che un software on premise richiede molta più cura, manutenzione e lavoro di una soluzione basata su cloud. Il paradigma di fornitura on premise risulta ancora essere la soluzione più adatta nel caso in cui la gestione diretta dei dati sia fondamentale per policy aziendali oppure sia necessaria una maggiore flessibilità di configurazione per l’integrazione con altre architetture software. Un'altro requisito che ne può richiedere l'adozione è la necessità che l'architettura fisica del software sia geograficamente centralizzata.

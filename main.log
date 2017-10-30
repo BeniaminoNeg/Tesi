@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  30 OCT 2017 15:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  30 OCT 2017 17:30
 entering extended mode
 **./main.tex
 (main.tex
@@ -937,7 +937,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 ]
 Capitolo 2.
-<capitoli/imgs/IEMArchitecture.png, id=184, 794.97pt x 614.295pt>
+<capitoli/imgs/IEMArchitecture.png, id=185, 794.97pt x 614.295pt>
 File: capitoli/imgs/IEMArchitecture.png Graphic file (type png)
 
 <use capitoli/imgs/IEMArchitecture.png>
@@ -951,23 +951,30 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [6
 
 ] [7 <./capitoli/imgs/IEMArchitecture.png>] [8] [9] [10] [11]
-<capitoli/imgs/GitLabGraph.PNG, id=230, 1019.30812pt x 316.18124pt>
+<capitoli/imgs/GitLabGraph.PNG, id=234, 1019.30812pt x 316.18124pt>
 File: capitoli/imgs/GitLabGraph.PNG Graphic file (type png)
 
 <use capitoli/imgs/GitLabGraph.PNG>
-Package pdftex.def Info: capitoli/imgs/GitLabGraph.PNG used on input line 70.
+Package pdftex.def Info: capitoli/imgs/GitLabGraph.PNG used on input line 77.
 (pdftex.def)             Requested size: 426.98857pt x 132.44785pt.
 
-<capitoli/imgs/rtc2.PNG, id=232, 286.06876pt x 168.63pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<capitoli/imgs/rtc2.PNG, id=236, 286.06876pt x 168.63pt>
 File: capitoli/imgs/rtc2.PNG Graphic file (type png)
 
 <use capitoli/imgs/rtc2.PNG>
-Package pdftex.def Info: capitoli/imgs/rtc2.PNG used on input line 79.
+Package pdftex.def Info: capitoli/imgs/rtc2.PNG used on input line 86.
 (pdftex.def)             Requested size: 426.98857pt x 251.70155pt.
- [12 <./capitoli/imgs/GitLabGraph.PNG>])
-(capitoli/capitolo3.tex [13 <./capitoli/imgs/rtc2.PNG>]
+ [12]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (capitoli/capitolo3.tex [13 <./capitoli/imgs/GitLabGraph.PNG>] [14 <./capitol
+i/imgs/rtc2.PNG>]
 Capitolo 3.
-<capitoli/imgs/CloudComputing.png, id=248, 996.72375pt x 902.37125pt>
+<capitoli/imgs/CloudComputing.png, id=258, 996.72375pt x 902.37125pt>
 File: capitoli/imgs/CloudComputing.png Graphic file (type png)
 
 <use capitoli/imgs/CloudComputing.png>
@@ -981,25 +988,25 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [14
+ [15
 
-] [15 <./capitoli/imgs/CloudComputing.png>]
-<capitoli/imgs/TipologieCloud.png, id=261, 1200.485pt x 394.47375pt>
+] [16 <./capitoli/imgs/CloudComputing.png>]
+<capitoli/imgs/TipologieCloud.png, id=271, 1200.485pt x 394.47375pt>
 File: capitoli/imgs/TipologieCloud.png Graphic file (type png)
 
 <use capitoli/imgs/TipologieCloud.png>
 Package pdftex.def Info: capitoli/imgs/TipologieCloud.png used on input line 32
 .
 (pdftex.def)             Requested size: 298.89069pt x 98.2149pt.
- [16] [17 <./capitoli/imgs/TipologieCloud.png>] <capitoli/imgs/catalog.png, id=
-274, 910.40125pt x 568.1225pt>
+ [17] [18 <./capitoli/imgs/TipologieCloud.png>] <capitoli/imgs/catalog.png, id=
+284, 910.40125pt x 568.1225pt>
 File: capitoli/imgs/catalog.png Graphic file (type png)
 
 <use capitoli/imgs/catalog.png>
 Package pdftex.def Info: capitoli/imgs/catalog.png used on input line 58.
 (pdftex.def)             Requested size: 426.98857pt x 266.4628pt.
- [18]
-<capitoli/imgs/watson.png, id=280, 931.48pt x 627.34375pt>
+ [19]
+<capitoli/imgs/watson.png, id=291, 931.48pt x 627.34375pt>
 File: capitoli/imgs/watson.png Graphic file (type png)
 
 <use capitoli/imgs/watson.png>
@@ -1009,18 +1016,18 @@ Package pdftex.def Info: capitoli/imgs/watson.png used on input line 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <./capitoli/imgs/catalog.png>] [20 <./capitoli/imgs/watson.png>] [21]
-[22])
+[20 <./capitoli/imgs/catalog.png>] [21 <./capitoli/imgs/watson.png>] [22]
+[23])
 No file main.bbl.
-[23]
+[24]
 No file main.gls.
 (appendici/tecnologie.tex
 Appendice A.
-[24
+[25
 
-] [25]) [26] [27
+] [26]) [27] [28
 
-] [28
+] [29
 
 
 ]
@@ -1037,8 +1044,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BCEFC3810FD4ED6E69D7AFE8ACD5DDB8;2089.
  ) 
 Here is how much of TeX's memory you used:
- 11183 strings out of 493328
- 160031 string characters out of 3136526
+ 11190 strings out of 493328
+ 160104 string characters out of 3136526
  526275 words of memory out of 3000000
  14386 multiletter control sequences out of 15000+200000
  14766 words of font info for 48 fonts, out of 3000000 for 9000
@@ -1052,9 +1059,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (28 pages, 1023721 bytes).
+Output written on main.pdf (29 pages, 1025137 bytes).
 PDF statistics:
- 415 PDF objects out of 1000 (max. 8388607)
- 117 named destinations out of 1000 (max. 500000)
+ 426 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 

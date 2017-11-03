@@ -77,15 +77,16 @@
 \contentsline {paragraph}{MTTF, Mean Time TO Failure}{26}{section*.60}
 \contentsline {paragraph}{}{26}{section*.61}
 \contentsline {paragraph}{}{26}{section*.62}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{28}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{28}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{28}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{28}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{29}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{29}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{29}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{29}{section*.64}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{30}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{30}{section*.65}
-\contentsline {subsubsection}{Google Chrome}{30}{section*.66}
-\contentsline {subsubsection}{Responsive Testing}{30}{section*.67}
+\contentsline {chapter}{\numberline {5}IBM BigFix Detect on SaaS, realizzazione del prototipo}{28}{chapter.5}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{29}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{29}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{29}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{29}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{30}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{30}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{30}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{30}{section*.64}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{31}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{31}{section*.65}
+\contentsline {subsubsection}{Google Chrome}{31}{section*.66}
+\contentsline {subsubsection}{Responsive Testing}{31}{section*.67}

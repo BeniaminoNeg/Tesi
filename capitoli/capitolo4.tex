@@ -2,7 +2,9 @@
 
 \section{SaaS e i suoi requisiti}
 
-\subsection{Availability}
+\subsection{Availability e Reliability}
+
+\subsubsection{Availability}
 Il concetto di Availability, nel senso generale del termine, è ben definito dallo standard ITU-T E.800: "L'abilità di un sistema di essere in uno stato che soddisfa un determinato requisito, in determinati istanti di tempo, assumendo che le risorse a lui necessarie siano disponibili." Come possiamo vedere, è un concetto ben definito, ad ha quindi le sue metriche ben definite che quantificano l'Availability. 
 
 \paragraph{MTTF, Mean Time TO Failure}
@@ -11,6 +13,14 @@ Misura l'intervallo di tempo tra due eventi di "faiulure", in cui il sistema non
 \paragraph{}
 Possiamo dire quindi che l'Availability rappresenta la porzione di tempo in cui il sistema si comporta secondo le proprie specifiche. Va tenuto in considerazione anche che, al verificarsi di un fallimento, al tempo di non-Availability si aggiunge il tempo per porre rimedio al fallimento e far ripartire il sistema. 
 
+\subsubsection{Reliability}
+La Reliability è definita anch'essa dalla International Telecommunications Union (ITU-T) recommendations E.800, come segue: "L'abilità di un sistema di soddisfare una funzione richiesta, sotto determinate condizioni e per un certo intervallo di tempo
+
 \paragraph{}
-Possiamo immaginare, a questo punto, quanto sia fondamentale un'altissima availability per i servizi Cloud 
+Possiamo immaginare, a questo punto, quanto sia fondamentale un'altissima availability per i servizi Cloud. In caso di failure, infatti, possono potenzialmente essere tutti gli utenti serviti dal provider che ha subuto il guasto. I servizi erogati via Cloud dovrebbero essere disponibili da chiunque li richieda e da qualunque parte del mondo ventiquattro ore su ventiquattro. Ovviamente affidabilità massima non è verosimile, ma ci si aspetta una Reliability di molto vicina al 100. Ad esempio, BlueMix dichiara una Reliability del 99,95 percento. Per rendere l'idea, una Reliability del 99,95 percento sta a significare che, sulla base annuale, il servizio non è disponibile per circa 4 ore. La Reliabiity è un concetto affine all'Availability, con la differenza che la Reliability si riferisce all'abilità del sistema di compiere i suoi scopi durante un'intervallo di tempo. Essa infatti si quantifica con una probabilità.
+
+\paragraph{Upgrade}
+Sono gli scenari di Upgrade un'aspetto critico. Come si può immaginare, molti servizi SaaS hanno bisogno di essere continuamente aggiorati e modernizzati. All'uscita di una nuova versione del software occorre che questa venga distribuita a tutti gli utenti del servizio. Distribuire un software su scala Cloud non è semplice come si possa pensare. Non si può infatti interrompere l'erogazione del servizio per far partire il processo di agiornamento del software, che può essere più o meno lungo. Occorrerà quindi adottare delle tecniche che diano l'impressione all'utente di una ontinuità del servizio. Vedremo nei prossimi capitoli quale strategia abbiamo adottato con BigFix SaaS. 
+
+\subsubsection{Dependability}
 

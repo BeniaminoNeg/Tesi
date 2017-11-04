@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  5 NOV 2017 00:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  5 NOV 2017 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,7 +786,7 @@ LaTeX Info: Redefining \nameref on input line 65.
 
 Title page
 \centeroffset=\skip71
-<logo.jpg, id=136, 62.2325pt x 75.28125pt>
+<logo.jpg, id=144, 62.2325pt x 75.28125pt>
 File: logo.jpg Graphic file (type jpg)
  <use logo.jpg>
 Package pdftex.def Info: logo.jpg used on input line 69.
@@ -837,7 +837,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 ]
 Capitolo 2.
-<capitoli/imgs/BigFixManifest.png, id=207, 1270.7475pt x 577.15625pt>
+<capitoli/imgs/BigFixManifest.png, id=217, 1270.7475pt x 577.15625pt>
 File: capitoli/imgs/BigFixManifest.png Graphic file (type png)
 
 <use capitoli/imgs/BigFixManifest.png>
@@ -848,7 +848,7 @@ Package pdftex.def Info: capitoli/imgs/BigFixManifest.png used on input line 7.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<capitoli/imgs/IEMArchitecture.png, id=209, 794.97pt x 614.295pt>
+<capitoli/imgs/IEMArchitecture.png, id=219, 794.97pt x 614.295pt>
 File: capitoli/imgs/IEMArchitecture.png Graphic file (type png)
 
 <use capitoli/imgs/IEMArchitecture.png>
@@ -863,14 +863,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [7 <./capitoli/imgs/BigFixManifest.png>] [8 <./capitoli/imgs/IEMArchitecture.
 png>] [9] [10] [11] [12]
-<capitoli/imgs/GitLabGraph.PNG, id=266, 1019.30812pt x 316.18124pt>
+<capitoli/imgs/GitLabGraph.PNG, id=276, 1019.30812pt x 316.18124pt>
 File: capitoli/imgs/GitLabGraph.PNG Graphic file (type png)
 
 <use capitoli/imgs/GitLabGraph.PNG>
 Package pdftex.def Info: capitoli/imgs/GitLabGraph.PNG used on input line 90.
 (pdftex.def)             Requested size: 426.98857pt x 132.44785pt.
  [13 <./capitoli/imgs/GitLabGraph.PNG>]
-<capitoli/imgs/rtc2.PNG, id=276, 286.06876pt x 168.63pt>
+<capitoli/imgs/rtc2.PNG, id=286, 286.06876pt x 168.63pt>
 File: capitoli/imgs/rtc2.PNG Graphic file (type png)
 
 <use capitoli/imgs/rtc2.PNG>
@@ -878,7 +878,7 @@ Package pdftex.def Info: capitoli/imgs/rtc2.PNG used on input line 99.
 (pdftex.def)             Requested size: 426.98857pt x 251.70155pt.
 ) (./capitoli/capitolo3.tex [14 <./capitoli/imgs/rtc2.PNG>]
 Capitolo 3.
-<capitoli/imgs/CloudComputing.png, id=284, 996.72375pt x 902.37125pt>
+<capitoli/imgs/CloudComputing.png, id=295, 996.72375pt x 902.37125pt>
 File: capitoli/imgs/CloudComputing.png Graphic file (type png)
 
 <use capitoli/imgs/CloudComputing.png>
@@ -895,7 +895,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [15
 
 ] [16 <./capitoli/imgs/CloudComputing.png>]
-<capitoli/imgs/TipologieCloud.png, id=298, 1200.485pt x 394.47375pt>
+<capitoli/imgs/TipologieCloud.png, id=308, 1200.485pt x 394.47375pt>
 File: capitoli/imgs/TipologieCloud.png Graphic file (type png)
 
 <use capitoli/imgs/TipologieCloud.png>
@@ -903,14 +903,14 @@ Package pdftex.def Info: capitoli/imgs/TipologieCloud.png used on input line 32
 .
 (pdftex.def)             Requested size: 298.89069pt x 98.2149pt.
  [17] [18 <./capitoli/imgs/TipologieCloud.png>] <capitoli/imgs/catalog.png, id=
-311, 910.40125pt x 568.1225pt>
+321, 910.40125pt x 568.1225pt>
 File: capitoli/imgs/catalog.png Graphic file (type png)
 
 <use capitoli/imgs/catalog.png>
 Package pdftex.def Info: capitoli/imgs/catalog.png used on input line 58.
 (pdftex.def)             Requested size: 426.98857pt x 266.4628pt.
  [19]
-<capitoli/imgs/watson.png, id=318, 931.48pt x 627.34375pt>
+<capitoli/imgs/watson.png, id=328, 931.48pt x 627.34375pt>
 File: capitoli/imgs/watson.png Graphic file (type png)
 
 <use capitoli/imgs/watson.png>
@@ -921,7 +921,7 @@ Package pdftex.def Info: capitoli/imgs/watson.png used on input line 65.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [20 <./capitoli/imgs/catalog.png>] [21 <./capitoli/imgs/watson.png>]
-<capitoli/imgs/IaasPaasSaas.png, id=334, 450.68375pt x 428.60126pt>
+<capitoli/imgs/IaasPaasSaas.png, id=344, 450.68375pt x 428.60126pt>
 File: capitoli/imgs/IaasPaasSaas.png Graphic file (type png)
 
 <use capitoli/imgs/IaasPaasSaas.png>
@@ -934,7 +934,7 @@ Capitolo 4.
 
 ]) (./capitoli/capitolo5.tex [27]
 Capitolo 5.
-<capitoli/imgs/LoadBalancer.png, id=382, 642.4pt x 327.2225pt>
+<capitoli/imgs/LoadBalancer.png, id=390, 642.4pt x 327.2225pt>
 File: capitoli/imgs/LoadBalancer.png Graphic file (type png)
 
 <use capitoli/imgs/LoadBalancer.png>
@@ -965,21 +965,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 100.
 (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 100.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 100.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 3132235C93DB87C2FA408CF8885BCCF2;2376
-(rerunfilecheck)             After:  DD69254626F9A58B09150F5C2636798F;2441.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E3DF03A8743519D3B3C04738A45BB122;2508.
  ) 
 Here is how much of TeX's memory you used:
- 11075 strings out of 493089
- 159567 string characters out of 6134842
+ 11077 strings out of 493089
+ 159608 string characters out of 6134842
  522341 words of memory out of 5000000
- 14196 multiletter control sequences out of 15000+600000
+ 14198 multiletter control sequences out of 15000+600000
  14766 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,7n,38p,994b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -991,10 +984,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (33 pages, 1243962 bytes).
+Output written on main.pdf (33 pages, 1244207 bytes).
 PDF statistics:
- 488 PDF objects out of 1000 (max. 8388607)
- 422 compressed objects within 5 object streams
+ 496 PDF objects out of 1000 (max. 8388607)
+ 430 compressed objects within 5 object streams
  144 named destinations out of 1000 (max. 500000)
- 326 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 

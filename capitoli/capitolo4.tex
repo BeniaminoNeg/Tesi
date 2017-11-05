@@ -1,28 +1,85 @@
+% !TeX spellcheck = de_DE
 \chapter{SaaS, le tecnologie che ne consentono la realizzazione}
 
 \section{SaaS e i suoi requisiti}
+Prima di conoscere a fondo le teclogie proprie della realizzazione di un SaaS, occorre essere consapevoli di quali siano le esigenze di un software di questo tipo. Ovviamente, per la sua natura, il SaaS ci pone davanti ad esigenze del tutto nuove ripsetto ai tradizionali paradigmi, in quanto la modalità di acesso al sistema è del tutto nuova. Non possiamo sapere a priori quanti utenti dovranno essere serviti dal Provider in un determinato istante, ad esempio, o quale carico di lavoro richiederanno al sistema. Andiamo a vedere nel dettaglio quali sono i principali aspetti critici di cui tenere conto nella fornitura di un SaaS.
 
 \subsection{Availability}
-Il concetto di Availability, nel senso generale del termine, è ben definito dallo standard ITU-T E.800: "L'abilità di un sistema di essere in uno stato che soddisfa un determinato requisito, in determinati istanti di tempo, assumendo che le risorse a lui necessarie siano disponibili." Come possiamo vedere, è un concetto ben definito, ad ha quindi le sue metriche ben definite che quantificano l'Availability. 
-
-\paragraph{MTTF, Mean Time TO Failure}
-Misura l'intervallo di tempo tra due eventi di "faiulure", in cui il sistema non è riuscito a portare a termine il proprio compito.
+Il concetto di Availability è ben definito dallo standard ITU-T E.800: "L'abilità di un sistema di essere in uno stato che soddisfa un determinato requisito, in determinati istanti di tempo, assumendo che le risorse a lui necessarie siano disponibili." 
 
 \paragraph{}
 Possiamo dire quindi che l'Availability rappresenta la porzione di tempo in cui il sistema si comporta secondo le proprie specifiche. Va tenuto in considerazione anche che, al verificarsi di un fallimento, al tempo di non-Availability si aggiunge il tempo per porre rimedio al fallimento e far ripartire il sistema. 
 
 \subsection{Reliability}
-La Reliability è definita anch'essa dalla International Telecommunications Union (ITU-T) recommendations E.800, come segue: "L'abilità di un sistema di soddisfare una funzione richiesta, sotto determinate condizioni e per un certo intervallo di tempo"
-
-scrivere quì
+La Reliability è definita anch'essa dalla International Telecommunications Union (ITU-T) recommendations E.800, come segue: "L'abilità di un sistema di soddisfare una funzione richiesta, sotto determinate condizioni e per un certo intervallo di tempo". La Reliabiity è un concetto affine all'Availability, con la differenza che la Reliability si riferisce all'abilità del sistema di compiere i suoi scopi durante un'intervallo di tempo. Essa infatti si quantifica con una probabilità.
 
 \subsection{Dependability}
-scrivere qualcosa su dependbility
+I concetti di Availability e Realiability si possono astrarre nel concetto di Dependability. Esso consiste proprio nella capacità di un sistema di poter "dipendere" da esso, ossia di mostrarsi affidabile ai propri utilizzatori. Come possiamo vedere la Dependability è un concetto ben definito, ed ha quindi le sue metriche ben definite che permettono di quantificarlo nei vari aspetti. La Realiability stessa, può rappresentare una metrica per quantificare l'affidabilità di un sistema, ma ce ne sono altre delle quali di seguito se ne descrive qualcuna.
 
-\paragraph{Availability e Reliability nel contesto Cloud}
-Possiamo immaginare, a questo punto, quanto sia fondamentale un'altissima availability per i servizi Cloud. In caso di failure, infatti, possono potenzialmente essere tutti gli utenti serviti dal provider che ha subuto il guasto. I servizi erogati via Cloud dovrebbero essere disponibili da chiunque li richieda e da qualunque parte del mondo ventiquattro ore su ventiquattro. Ovviamente affidabilità massima non è verosimile, ma ci si aspetta una Reliability di molto vicina al 100. Ad esempio, BlueMix dichiara una Reliability del 99,95 percento. Per rendere l'idea, una Reliability del 99,95 percento sta a significare che, sulla base annuale, il servizio non è disponibile per circa 4 ore. La Reliabiity è un concetto affine all'Availability, con la differenza che la Reliability si riferisce all'abilità del sistema di compiere i suoi scopi durante un'intervallo di tempo. Essa infatti si quantifica con una probabilità.
+
+\paragraph{MTTF, Mean Time TO Failure}
+Misura l'intervallo di tempo tra due eventi di "Failure", in cui il sistema non è riuscito a portare a termine il proprio compito.
+
+\paragraph{POFOD, Probability Of Failure On Demand} 
+Questa è un'altra probabilità. In particolare si vuole misurare la probabilità che un sistema fallisca facendo fronte ad una richiesta che gli è stata sottoposta. Differisce con l'Availabilty infatti perchè questa è sulla base delle richieste ricevute, metre l'Availability è su base temporale. Questa è una metrica molto importante per quei sistemi che vengono chiamati in causa raramente, ma all'interno di processi critici.
+
+
+\subsubsection{Availability e Reliability nel contesto Cloud}
+Possiamo immaginare, a questo punto, quanto sia fondamentale un'altissima Availability e Reliability per i servizi Cloud. In caso di Failure, infatti, possono potenzialmente essere coinvolti tutti gli utenti serviti dal provider che ha subuto il guasto. I servizi erogati via Cloud dovrebbero essere disponibili da chiunque li richieda e da qualunque parte del mondo ventiquattro ore su ventiquattro. Ovviamente affidabilità massima non è verosimile, ma ci si aspetta una Reliability di molto vicina al 100. Ad esempio, BlueMix dichiara una Reliability del 99,95 percento. Per rendere l'idea, una Reliability del 99,95 percento sta a significare che, sulla base annuale, il servizio può non essere disponibile per circa 4 ore. 
 
 \paragraph{Upgrade}
-Sono gli scenari di Upgrade un'aspetto critico. Come si può immaginare, molti servizi SaaS hanno bisogno di essere continuamente aggiorati e modernizzati. All'uscita di una nuova versione del software occorre che questa venga distribuita a tutti gli utenti del servizio. Distribuire un software su scala Cloud non è semplice come si possa pensare. Non si può infatti interrompere l'erogazione del servizio per far partire il processo di agiornamento del software, che può essere più o meno lungo. Occorrerà quindi adottare delle tecniche che diano l'impressione all'utente di una ontinuità del servizio. Vedremo nei prossimi capitoli quale strategia abbiamo adottato con BigFix SaaS. 
+Sono gli scenari di Upgrade un'aspetto maggiornmente critico. Come si può immaginare, molti servizi SaaS hanno bisogno di essere continuamente aggiorati e modernizzati. All'uscita di una nuova versione del software occorre che questa venga distribuita a tutti gli utenti del servizio. Distribuire un software su scala Cloud non è semplice come si possa pensare. Non si può infatti interrompere l'erogazione del servizio per far partire il processo di aggiornamento del prodotto, perchè infatti questo processo può essere più o meno lungo. Occorrerà quindi adottare delle tecniche che diano l'impressione utente di una continuità del servizio. Vedremo nei prossimi capitoli quale strategia abbiamo adottato con BigFix SaaS. 
+
+\subsection{Scalability}
+Definiamo invece la Scalabilità come la capacità di un software di adattarsi all'aumento del carico di lavoro senza un decadimento delle prestazioni. Ci aspettiamo, ad esempio, che BigFix SaaS non abbia difficoltà ad operare con un numero considerevolmente alto di Endoint, quali possono essere i 250.000 Client supportati dalla suite. Il tutto ovvimente mantenendo gli stessi standard prestazionali che si osservano con l'interazione con pochi Endpoint. Questa percezione però, può essere in realtà merito di due diversi aspetti della Scalabilità:
+\begin{itemize}
+	\item  Scalabilità Verticale \\
+	Consiste nell'incrementare le risorse del sistema, aumentando ad esempio le risrorse hardware del Server. SI può aggiungere RAM o CPU e rendere il sistema più performante sotto l'aumento del carico di lavoro.
+	
+	\item  Scalabilità Orizzontale \\
+	Con la Scalabilità Orizzontale si ha un approccio diverso. Al verificarsi di un maggiore carico di lavoro non vengono invrementate le risorse di un Server, ma vengono aggiunti nuovi Server in parallelo, andando a formare tutti insieme un sistema unico. E' questo l'aspetto più interessante al punto di vista Cloud, ma ovviamente occorre che anche a livello software ci siano meccanismi intelligenti di ripartizione del carico nei diversi nodi che  compongono il sistema.
+\end{itemize}
+
+\paragraph{}
+Ovviamente la Scalabilità Orizzontale è un aspetto centrale nel Cloud Computing. Le richieste di utilizzo di un componente software possono crescere notevolmente su scala mondiale al crescere degli utenti. Al tempo stesso le risorse di calcolo però possono essere anch'esse distribuite geograficamente in luoghi diversi e non è necessario che il sistema risieda nello stesso luogo. Introduciamo così notevole flessibilità ed agilità al sistema per far fronte alle necessità di scaling dovute dall'aumentare delle risorse richieste dagli utenti. Il tutto deve rientrare in un processo automatico di adattamento alle richieste, non possiamo pensare infatti che ci sia un'intervento umano per far scalare il sistema secondo le esigenze.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\paragraph{Difetti, Errori e Failures}
+TO DELETE
+Andiamo ad analizzare brevemente quale può essere la natura di un Failure. Abbiamo detto che la Reliability misura il grado di occorrenza di un Failure, ma come può verificarsi un Failure? Andiamo a presentare anche i concetti di Difetto ed Errore, vediamoli nel dettaglio.
+\begin{itemize}
+	\item Difetto \\
+	E' il termine più inerente alla struttura del sistema. Esso è una caratteristica del sistema che preclude il software da operare secondo le sue specifiche. Non necessariamente un difetto può generare un Errore (il codice inerente al Difetto potrebbe non essere mai eseguito ad esempio).
+	
+	\item  Errore \\
+	Si ha un errore quando stato interno del sistema software, sotto certe condizioni, differisce da quello aspettato. Anche in questo caso, non è detto che un Errore si propaghi in un Failure. Può infatti l'inesattezza rimanere circoscritta allo stato interno del sistema. 
+	
+	\item  Failure \\
+	Si ha infine una Failure quando il valore di output del sistema differisce da quello che ci aspettiamo .
+\end{itemize}
 
 

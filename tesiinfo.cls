@@ -293,7 +293,7 @@ Prof. \@relatore
 \ifcorrelatoreuno
 {\bfseries
 Correlatore:\\[0ex]}
-Prof. \@correlatoreuno \\[4ex]\fi
+\@correlatoreuno \\[4ex]\fi
 \ifcorrelatoredue
 {\bfseries
 Correlatori:\\[0ex]}

@@ -5,7 +5,7 @@ Nel corso degli ultimi anni, con il proliferarsi delle piattaforme e dei servizi
 Un concetto fondamentale, di cui il Cloud Computing fa largamente uso, sono i mircoservizi. Cominciamo col darne una definizione abbastanza formale: "Lo stile architetturale a microservizi è un approccio allo sviluppo di una singola applicazione come insieme di piccoli servizi, ciascuno dei quali viene eseguito da un proprio processo e comunica con un meccanismo snello, spesso una HTTP API.(Martin Fowler)".
 
 \paragraph{}
-L'approccio è quello di dividere le funzionalità del sistema in più microservizi. Ad ogni microservizio corrisponde una necessità dell'utente. Una suddivisione modulare del sistema in base ai casi d'uso dell'utente è già presente da tempo nell'Object Oriented Design, ma la novità apportata dai microservizi è che il sistema con essi risulta scomposto in realtà in piccoli servizi completamente indipendenti tra loro. La comunicazione tra i servizi avviene attraverso la rete al fine di garantire l’indipendenza tra i servizi ed evitare ogni forma di accoppiamento. Ogni microservizio, infatti, rappresenta un'entità separata che generalmente viene pubblicata come un modulo di una Platform as a Service.
+L'approccio è quello di dividere le funzionalità del sistema in più microservizi. Ad ogni microservizio corrisponde una necessità dell'utente. La filosofia di dividere il software in base alle resposabilità è già presente da tempo nell'ingegneria del software. Una suddivisione modulare del sistema in base ai casi d'uso dell'utente è già presente da tempo nell'Object Oriented Design, ma la novità apportata dai microservizi è che il sistema con essi risulta scomposto in realtà in piccoli servizi completamente indipendenti tra loro. Ogni microservizio si preoccupa infatti di risolvere un particolare problema del cliente, un unico scenario. La comunicazione tra i servizi avviene attraverso la rete al fine di garantire l’indipendenza tra i servizi ed evitare ogni forma di accoppiamento. Ogni microservizio, infatti, rappresenta un'entità separata che generalmente viene pubblicata come un modulo di una Platform as a Service.
 
 \subsection{Il modello monolitico a layer }
 Secondo il classico modello a layer le funzionalità vengono suddivise in base al grado di astrazione tra i vari livelli, usando delle tecnologie proprie di ogni livello. Questi sono separati a livello logico e comunicano tra di loro. Con questa architettura però, nonostante ci sia questa suddivisione a strati, il software risulta essere un unico sistema monolitico, sebbene molti componenti possano essere comunque riusabili.
@@ -39,5 +39,43 @@ Un'architettura di questo tipo porta con se ovviamente anche i suoi svantaggi e 
 \subsubsection{Vantaggi}
 \begin{itemize}
 	\item  Velocità \\
-	L'architettura a microservizi è quella che si sposa meglio con la metodologia agile. Lo sviluppo di un microservizio dovrebbe avere una durata di circa due settimane e ciò spinge molto ad avere fin da subito piccole porzioni del sistema (i servizi appunto), pronte, testabili ed utilizzabili. Ogni microservizio inoltre è autonomo e può quindi giungere in ambiente di produzione indipendentemente dagli altri, reagendo molto velocemente alle esigenze di mercato.
+	L'architettura a microservizi è quella che si sposa meglio con la metodologia agile. un microservizio deve avere sempre delle dimensioni ridotte e il suo sviluppo  dovrebbe avere una durata di circa due settimane. Ciò porta ad avere fin da subito piccole porzioni del sistema (i servizi appunto), pronte, testabili ed utilizzabili. Ogni microservizio inoltre è autonomo e può quindi giungere in ambiente di produzione indipendentemente dagli altri. In questo modo si riesce a reagire molto velocemente alle esigenze di mercato.
+	
+	\item Sperimentazione \\
+	Con i microservizi la modularità del sistema è un notevole punto di forza. Sperimentare nuove tecnologie all'interno di un singolo microservizio ha un impatto nullo su tutti gli altri. Si è in questo modo molto più invogliati a ricercare sempre più nuove tecnologie da inserire nel proprio prodotto. Il rischio è minimo in quanto, anche nel caso l'esperienza risulti fallimentare, la mole di lavoro che comporta la modifica di un microservizio e veramente molto ridotta.
+	
+	\item Tecnologie ad hoc \\
+	Altro fattore da considerare è la possibilità di differenziare le tecnologie a seconda del microservizio. Si prenda come esempio la vastità di database che sono disponibili all'uso. Un database che è appropriato per un miocroservizio potrebbe non essere la scelta migliore per un altro. 
+	
+	\item Scalabilità \\
+	I software con un'architettura a microservizi sono pensati per scalare orizzontalmente in maniera estremamente agevole. Si possono replicare a piacimento tramite l'utilizzo di containers e hanno un comportamento distribuito anche nel caso si trovino sulla stessa macchina, in quanto i container li isolano da tutti gli altri.
+	
+	\item Facilità di Deployment \\
+	Le modifiche hanno un impatto molto ridotto nell'interno sistema. Grazie a ciò è possibile rilasciare sul mercato il software aggiornato con frequenze molto maggiori. Potenzialmente ogni modifica può subito essere pubblicata e non occorre attenersi a lunghi processi di release in cui si cerca il più possibile di accumulare modifiche da effettuare per poi applicarle tutte insieme.
+	
+	\item Portabilità \\
+	Il software a microservizi è facilmente componibile e portabile su più contesti e dispositivi, come web,mobile ma anche sistemi embedded o dispositivi indossabili ad esempio.	
 \end{itemize}
+
+\subsubsection{Svantaggi}
+\begin{itemize}
+	\item Dipendenza dalla rete \\
+	E' questo il principale punto di critico di un'architettura a microservices. Abbiamo quanto l'interazione tra i singoli microservizi faccia affidamento su una comunicazione attraverso internet. Ovviamente questo deve essere un requisito fondamentale. In mancanza di una connessione adeguata tutto il sistema smette di funzionare.
+	
+	\item Identità e autenticazione \\
+	Una volta che un utente del software effettua il login occorre garantire che la sua autenticazione, e soprattutto la sua identità, venga mantenuta in tutti i microservizi che andranno a comporre la sua esperienza utente.
+\end{itemize}
+
+\section{Containers}
+I container sono l'habitat naturale dei microservizi. Essi forniscono al software tutto ciò che gli è necessario, garantendogli un ambiente estremamente leggero e flessibile.
+
+\paragraph{}
+I containers sono infatti un metodo di virtualizzazione del sistema operativo che ha come obiettivo quello di isolare il software che ospita, permettendo di eseguire le applicazioni e le loro dipendenze in processi completamente isolati. L'infrastruttura del container interagisce direttamente con il kernel della macchina che lo ospita, scavalcando gli altri layer. In qualsiasi sistema operativo si troverà il container, le sue configurazioni interne rimarranno sempre separate, e l'applicazione contenuta avrà garantito il suo ecosistema necessario all'esecuzione. Non ci si deve preoccupare, ad esempio, di produrre una versione software per Windows e una per sistemi UNIX, ma la soluzione a container e unica e portabile. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/container.PNG}
+	\caption{Schematizzazione di tre container sulla stessa macchina ospitante}
+\end{figure}
+
+\subsection{I containers e le Macchine Virtuali}

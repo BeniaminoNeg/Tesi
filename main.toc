@@ -83,17 +83,24 @@
 \contentsline {section}{\numberline {5.1}Microservizi}{31}{section.5.1}
 \contentsline {paragraph}{}{31}{section*.62}
 \contentsline {subsection}{\numberline {5.1.1}Il modello monolitico a layer }{32}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Confronto tra l'architettura a microservizi e il modello monolitico}{32}{subsection.5.1.2}
-\contentsline {chapter}{\numberline {6}IBM BigFix Detect on SaaS, realizzazione del prototipo}{34}{chapter.6}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{35}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{36}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{36}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{36}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{36}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{36}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{37}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{37}{section*.66}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{37}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{37}{section*.67}
-\contentsline {subsubsection}{Google Chrome}{37}{section*.68}
-\contentsline {subsubsection}{Responsive Testing}{37}{section*.69}
+\contentsline {subsection}{\numberline {5.1.2}Confronto tra l'architettura a microservizi e il modello monolitico}{33}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Vantaggi e svantaggi di un'architettura a microservizi}{33}{subsection.5.1.3}
+\contentsline {subsubsection}{Vantaggi}{33}{section*.65}
+\contentsline {subsubsection}{Svantaggi}{35}{section*.66}
+\contentsline {section}{\numberline {5.2}Containers}{36}{section.5.2}
+\contentsline {paragraph}{}{36}{section*.67}
+\contentsline {subsection}{\numberline {5.2.1}I containers e le Macchine Virtuali}{36}{subsection.5.2.1}
+\contentsline {chapter}{\numberline {6}IBM BigFix Detect on SaaS, realizzazione del prototipo}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Interaction Design}{37}{section.6.1}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{38}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{39}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{39}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{39}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{39}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{39}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{40}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{40}{section*.70}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{40}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{40}{section*.71}
+\contentsline {subsubsection}{Google Chrome}{40}{section*.72}
+\contentsline {subsubsection}{Responsive Testing}{40}{section*.73}

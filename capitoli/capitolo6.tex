@@ -1,3 +1,45 @@
-\chapter{IBM BigFix Detect on SaaS, realizzazione del prototipo}
+\chapter{IBM BigFix on SaaS, progettazione del prototipo}
 
 \section{Interaction Design}
+
+\section{Requisiti Non Funzionali}
+Abbiamo già parlato nel capitolo 4 di quali sono le nuove problematiche alle quali una SaaS application deve far fronte. Ovviamente nel mio lavoro di tesi questo aspetto è stato un argomento cruciale delle prime fasi del lavoro. Soddisfare questo tipo di requisiti comporta infatti fare scelte architetturali molto impattanti e in quanto tali occorre definirle prima possibile nel design di un sistema software. 
+\subsection{Dependability}
+%	tempi di rispost asotto parametri definiti
+%	availability oltre il 99
+	
+%	aspettativa come tutti gli altri prodotti saas, disponibilità anche in upgrade
+%	rollig upgrade
+	
+%	microservizi
+	
+%	repliche dei microservizi
+	
+%	database hadr
+%	utilizzo di db2, due datacenter o due fonti di energia
+
+Il servizio di BigFix SaaS è stato progettato per garantire, quando sarà in produzione, un'availability che si mantenga sempre su valori superiori al 90. Ovviamente si prevedono carichi di utilizzo che possono essere anche molto elevati per il prodotto. La suite di BigFix è utilizzata da clienti di tutto il mondo, alcuni dei quali possiedono una rete di endopoint di notevole dimensione. Tutto ciò può portare a picchi di carico per il servizio molto elevati nei quali il servizio deve continuare a essere disponibile con prestazioni sopra delle soglie minime di accettabilità.
+
+\paragraph{Microservizi e container}
+Come abbiamo potuto osservare nei capitoli precedenti, l'adozione di microservizi e container è un must per i servizi cloud. Grazie a questa scelta possiamo garantire agli utenti di BigFix SaaS un'alta Dependability, fattore fondamentale nel contesto security in cui si va a calare questa suite di prodotti. ...
+
+
+\subsection{Scalability}
+
+%Come il prodotto originale 250 000
+
+
+\subsection{Monitoring}
+
+%necessità di automatizzare. processo automatico log -> prometheus -> grafana
+%avere dati subito intellegibili
+
+
+
+\section{Definizione architetturale}
+
+\subsection{Gap prd es}
+
+%multiten
+%microservizi
+

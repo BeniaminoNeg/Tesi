@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  10 NOV 2017 12:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  10 NOV 2017 17:49
 entering extended mode
 **./main.tex
 (main.tex
@@ -803,20 +803,20 @@ Writing glossary file main.glo
 (glossario/termini.tex) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -844,8 +844,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-LaTeX Info: Redefining \it@ocap on input line 65.
-LaTeX Info: Redefining \it@ccap on input line 65.
+LaTeX Info: Redefining \it@ocap on input line 66.
+LaTeX Info: Redefining \it@ccap on input line 66.
 
 
 File italian.ldf warning: 
@@ -853,7 +853,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 65.
+italian.ldf    on input line 66.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
@@ -865,7 +865,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 65.
+Package hyperref Info: Link coloring OFF on input line 66.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -875,9 +875,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count152
 )
-LaTeX Info: Redefining \ref on input line 65.
-LaTeX Info: Redefining \pageref on input line 65.
-LaTeX Info: Redefining \nameref on input line 65.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
 (main.out) (main.out)
 \@outlinefile=\write5
@@ -887,22 +887,22 @@ LaTeX Info: Redefining \nameref on input line 65.
 
 Title page
 \centeroffset=\skip71
-<logo.jpg, id=199, 62.2325pt x 75.28125pt>
+<logo.jpg, id=223, 62.2325pt x 75.28125pt>
 File: logo.jpg Graphic file (type jpg)
  <use logo.jpg>
-Package pdftex.def Info: logo.jpg used on input line 69.
+Package pdftex.def Info: logo.jpg used on input line 70.
 (pdftex.def)             Requested size: 62.23235pt x 75.28105pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 69.
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 69.
+LaTeX Font Info:    Try loading font information for U+msb on input line 70.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 69.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 70.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -916,11 +916,11 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ] (main.toc [3
 
 
-])
+] [4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4]
+
 [5] (capitoli/capitolo1.tex
 Capitolo 1.
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 1.
@@ -937,7 +937,7 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 
 ]
 Capitolo 2.
-<capitoli/imgs/BigFixManifest.png, id=290, 1270.7475pt x 577.15625pt>
+<capitoli/imgs/BigFixManifest.png, id=320, 1270.7475pt x 577.15625pt>
 File: capitoli/imgs/BigFixManifest.png Graphic file (type png)
 
 <use capitoli/imgs/BigFixManifest.png>
@@ -948,7 +948,7 @@ Package pdftex.def Info: capitoli/imgs/BigFixManifest.png used on input line 7.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<capitoli/imgs/IEMArchitecture.png, id=292, 794.97pt x 614.295pt>
+<capitoli/imgs/IEMArchitecture.png, id=322, 794.97pt x 614.295pt>
 File: capitoli/imgs/IEMArchitecture.png Graphic file (type png)
 
 <use capitoli/imgs/IEMArchitecture.png>
@@ -963,14 +963,14 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ] [8 <./capitoli/imgs/BigFixManifest.png>] [9 <./capitoli/imgs/IEMArchitecture.
 png>] [10] [11] [12] [13]
-<capitoli/imgs/GitLabGraph.PNG, id=347, 1019.30812pt x 316.18124pt>
+<capitoli/imgs/GitLabGraph.PNG, id=377, 1019.30812pt x 316.18124pt>
 File: capitoli/imgs/GitLabGraph.PNG Graphic file (type png)
 
 <use capitoli/imgs/GitLabGraph.PNG>
 Package pdftex.def Info: capitoli/imgs/GitLabGraph.PNG used on input line 80.
 (pdftex.def)             Requested size: 426.98857pt x 132.44785pt.
 
-<capitoli/imgs/rtc2.PNG, id=348, 286.06876pt x 168.63pt>
+<capitoli/imgs/rtc2.PNG, id=378, 286.06876pt x 168.63pt>
 File: capitoli/imgs/rtc2.PNG Graphic file (type png)
 
 <use capitoli/imgs/rtc2.PNG>
@@ -983,7 +983,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) (capitoli/capitolo3.tex [14 <./capitoli/imgs/GitLabGraph.PNG>] [15 <./capitol
 i/imgs/rtc2.PNG>]
 Capitolo 3.
-<capitoli/imgs/CloudComputing.png, id=363, 996.72375pt x 902.37125pt>
+<capitoli/imgs/CloudComputing.png, id=393, 996.72375pt x 902.37125pt>
 File: capitoli/imgs/CloudComputing.png Graphic file (type png)
 
 <use capitoli/imgs/CloudComputing.png>
@@ -1000,7 +1000,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [16
 
 ] [17 <./capitoli/imgs/CloudComputing.png>]
-<capitoli/imgs/TipologieCloud.png, id=376, 1200.485pt x 394.47375pt>
+<capitoli/imgs/TipologieCloud.png, id=406, 1200.485pt x 394.47375pt>
 File: capitoli/imgs/TipologieCloud.png Graphic file (type png)
 
 <use capitoli/imgs/TipologieCloud.png>
@@ -1008,14 +1008,14 @@ Package pdftex.def Info: capitoli/imgs/TipologieCloud.png used on input line 32
 .
 (pdftex.def)             Requested size: 298.89069pt x 98.2149pt.
  [18] [19 <./capitoli/imgs/TipologieCloud.png>] <capitoli/imgs/catalog.png, id=
-390, 910.40125pt x 568.1225pt>
+420, 910.40125pt x 568.1225pt>
 File: capitoli/imgs/catalog.png Graphic file (type png)
 
 <use capitoli/imgs/catalog.png>
 Package pdftex.def Info: capitoli/imgs/catalog.png used on input line 58.
 (pdftex.def)             Requested size: 426.98857pt x 266.4628pt.
  [20]
-<capitoli/imgs/watson.png, id=396, 931.48pt x 627.34375pt>
+<capitoli/imgs/watson.png, id=426, 931.48pt x 627.34375pt>
 File: capitoli/imgs/watson.png Graphic file (type png)
 
 <use capitoli/imgs/watson.png>
@@ -1026,7 +1026,7 @@ Package pdftex.def Info: capitoli/imgs/watson.png used on input line 65.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [21 <./capitoli/imgs/catalog.png>] [22 <./capitoli/imgs/watson.png>]
-<capitoli/imgs/IaasPaasSaas.png, id=412, 450.68375pt x 428.60126pt>
+<capitoli/imgs/IaasPaasSaas.png, id=442, 450.68375pt x 428.60126pt>
 File: capitoli/imgs/IaasPaasSaas.png Graphic file (type png)
 
 <use capitoli/imgs/IaasPaasSaas.png>
@@ -1041,7 +1041,7 @@ Capitolo 4.
 Capitolo 5.
 [32
 
-] <capitoli/imgs/disegnoMicrosMonol.png, id=479, 602.25pt x 283.0575pt>
+] <capitoli/imgs/disegnoMicrosMonol.png, id=509, 602.25pt x 283.0575pt>
 File: capitoli/imgs/disegnoMicrosMonol.png Graphic file (type png)
 
 <use capitoli/imgs/disegnoMicrosMonol.png>
@@ -1049,7 +1049,7 @@ Package pdftex.def Info: capitoli/imgs/disegnoMicrosMonol.png used on input lin
 e 15.
 (pdftex.def)             Requested size: 426.98857pt x 200.69147pt.
  [33 <./capitoli/imgs/disegnoMicrosMonol.png>] <capitoli/imgs/monosvmicro.png, 
-id=485, 903.375pt x 508.14844pt>
+id=515, 903.375pt x 508.14844pt>
 File: capitoli/imgs/monosvmicro.png Graphic file (type png)
 
 <use capitoli/imgs/monosvmicro.png>
@@ -1060,21 +1060,21 @@ Package pdftex.def Info: capitoli/imgs/monosvmicro.png used on input line 32.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [34] [35 <./capitoli/imgs/monosvmicro.png>] [36]
-<capitoli/imgs/container.PNG, id=501, 341.77687pt x 188.95593pt>
+<capitoli/imgs/container.PNG, id=531, 341.77687pt x 188.95593pt>
 File: capitoli/imgs/container.PNG Graphic file (type png)
 
 <use capitoli/imgs/container.PNG>
 Package pdftex.def Info: capitoli/imgs/container.PNG used on input line 77.
 (pdftex.def)             Requested size: 426.98857pt x 236.08186pt.
  [37 <./capitoli/imgs/container.PNG>]
-<capitoli/imgs/ContainersvsVms.PNG, id=510, 432.61626pt x 236.885pt>
+<capitoli/imgs/ContainersvsVms.PNG, id=540, 432.61626pt x 236.885pt>
 File: capitoli/imgs/ContainersvsVms.PNG Graphic file (type png)
 
 <use capitoli/imgs/ContainersvsVms.PNG>
 Package pdftex.def Info: capitoli/imgs/ContainersvsVms.PNG used on input line 8
 9.
 (pdftex.def)             Requested size: 426.98857pt x 233.81203pt.
- [38 <./capitoli/imgs/ContainersvsVms.PNG>] <capitoli/imgs/docker.png, id=518, 
+ [38 <./capitoli/imgs/ContainersvsVms.PNG>] <capitoli/imgs/docker.png, id=548, 
 794.97pt x 269.3262pt>
 File: capitoli/imgs/docker.png Graphic file (type png)
 
@@ -1087,26 +1087,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (capitoli/capitolo6.tex [39] [40 <./capitoli/imgs/docker.png>]
 Capitolo 6.
-)
-No file main.bbl.
 [41
 
-]
+])
+No file main.bbl.
+[42]
 No file main.gls.
 (appendici/tecnologie.tex
 Appendice A.
-<capitoli/imgs/LoadBalancer.png, id=534, 642.4pt x 327.2225pt>
+<capitoli/imgs/LoadBalancer.png, id=569, 642.4pt x 327.2225pt>
 File: capitoli/imgs/LoadBalancer.png Graphic file (type png)
 
 <use capitoli/imgs/LoadBalancer.png>
 Package pdftex.def Info: capitoli/imgs/LoadBalancer.png used on input line 5.
 (pdftex.def)             Requested size: 426.98857pt x 217.50037pt.
- [42
+ [43
 
  <./capitoli/imgs/LoadBalancer.png>]
-[43]) [44] [45
+[44]) [45] [46
 
-] [46
+] [47
 
 
 ]
@@ -1114,22 +1114,22 @@ Package pdftex.def Info: capitoli/imgs/LoadBalancer.png used on input line 5.
 Package caption Warning: Unused \captionsetup[lstlisting] on input line 35.
 See the caption package documentation for explanation.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
 (main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2C0017860D43B8BA36A69BA2DC93B187;3604.
+(rerunfilecheck)             Checksum: A942D61EAC4B936704E1B00C561A5FC9;4007.
  ) 
 Here is how much of TeX's memory you used:
- 11315 strings out of 493328
- 162449 string characters out of 3136526
- 527269 words of memory out of 3000000
- 14439 multiletter control sequences out of 15000+200000
+ 11329 strings out of 493328
+ 162651 string characters out of 3136526
+ 526269 words of memory out of 3000000
+ 14445 multiletter control sequences out of 15000+200000
  14766 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,7n,39p,1011b,465s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,7n,39p,1011b,481s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (
@@ -1138,9 +1138,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (46 pages, 1852330 bytes).
+Output written on main.pdf (47 pages, 1858499 bytes).
 PDF statistics:
- 641 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 479 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 527 words of extra memory for PDF output out of 10000 (max. 10000000)
 

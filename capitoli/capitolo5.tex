@@ -70,7 +70,7 @@ Un'architettura di questo tipo porta con se ovviamente anche i suoi svantaggi e 
 I container sono l'habitat naturale dei microservizi. Essi forniscono al software tutto ciò che gli è necessario, garantendogli un ambiente estremamente leggero e flessibile.
 
 \paragraph{}
-I containers sono infatti un metodo di virtualizzazione del sistema operativo che ha come obiettivo quello di isolare il software che ospita, permettendo di eseguire le applicazioni e le loro dipendenze in processi completamente isolati. L'infrastruttura del container interagisce direttamente con il kernel della macchina che lo ospita, scavalcando gli altri layer. In qualsiasi sistema operativo si troverà il container, le sue configurazioni interne rimarranno sempre separate, e l'applicazione contenuta avrà garantito il suo ecosistema necessario all'esecuzione. Non ci si deve preoccupare, ad esempio, di produrre una versione software per Windows e una per sistemi UNIX, ma la soluzione a container e unica e portabile. 
+I containers sono infatti un metodo di virtualizzazione del sistema operativo che ha come obiettivo quello di isolare il software che ospita, permettendo di eseguire le applicazioni e le loro dipendenze in processi completamente isolati. L'infrastruttura del container interagisce direttamente con il kernel della macchina che lo ospita, scavalcando gli altri layer. In qualsiasi sistema operativo collochiamo il container, le sue configurazioni interne rimarranno sempre separate, e l'applicazione contenuta avrà garantito il suo ecosistema necessario all'esecuzione. Non ci si deve preoccupare, ad esempio, di produrre una versione software per Windows e una per sistemi UNIX, ma la soluzione a container e unica e portabile. 
 
 \begin{figure}[h!]
 	\centering
@@ -79,3 +79,42 @@ I containers sono infatti un metodo di virtualizzazione del sistema operativo ch
 \end{figure}
 
 \subsection{I containers e le Macchine Virtuali}
+Stando alla descrizione dei container che abbiamo dato fino a questo punto potrebbe sorgere una domanda: perchè utilizzare i container se potrebbero essere usate delle macchine virtuali? Una Virtual Machine è per sua natura già isolata dalla macchina che la ospita. La risposta sta nella leggerezza d'uso dei container. I container infatti non virtualizzano l'hardware della macchina, ma solamente il layer applicativo, rendendoli più portabili ed efficienti.
+
+\paragraph{}
+Non avendo un proprio sistema operativo, il peso di un container e dell'ordine di qualche Megabyte, contro i Gigabyte di una macchina virtuale che sovrappone il proprio sistema operativo a quello della macchina ospitante. A differenza delle macchine virtuali inoltre, i container non necessitano dell'Hypervisor, un componente che svolge delle attività di controllo e coordinamento sulle macchine virtuali. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/ContainersvsVms.PNG}
+	\caption{Confronto tra macchine virtuali e container, nell'esempio con l'utilizzo di un Docker Engine}
+\end{figure}
+
+\subsection{Vantaggi dei container}
+Andiamo a ricapitolare quali sono le principali motivazioni che possono spingerci all'adozione dei container.
+\begin{itemize}
+	\item Coesione dell'ambiente \\
+	L'ambiente di un container è fortemente disaccoppiato dalla macchina in cui si trova. Questo fà si che il proprio contenuto sia facilmente replicabile e portabile ovunque.
+	
+	\item Gestione delle risorse \\
+	Con i containers si ha una gestione delle risorse di calcolo molto più efficiente. Richiedendo poche risorse alla macchine ospitante, si ha la possibilità di eseguire molti più container contemporaneamente. 
+	
+	\item Produttività \\
+	Diminuendo le dipendenze, ci si alleggerisce di tutta la mole di lavoro necessaria per configurare correttamente un prodotto. 
+	
+	\item gestione degli aggiornamenti. \\
+	Molto spesso la gestione degli aggiornamenti è un meccanismo già compreso nei container engine, come Docker.
+\end{itemize}
+
+\subsection{I container e i microservizi}
+Possiamo quindi comprendere come i container siano estremamente appropriati ad ospitare del microservizi. Ponendo un microservizio dentro ogni container, abbiamo la garanzia che ogni microservizio operi come un sistema sepato, anche nell'eventualità che due servizi risiedano nella stessa macchina fisica. Ogni microservizio inserito in un container gode automaticamente di tutti i vantaggi di portabilità e flessibilità che sono tra i requisiti fondamentali che ci spingono verso l'architettura a microservizi.
+
+\subsection{Docker}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/docker.png}
+	\caption{Logo di Docker}
+\end{figure}
+
+\subsection{Kubernetes}

@@ -18,10 +18,16 @@ Abbiamo già parlato nel capitolo 4 di quali sono le nuove problematiche alle qu
 %	database hadr
 %	utilizzo di db2, due datacenter o due fonti di energia
 
-Il servizio di BigFix SaaS è stato progettato per garantire, quando sarà in produzione, un'availability che si mantenga sempre su valori superiori al 90. Ovviamente si prevedono carichi di utilizzo che possono essere anche molto elevati per il prodotto. La suite di BigFix è utilizzata da clienti di tutto il mondo, alcuni dei quali possiedono una rete di endopoint di notevole dimensione. Tutto ciò può portare a picchi di carico per il servizio molto elevati nei quali il servizio deve continuare a essere disponibile con prestazioni sopra delle soglie minime di accettabilità.
+Il servizio di BigFix SaaS è stato progettato per garantire, quando sarà in produzione, un'availability che si mantenga sempre su valori superiori al 99. Ovviamente si prevedono carichi di utilizzo che possono essere anche molto elevati. La suite di BigFix è utilizzata contemporaneamente da clienti di tutto il mondo, alcuni dei quali possiedono una rete di endpoint composta da un numero considerevole di nodi. Tutto ciò può portare a picchi di carico molto elevati nonostante i quali il servizio deve continuare a essere disponibile con prestazioni sopra delle soglie minime di accettabilità.
 
 \paragraph{Microservizi e container}
-Come abbiamo potuto osservare nei capitoli precedenti, l'adozione di microservizi e container è un must per i servizi cloud. Grazie a questa scelta possiamo garantire agli utenti di BigFix SaaS un'alta Dependability, fattore fondamentale nel contesto security in cui si va a calare questa suite di prodotti. ...
+Come abbiamo potuto osservare nei capitoli precedenti, l'adozione di microservizi e container è un must per i servizi cloud. Grazie a questa scelta possiamo garantire agli utenti di BigFix SaaS un'alta Dependability, fattore fondamentale nel contesto della security aziendale in cui si va a calare questa suite di prodotti. I microservizi di BigFix, infatti, verranno replicati tramite i container in datacenter IBM in tutto il mondo, ciò potrà garantire anche tolleranza ai guasti che possono presentarsi. Il grado di replicazione dei diversi microservizi sarà ovviamente proporzionale all'importanza del microservizio stesso. Ci saranno ovviamente dei microservizi con dei ruoli più centrali di altri.
+
+\paragraph{Rolling Update}
+Un'altro aspetto critico nel garantire un'alta availability è quello dell'aggiornamento del servizio. Facendo un paragone con i servizi SaaS che utilizziamo quotidianamente per consultare la posta elettronica, notiamo che non assistiamo mai a fenomeni di mancanza del servizio quando il prodotto si aggiorna, ma, all'occorrenza, troviamo già il prodotto nella sua versione agiornata. Vogliamo che questo comportamento si verifichi anche con la suite SaaS di BigFix e per questo occorre attuare una politica di Rolling Update. Silentemente, vengono aggiornate a turno tutte le repliche dei microservizi interessanti dall'aggiornamento. Nel fare ciò però, l'esperienza utente non risente di peggioramenti, in quanto le repliche che rimangono in servizio garantiscono l'efficienza del servizio.
+
+\paragraph{Utilizzo di BD2}
+Anche la persistenza dei dati può risultare essere un elemento critico per la dependability. Occorre uno strumento che garantisca l'integrità dei dati, la resistenza ai guasti con adeguate misure di ripristino e soprattutto la riservatezza dei dati che, in un contesto come la security aziendale, possono essere molto sensibili. Si è scelto di utilizzare come DBMS DB2, un database relazionale prodotto da IBM. Una peculiarità di questo prodotto è la HADR (High Availability and Disaster Recovery). 
 
 
 \subsection{Scalability}

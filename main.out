@@ -37,19 +37,26 @@
 \BOOKMARK [2][-]{subsection.5.2.3}{I container e i microservizi}{section.5.2}% 37
 \BOOKMARK [2][-]{subsection.5.2.4}{Docker}{section.5.2}% 38
 \BOOKMARK [2][-]{subsection.5.2.5}{Kubernetes}{section.5.2}% 39
-\BOOKMARK [0][-]{chapter.6}{IBM BigFix on SaaS, progettazione del prototipo}{}% 40
-\BOOKMARK [1][-]{section.6.1}{Interaction Design}{chapter.6}% 41
-\BOOKMARK [1][-]{section.6.2}{Requisiti Non Funzionali}{chapter.6}% 42
-\BOOKMARK [2][-]{subsection.6.2.1}{Dependability}{section.6.2}% 43
-\BOOKMARK [2][-]{subsection.6.2.2}{Scalability}{section.6.2}% 44
-\BOOKMARK [2][-]{subsection.6.2.3}{Monitoring}{section.6.2}% 45
-\BOOKMARK [1][-]{section.6.3}{Definizione architetturale}{chapter.6}% 46
-\BOOKMARK [2][-]{subsection.6.3.1}{Gap prd es}{section.6.3}% 47
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 48
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 49
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 50
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 51
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 52
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 53
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 54
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 55
+\BOOKMARK [1][-]{section.5.3}{Multitenancy}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.4}{Monitoring Tools}{chapter.5}% 41
+\BOOKMARK [2][-]{subsection.5.4.1}{Prometheus}{section.5.4}% 42
+\BOOKMARK [2][-]{subsection.5.4.2}{Grafana}{section.5.4}% 43
+\BOOKMARK [1][-]{section.5.5}{BlueMix Service}{chapter.5}% 44
+\BOOKMARK [0][-]{chapter.6}{IBM BigFix on SaaS, la progettazione}{}% 45
+\BOOKMARK [1][-]{section.6.1}{Interaction Design}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.2}{Requisiti Non Funzionali}{chapter.6}% 47
+\BOOKMARK [2][-]{subsection.6.2.1}{Dependability}{section.6.2}% 48
+\BOOKMARK [2][-]{subsection.6.2.2}{Scalabilit\340}{section.6.2}% 49
+\BOOKMARK [2][-]{subsection.6.2.3}{Monitoring}{section.6.2}% 50
+\BOOKMARK [1][-]{section.6.3}{Gap con il prodotto on premise}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.4}{Definizione Architetturale}{chapter.6}% 52
+\BOOKMARK [2][-]{subsection.6.4.1}{Scelta dei tool e dei servizi da utilizzare}{section.6.4}% 53
+\BOOKMARK [2][-]{subsection.6.4.2}{Viste architetturali}{section.6.4}% 54
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 55
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 56
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 57
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 58
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 59
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 60
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 61
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 62

@@ -1,51 +1,46 @@
-\chapter{IBM BigFix on SaaS, progettazione del prototipo}
+\chapter{IBM BigFix on SaaS, la progettazione}
 
 \section{Interaction Design}
 
 \section{Requisiti Non Funzionali}
 Abbiamo già parlato nel capitolo 4 di quali sono le nuove problematiche alle quali una SaaS application deve far fronte. Ovviamente nel mio lavoro di tesi questo aspetto è stato un argomento cruciale delle prime fasi del lavoro. Soddisfare questo tipo di requisiti comporta infatti fare scelte architetturali molto impattanti e in quanto tali occorre definirle prima possibile nel design di un sistema software. 
-\subsection{Dependability}
-%	tempi di rispost asotto parametri definiti
-%	availability oltre il 99
-	
-%	aspettativa come tutti gli altri prodotti saas, disponibilità anche in upgrade
-%	rollig upgrade
-	
-%	microservizi
-	
-%	repliche dei microservizi
-	
-%	database hadr
-%	utilizzo di db2, due datacenter o due fonti di energia
 
+\subsection{Dependability}
 Il servizio di BigFix SaaS è stato progettato per garantire, quando sarà in produzione, un'availability che si mantenga sempre su valori superiori al 99. Ovviamente si prevedono carichi di utilizzo che possono essere anche molto elevati. La suite di BigFix è utilizzata contemporaneamente da clienti di tutto il mondo, alcuni dei quali possiedono una rete di endpoint composta da un numero considerevole di nodi. Tutto ciò può portare a picchi di carico molto elevati nonostante i quali il servizio deve continuare a essere disponibile con prestazioni sopra delle soglie minime di accettabilità.
 
 \paragraph{Microservizi e container}
 Come abbiamo potuto osservare nei capitoli precedenti, l'adozione di microservizi e container è un must per i servizi cloud. Grazie a questa scelta possiamo garantire agli utenti di BigFix SaaS un'alta Dependability, fattore fondamentale nel contesto della security aziendale in cui si va a calare questa suite di prodotti. I microservizi di BigFix, infatti, verranno replicati tramite i container in datacenter IBM in tutto il mondo, ciò potrà garantire anche tolleranza ai guasti che possono presentarsi. Il grado di replicazione dei diversi microservizi sarà ovviamente proporzionale all'importanza del microservizio stesso. Ci saranno ovviamente dei microservizi con dei ruoli più centrali di altri.
 
-\paragraph{Rolling Update}
+\subsubsection{Rolling Update}
 Un'altro aspetto critico nel garantire un'alta availability è quello dell'aggiornamento del servizio. Facendo un paragone con i servizi SaaS che utilizziamo quotidianamente per consultare la posta elettronica, notiamo che non assistiamo mai a fenomeni di mancanza del servizio quando il prodotto si aggiorna, ma, all'occorrenza, troviamo già il prodotto nella sua versione agiornata. Vogliamo che questo comportamento si verifichi anche con la suite SaaS di BigFix e per questo occorre attuare una politica di Rolling Update. Silentemente, vengono aggiornate a turno tutte le repliche dei microservizi interessanti dall'aggiornamento. Nel fare ciò però, l'esperienza utente non risente di peggioramenti, in quanto le repliche che rimangono in servizio garantiscono l'efficienza del servizio.
 
-\paragraph{Utilizzo di BD2}
-Anche la persistenza dei dati può risultare essere un elemento critico per la dependability. Occorre uno strumento che garantisca l'integrità dei dati, la resistenza ai guasti con adeguate misure di ripristino e soprattutto la riservatezza dei dati che, in un contesto come la security aziendale, possono essere molto sensibili. Si è scelto di utilizzare come DBMS DB2, un database relazionale prodotto da IBM. Una peculiarità di questo prodotto è la HADR (High Availability and Disaster Recovery). 
+\subsubsection{Utilizzo di BD2}
+Anche la persistenza dei dati può risultare essere un elemento critico per la dependability. Occorre uno strumento che garantisca l'integrità dei dati, la resistenza ai guasti con adeguate misure di ripristino e soprattutto la riservatezza dei dati che, in un contesto come la security aziendale, possono essere molto sensibili. Si è scelto di utilizzare come DBMS DB2, un database relazionale prodotto da IBM. Una peculiarità di questo prodotto è la HADR (High Availability and Disaster Recovery). Diamo un'occhiata all'architettura di DB2 per capire di cosa si tratta.
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/db2.PNG}
+	\caption{Architettura del DBMS IBM DB2}
+\end{figure}
 
-\subsection{Scalability}
+\paragraph{}
+DB2 replica tutto il contenuto del suo database, chiamato Primary Database, in un secondo database detto Standby Database, il quale svolge anche il ruolo di backup. I dati di questi due sono consistenti e vengono sincronizzati costantemente. Qualunque malfunzionamento del database principale normalmente comporterebbe dei tempi di non availability più o meno lunghi. Con questa architettura HADR, invece, nel momento in cui il Primary Database presenta un guasto, lo Standby Database assume il suo ruolo (Failover) finchè il database primario non torna disponibile e, a qual punto, i due database tornano a svolgere il loro compito originario (Role switch). Una prerogativa importante però è che i due database risiedano in due data center distinti, o comunque provengano da due fonti di energia distinte nel caso si trovino nello stesso luogo geografico, per evitare che dei guasti possano colpirli entrambi. 
 
-%Come il prodotto originale 250 000
-
+\subsection{Scalabilità}
+Per quanto riguarda la Scalabilita ci prefiggiamo di garantire le stesse specifiche del prodotto in versione on premise, quindi di supportare fino a 250.000 endpoint per server. Il soddisfacimento di questa specifica, nel contesto SaaS, sposta l'attenzione ovviamente sul nuovo concetto di server, ossia una serie di microservizi distribuiti che svolgono le funzionalità che nella versione on premise era svolta dal server presso il client. Ancora una volta sta nella ridondanza dei microservizi la chiave per garantire la scalabilità prefissata.
 
 \subsection{Monitoring}
-
-%necessità di automatizzare. processo automatico log -> prometheus -> grafana
-%avere dati subito intellegibili
+Sotto l'aspetto del monitoring ci siamo dovuti scontrare con una nuova complessità nel saper monitorare un servizio così diffuso come quello di SaaS. La necessità è quella di sostituire l'intervento umano nella consultazione dei log di tutti i servizi. Il requisito che abbiamo è quello di analizzare i risultati, saper effettuare delle medie e calcolare dei picchi di parametri come il throughput o la latenza. Vogliamo infine che questa mole di dati fosse facilmente consultabile agli occhi di chi effettua la manutenzione del prodotto, magari sotto forma di grafici facilmente intellegibili. Per soddisfare queste necessità abbiamo individuato i tool Prometheus e Grafana che si sono rivelati molto utili nelle fasi successive al deployment, come vedremo in seguito.  
 
 
+\section{Gap con il prodotto on premise}
+La natura di un servizio SaaS porta con se alcune differenze strutturali importanti con il prodotto già esistente. La modalità di fruizione del prodotto è completamente diversa dal prodotto on premise infatti e gli accorgimenti sono da prendere subito in considerazione in quanto impattano pesantemente sulle scelte architetturali.
+\paragraph{Introduzione della multitenancy}
+Uno di questi è sicuramente la multitenancy. Nel modello SaaS può capitare che sulla stessa macchina fisica risiedano più server di clienti diversi. Dalla prospettiva utente però si deve dare l'impressione di un possesso esclusivo del server tramite strategie di multitenancy. E' di fondamentale importanza che un cliente non entri in contatto con dati afferenti al server di altre organizzazioni, anche se queste risiedono sullo stesso server fisico. Tra gli accorgimenti attuati c'è la modifica della modalità di archiviazione dei dati, permettendo di filtrare i dati appartenenti al tenant corretto e speciali privilegi di utilizzo dei servizi server. 
+\paragraph{Introduzione dei microservizi}
+L'introduzione dei microservizi è un elemento centrale della conversione a SaaS. Per attuarla è necessario un attento percorso di refactoring del codice del prodotto, suddividendolo in servizi coesi che possano rappresentare delle entità separate che cooperino tra loro.
 
-\section{Definizione architetturale}
-
-\subsection{Gap prd es}
-
-%multiten
-%microservizi
-
+\section{Definizione Architetturale}
+La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre definire componenti ben definiti da implementare, altri da riutilizzare, alcuni da adattare e inoltre interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
+\subsection{Scelta dei tool e dei servizi da utilizzare}
+\subsection{Viste architetturali}

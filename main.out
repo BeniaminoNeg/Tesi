@@ -44,19 +44,21 @@
 \BOOKMARK [1][-]{section.5.5}{BlueMix Service}{chapter.5}% 44
 \BOOKMARK [0][-]{chapter.6}{IBM BigFix on SaaS, la progettazione}{}% 45
 \BOOKMARK [1][-]{section.6.1}{Interaction Design}{chapter.6}% 46
-\BOOKMARK [1][-]{section.6.2}{Requisiti Non Funzionali}{chapter.6}% 47
-\BOOKMARK [2][-]{subsection.6.2.1}{Dependability}{section.6.2}% 48
-\BOOKMARK [2][-]{subsection.6.2.2}{Scalabilit\340}{section.6.2}% 49
-\BOOKMARK [2][-]{subsection.6.2.3}{Monitoring}{section.6.2}% 50
-\BOOKMARK [1][-]{section.6.3}{Gap con il prodotto on premise}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.4}{Definizione Architetturale}{chapter.6}% 52
-\BOOKMARK [2][-]{subsection.6.4.1}{Scelta dei tool e dei servizi da utilizzare}{section.6.4}% 53
-\BOOKMARK [2][-]{subsection.6.4.2}{Viste architetturali}{section.6.4}% 54
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 55
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 56
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 57
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 58
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 59
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 60
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 61
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 62
+\BOOKMARK [2][-]{subsection.6.1.1}{Design Thinking}{section.6.1}% 47
+\BOOKMARK [2][-]{subsection.6.1.2}{Stackeholder Map}{section.6.1}% 48
+\BOOKMARK [1][-]{section.6.2}{Requisiti Non Funzionali}{chapter.6}% 49
+\BOOKMARK [2][-]{subsection.6.2.1}{Dependability}{section.6.2}% 50
+\BOOKMARK [2][-]{subsection.6.2.2}{Scalabilit\340}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.3}{Monitoring}{section.6.2}% 52
+\BOOKMARK [1][-]{section.6.3}{Gap con il prodotto on premise}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.4}{Definizione Architetturale}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.4.1}{Scelta dei tool e dei servizi da utilizzare}{section.6.4}% 55
+\BOOKMARK [2][-]{subsection.6.4.2}{Viste architetturali}{section.6.4}% 56
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 57
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 58
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 59
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 60
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 61
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 62
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 63
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 64

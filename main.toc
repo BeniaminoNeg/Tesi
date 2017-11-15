@@ -102,32 +102,33 @@
 \contentsline {section}{\numberline {5.5}BlueMix Service}{40}{section.5.5}
 \contentsline {chapter}{\numberline {6}IBM BigFix on SaaS, la progettazione}{41}{chapter.6}
 \contentsline {section}{\numberline {6.1}Interaction Design}{41}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Design Thinking}{41}{subsection.6.1.1}
-\contentsline {subsubsection}{Le fasi del design}{41}{section*.72}
-\contentsline {subsection}{\numberline {6.1.2}Stackeholder Map}{41}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Requisiti Non Funzionali}{41}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Dependability}{41}{subsection.6.2.1}
-\contentsline {paragraph}{Microservizi e container}{42}{section*.73}
-\contentsline {subsubsection}{Rolling Update}{42}{section*.74}
-\contentsline {subsubsection}{Utilizzo di BD2}{42}{section*.75}
-\contentsline {paragraph}{}{43}{section*.77}
-\contentsline {subsection}{\numberline {6.2.2}Scalabilit\IeC {\`a}}{43}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Monitoring}{44}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Gap con il prodotto on premise}{44}{section.6.3}
-\contentsline {paragraph}{Introduzione della multitenancy}{44}{section*.78}
-\contentsline {paragraph}{Introduzione dei microservizi}{45}{section*.79}
-\contentsline {section}{\numberline {6.4}Definizione Architetturale}{45}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Scelta dei tool e dei servizi da utilizzare}{45}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Viste architetturali}{45}{subsection.6.4.2}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{46}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{47}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{47}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{47}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{47}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{47}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{48}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{48}{section*.81}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{48}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{48}{section*.82}
-\contentsline {subsubsection}{Google Chrome}{48}{section*.83}
-\contentsline {subsubsection}{Responsive Testing}{48}{section*.84}
+\contentsline {subsection}{\numberline {6.1.1}Design Thinking}{42}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}BigFix SaaS Interaction Design}{43}{subsection.6.1.2}
+\contentsline {paragraph}{}{43}{section*.73}
+\contentsline {paragraph}{}{43}{section*.74}
+\contentsline {section}{\numberline {6.2}Requisiti Non Funzionali}{43}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Dependability}{44}{subsection.6.2.1}
+\contentsline {paragraph}{Microservizi e container}{44}{section*.75}
+\contentsline {subsubsection}{Rolling Update}{44}{section*.76}
+\contentsline {subsubsection}{Utilizzo di BD2}{45}{section*.77}
+\contentsline {paragraph}{}{45}{section*.79}
+\contentsline {subsection}{\numberline {6.2.2}Scalabilit\IeC {\`a}}{46}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Monitoring}{46}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Gap con il prodotto on premise}{46}{section.6.3}
+\contentsline {paragraph}{Introduzione della multitenancy}{47}{section*.80}
+\contentsline {paragraph}{Introduzione dei microservizi}{47}{section*.81}
+\contentsline {section}{\numberline {6.4}Definizione Architetturale}{47}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Scelta dei tool e dei servizi da utilizzare}{47}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Viste architetturali}{47}{subsection.6.4.2}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{48}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{49}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{49}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{49}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{49}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{49}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{50}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{50}{section*.83}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{50}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{50}{section*.84}
+\contentsline {subsubsection}{Google Chrome}{50}{section*.85}
+\contentsline {subsubsection}{Responsive Testing}{50}{section*.86}

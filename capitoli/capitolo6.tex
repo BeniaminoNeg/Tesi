@@ -26,11 +26,37 @@ Empatia. E' questa la parola chiave della filosofia del Design Thinking. E' un p
 \subsection{BigFix SaaS Interaction Design}
 Il nodo cruciale di questa fase del lavoro e stato per noi quello di capire realmente quale fosse il target del nuovo servizio SaaS e quali siano i reali bisogni che possano spingere i clienti ad adottare un prodotto SaaS, siano essi già degli utenti della versione on premise o no. Il problema principale prima dell'avvento del paradigma design thinking era che i requisiti funzionali dei prodotti che venivano realizzati per le aziende erano stabiliti tramite delle contrattazioni svolte tra i progettisti e gli addetti agli acquisti delle aziende clienti, spesso trascurando i reali beneficiari del prodotto, ossia i tecnici dell'azienda cliente. Questo spesso porta a realizzare dei prodotti che non fanno fronte ai reali bisogni dell'utente. 
 
-\paragraph{}
-La novità introdotta dal design thinking è il coinvolgimento della figura dell'utente finale fin dalla progettazione. Questo è stato fatto tramite interviste ma anche osservando gli utenti nella loro routine lavorative, cercando di captare necessità e frustrazioni che vogliono essere eliminate.
 
-\paragraph{}
-continuare quì
+\paragraph{Stakeholder Map}
+L'obiettivo principale di questa fase del lavoro è stata per noi quella di allineare tutti gli interessati, sviluppatori, dirigenti e potenziali utenti, sugli obiettivi del progetto SaaS. Per fare ciò si è fatto uso della Stakeholder Map, un artefatto che raffigura per l'appunto tutti gli Stackeholder interessati alla realizzazione del progetto. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/StakeholderMap.PNG}
+	\caption{BigFix on SaaS Stakeholder Map}
+\end{figure}
+Possiamo notare come gli input vengano da figure dirigenziali, che dettano le direttive aziendali, e da clienti del panorama cloud. E'inoltre necessaria una stretta interazione tra il team di sviluppo e il Security Operation Team, ovvero il team che dovrà garantire la manutenzione del servizio SaaS, monitorando le prestazioni del servizio e intervenendo se necessario.
+
+\paragraph{User Research}
+Il coinvolgimento della figura dell'utente finale è avvenuto fin dalla progettazione. Questo è stato fatto tramite interviste strutturate, ma anche osservando gli utenti nella loro routine lavorative, cercando di captare necessità e frustrazioni che vogliono essere eliminate e annotarle. L'obiettivo di fondo di questa fase del lavoro era quello di instaurare un rapporto di empatia tra gli utenti e chi realizza il progetto.
+
+\paragraph{Nascita delle personas}
+A questa punto occorreva fare un'operazione di astrazione. Cercare di identificare degli elementi chiave dal lavoro precedente e impersonificare i bisogni e le caratteristiche scoperte in delle personas. Le personas sono personaggi fittizi che vengono creati per rappresentare i diversi tipi di utenti in base alle loro caratteristiche comportamentali. Vengono utilizzate per creare degli scenari e capire meglio il target del lavoro che si sta per compiere. Nel nostro caso sono state individuate le seguenti personas:
+\begin{itemize}
+	\item Rick - BigFix Operator \\
+	Rick è l'amministratore che utilizza BigFix nella sua versione SaaS. Vuole poter festire gli endpoint della sua azienda come farebbe con la versione on premise, distribuire contenuti e forzare le policy aziendali. usa le applications di BigFix.
+	\item James - Content Creator \\
+	James crea i contenuti per BigFix, crea Fixlet e task ad hoc per la propria azienda e crea pacchetti da deployare su diversi endpoint aziendali.
+	\item Scott - BigFix Architect \\
+	Scott è l'architetto dell'azienda cliente. Si occupa di installare la suite BigFix, che nel caso della versione SaaS risulta essere molto più agevole. Deve stabilire quale sia l'architettura azienda aziendale, relay e la rete di agent.
+	\item  Rafael - Security Analyst \\
+	Rafael è la figura che si occupa di controllare che gli endpoint rispettino le policy aziendali e può mandare dei messaggi per sollecitare l'attuazione della compliace.
+	\item Lucy - IT Manager \\
+	Si occupa della gestione dell'infrasruttura IT dell'azienda. Ha bisogno di accedere a molti contenuti dell'operator e si interfaccia spesso con Rick.
+\end{itemize}
+
+\paragraph{Empathy Map}
+A questo punto è stato necessario definire gli aspetti caratteriali dal punto di vista lavorativo delle personas appena individuate. Questo si formalizza attraverso una Empathy Map per ogni peronas che si vuole analizzare. In questo artefatto vengono poste al centro e ne vengono appuntate le peculiarità. Abbiamo scritto cosa fa durante la giornata e le sue necessità, ma anche dopo un'analisi quelli che possono essere i suoi sentimenti durante lo svolgimento dei task quotidiani. tra le caratteristiche che abbiamo cercato di delineare nei personaggi ci sono:
+https://app.mural.ly/t/bigfixsaas2832/m/bigfixsaas2832/1499077049157/c1586b0e630bf226a52ddc8c5a1c12cfd6ba4978
 
 \section{Requisiti Non Funzionali}
 Abbiamo già parlato nel capitolo 4 di quali sono le nuove problematiche alle quali una SaaS application deve far fronte. Ovviamente nel mio lavoro di tesi questo aspetto è stato un argomento cruciale delle prime fasi del lavoro. Soddisfare questo tipo di requisiti comporta infatti fare scelte architetturali molto impattanti e in quanto tali occorre definirle prima possibile nel design di un sistema software. 

@@ -145,8 +145,16 @@ Uno di questi è sicuramente la multitenancy. Nel modello SaaS può capitare che
 L'introduzione dei microservizi è un elemento centrale della conversione a SaaS. Per attuarla è necessario un attento percorso di refactoring del codice del prodotto, suddividendolo in servizi coesi che possano rappresentare delle entità separate che cooperino tra loro.
 
 \section{Definizione Architetturale}
-La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre definire componenti ben definiti da implementare, altri da riutilizzare, alcuni da adattare e inoltre interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
+La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre definire quali sono i componenti da implementare, altri da riutilizzare e alcuni da adattare. Inoltre occorre stabilire come interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
 \subsection{Scelta dei tool e dei servizi da utilizzare}
+Nel mio caso mi sono mosso in un ambito, quello del cloud computing, si privo di una consolidata storia alle spalle, ma anche ricco di continui nuovi contributi. Infatti compaiono sempre nuove tecnologie dedicate esclusivamente all'ambiente cloud, molte delle quali open-source con frequentissimi contributi da parte degli sviluppatori.
+
+\paragraph{}
+Trattandosi della realizzazione di un prototipo SaaS, l'attenzione principale non poteva che ricadere sui container e sui più diffusi trend in ambito cloud. Si è scelto di adottare l'utilizzo dei container. Come largamente trattato nella sezione 5.2 essi rappresentano una tecnologia fondamentale per realizzare un servizio SaaS. Avendo scelto di adottare i container occorreva quindi scegliere una piattaforma che automatizzi il deployment dei container in maniera efficace. Da questo punto di vista la scelta è ricaduta su Docker, una scelta quasi obbligata vista l'alta competitività del tool e l'affermazione ormai incontrastata. In questo modo ci si alleggerisce dall'overhead di utilizzare un'intera macchina virtuale per ogni container in quanto tutti i container sulla stessa macchina fisica condividono lo stesso sistema operativo, ma al tempo stesso sono isolati. 
+
+\paragraph{}
+A questo punto però bisogna immaginare uno scenario in cui il servizio che sono andato a realizzare e scomposto in un numero piuttosto elevato di container, alcuni andranno creati in delle situazioni specifiche, altri eliminati o modificati. Per queste funzionalità l'IBM ha come direttiva quella di utilizzare Kubernetes, del quale abbiamo parlato anche nella sezione 5.2. Tramite questo tool sono in grado di orchestrare i container e controllarne il flusso di vita tramite i pod.
+
 \subsection{Viste architetturali}
 
 \section{Definizione dei processi di gestione}

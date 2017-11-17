@@ -52,11 +52,59 @@ A questa punto occorreva fare un'operazione di astrazione. Cercare di identifica
 	Rafael è la figura che si occupa di controllare che gli endpoint rispettino le policy aziendali e può mandare dei messaggi per sollecitare l'attuazione della compliace.
 	\item Lucy - IT Manager \\
 	Si occupa della gestione dell'infrasruttura IT dell'azienda. Ha bisogno di accedere a molti contenuti dell'operator e si interfaccia spesso con Rick.
+	\item Hugo - OPS engineer \\
+	Hugo è un dipendente IBM che si occupa della manutenzione del servizio SaaS.
 \end{itemize}
 
 \paragraph{Empathy Map}
 A questo punto è stato necessario definire gli aspetti caratteriali dal punto di vista lavorativo delle personas appena individuate. Questo si formalizza attraverso una Empathy Map per ogni peronas che si vuole analizzare. In questo artefatto vengono poste al centro e ne vengono appuntate le peculiarità. Abbiamo scritto cosa fa durante la giornata e le sue necessità, ma anche dopo un'analisi quelli che possono essere i suoi sentimenti durante lo svolgimento dei task quotidiani. tra le caratteristiche che abbiamo cercato di delineare nei personaggi ci sono:
-https://app.mural.ly/t/bigfixsaas2832/m/bigfixsaas2832/1499077049157/c1586b0e630bf226a52ddc8c5a1c12cfd6ba4978
+\begin{itemize}
+	\item Profilo professionale
+	\item Attività
+	\item Attitudini
+	\item Bisogni
+	\item Obiettivi
+	\item Cosa possiamo fare per aiutarlo
+\end{itemize}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/empatymap}
+	\caption{Esempio di Empathy Map}
+	\label{fig:empatymap}
+\end{figure}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/HugoEM.PNG}
+	\caption{Empathy Map di una delle nostre personas}
+	\label{fig:hugoem}
+\end{figure}
+
+\paragraph{Scenario Map}
+In questo nuovo elaborato le personas con le quali siamo entrati in confidenza nella fase precedente iniziano ad essere inserite nel loro ciclo di vita quotidiano. Con lo scenario viene descritto un flusso di lavoro tipico del personaggio in questione. Nel succedersi degli stages, ovvero i passi in cui si divide lo scenario, si annotano quelli che possono essere i sentimenti dell'utente, cercando di individuare gli elementi di frustrazione e le opportunità per intervenire nella progettazione risolvendo i problemi dell'utente tipo. Vediamo qui di seguito una scenario map per Rafael.
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/scenarioRafael.PNG}
+	\caption{Scenario che rappresenta il primo utilizzo del servizio da parte di Rafael, il Security Analist }
+	\label{fig:scen1}
+\end{figure}
+
+\paragraph{}
+Vediamo quì di seguito uno schizzo riassuntivo degli step del Design Thinking che abbiamo adottato:
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/schizzodesthink.PNG}
+	\caption{Step del Design Thinking adottati nel nostro progetto}
+	\label{fig:dt}
+\end{figure}
+
+\paragraph{}
+Gli scenari in questo modo individuato vanno a rappresentare la base per la stesura delle Epiche. Queste, come abbiamo descritto nella sezione 2.3 verranno poi raffinate con la stesura delle Storie e infine divide nei Task implementabili dagli sviluppatori.
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/scenario.PNG}
+	\caption{Relazione tra gli scenari individuati in questa fase e le Epiche del framework SCRUM}
+	\label{fig:scentospic}
+\end{figure}
 
 \section{Requisiti Non Funzionali}
 Abbiamo già parlato nel capitolo 4 di quali sono le nuove problematiche alle quali una SaaS application deve far fronte. Ovviamente nel mio lavoro di tesi questo aspetto è stato un argomento cruciale delle prime fasi del lavoro. Soddisfare questo tipo di requisiti comporta infatti fare scelte architetturali molto impattanti e in quanto tali occorre definirle prima possibile nel design di un sistema software. 
@@ -100,3 +148,7 @@ L'introduzione dei microservizi è un elemento centrale della conversione a SaaS
 La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre definire componenti ben definiti da implementare, altri da riutilizzare, alcuni da adattare e inoltre interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
 \subsection{Scelta dei tool e dei servizi da utilizzare}
 \subsection{Viste architetturali}
+
+\section{Definizione dei processi di gestione}
+\subsection{Novità rispetto al prodotto già esistente}
+\subsection{Disaster Recovering}

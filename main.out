@@ -54,11 +54,34 @@
 \BOOKMARK [1][-]{section.6.4}{Definizione Architetturale}{chapter.6}% 54
 \BOOKMARK [2][-]{subsection.6.4.1}{Scelta dei tool e dei servizi da utilizzare}{section.6.4}% 55
 \BOOKMARK [2][-]{subsection.6.4.2}{Viste architetturali}{section.6.4}% 56
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 57
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 58
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 59
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 60
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 61
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 62
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 63
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 64
+\BOOKMARK [1][-]{section.6.5}{Definizione dei processi di gestione}{chapter.6}% 57
+\BOOKMARK [2][-]{subsection.6.5.1}{Novit\340 rispetto al prodotto gi\340 esistente}{section.6.5}% 58
+\BOOKMARK [2][-]{subsection.6.5.2}{Disaster Recovering}{section.6.5}% 59
+\BOOKMARK [0][-]{chapter.7}{IBM BigFix on SaaS, l'implementazione del prototipo}{}% 60
+\BOOKMARK [1][-]{section.7.1}{Relazione tra il prodotto BigFix e i container}{chapter.7}% 61
+\BOOKMARK [1][-]{section.7.2}{Generazione delle immagini}{chapter.7}% 62
+\BOOKMARK [1][-]{section.7.3}{Automazione del Deployment}{chapter.7}% 63
+\BOOKMARK [2][-]{subsection.7.3.1}{Releases vs DevOps vs Continuous Delivery}{section.7.3}% 64
+\BOOKMARK [2][-]{subsection.7.3.2}{Bash Scripting}{section.7.3}% 65
+\BOOKMARK [2][-]{subsection.7.3.3}{Jenkins}{section.7.3}% 66
+\BOOKMARK [2][-]{subsection.7.3.4}{UrbanCode}{section.7.3}% 67
+\BOOKMARK [2][-]{subsection.7.3.5}{Ansible}{section.7.3}% 68
+\BOOKMARK [2][-]{subsection.7.3.6}{Scenario di onboarding di un nuovo cliente}{section.7.3}% 69
+\BOOKMARK [1][-]{section.7.4}{Automazione del Testing}{chapter.7}% 70
+\BOOKMARK [2][-]{subsection.7.4.1}{Functional Test}{section.7.4}% 71
+\BOOKMARK [2][-]{subsection.7.4.2}{Security Test}{section.7.4}% 72
+\BOOKMARK [2][-]{subsection.7.4.3}{Performance Test}{section.7.4}% 73
+\BOOKMARK [2][-]{subsection.7.4.4}{Penetration Test}{section.7.4}% 74
+\BOOKMARK [2][-]{subsection.7.4.5}{Rielaborazione degli output del testing}{section.7.4}% 75
+\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 76
+\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 77
+\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 78
+\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 79
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 80
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 81
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 82
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 83
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 84
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 85
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 86
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 87

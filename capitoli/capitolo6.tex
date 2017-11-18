@@ -144,9 +144,7 @@ Uno di questi è sicuramente la multitenancy. Nel modello SaaS può capitare che
 \paragraph{Introduzione dei microservizi}
 L'introduzione dei microservizi è un elemento centrale della conversione a SaaS. Per attuarla è necessario un attento percorso di refactoring del codice del prodotto, suddividendolo in servizi coesi che possano rappresentare delle entità separate che cooperino tra loro.
 
-\section{Definizione Architetturale}
-La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre definire quali sono i componenti da implementare, altri da riutilizzare e alcuni da adattare. Inoltre occorre stabilire come interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
-\subsection{Scelta dei tool e dei servizi da utilizzare}
+\section{Scelta dei tool e dei servizi da utilizzare}
 Nel mio caso mi sono mosso in un ambito, quello del cloud computing, si privo di una consolidata storia alle spalle, ma anche ricco di continui nuovi contributi. Infatti compaiono sempre nuove tecnologie dedicate esclusivamente all'ambiente cloud, molte delle quali open-source con frequentissimi contributi da parte degli sviluppatori.
 
 \paragraph{}
@@ -155,7 +153,29 @@ Trattandosi della realizzazione di un prototipo SaaS, l'attenzione principale no
 \paragraph{}
 A questo punto però bisogna immaginare uno scenario in cui il servizio che sono andato a realizzare e scomposto in un numero piuttosto elevato di container, alcuni andranno creati in delle situazioni specifiche, altri eliminati o modificati. Per queste funzionalità l'IBM ha come direttiva quella di utilizzare Kubernetes, del quale abbiamo parlato anche nella sezione 5.2. Tramite questo tool sono in grado di orchestrare i container e controllarne il flusso di vita tramite i pod.
 
+\section{Definizione Architetturale}
+La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre stabilire quali siano i componenti da implementare, altri da riutilizzare e alcuni da adattare. Inoltre occorre stabilire come interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
+
 \subsection{Viste architetturali}
+\subsubsection{Vista sull'architettura fisica e sui container}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/BfsaasArchitecture.png}
+	\caption{Archittettura di BigFix SaaS}
+	\label{fig:arch}
+\end{figure}
+Questa è la più significativa delle viste architetturali. Da questa immagine possiamo chiaramente evincere la struttura a microservisi del SaaS di BigFix. Ogni microservizio è deployato in un container. Volutamente non si sono volute raffigurare macchine che ospitano i container per rendere il senso di portabilità dei container stessi. Potrebbero trovarsi tutti sulla stessa macchina fisica come in parti del mondo differenti. Tutti i container, come abbiamo sottolineato precedentemente, adottano Docker come gestore. Da questa archittetura notiamo anche la presenza di nuovi componenti:
+\begin{itemize}
+	\item Container Master \\
+	Questo container ospita il componente kubernetes master, il quale ha il compito di governare il comportamento di tutti gli altri nodi container. Questi ultimi rappresentano infatti dei kubernetes node.
+	\item BigFix Automation Manager \\
+	Questo componente è fondamentale per tutti i processi di gestione, che vedremo in seguito. SI immagino ad esempio scenari come l'onboarding di un nuovo cliente o la distribuzione di una versione del servizio.
+	\item Load Balancer \\
+	Come suggerice il nome stesso è il componente che ha la responsabilità di ripartire il carico di lavoro sui microservizi presenti sui container, alcuni di loro replicati. Una buona gestione del workload è fondamentale nelle situazioni di picco di utilizzo da parte dei clienti per garantire l'availability del prodotto.
+\end{itemize}
+
+\subsubsection{Vista da una prospettiva del cliente}
+
 
 \section{Definizione dei processi di gestione}
 \subsection{Novità rispetto al prodotto già esistente}

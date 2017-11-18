@@ -160,7 +160,7 @@ La definizione di un'architettura di un prodotto così complesso è guidata da u
 \subsubsection{Vista sull'architettura fisica e sui container}
 \begin{figure} [h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{capitoli/imgs/BfsaasArchitecture.png}
+	\includegraphics[width=1\linewidth]{capitoli/imgs/BfsaasArchitecture.png}
 	\caption{Archittettura di BigFix SaaS}
 	\label{fig:arch}
 \end{figure}
@@ -174,9 +174,25 @@ Questa è la più significativa delle viste architetturali. Da questa immagine p
 	Come suggerice il nome stesso è il componente che ha la responsabilità di ripartire il carico di lavoro sui microservizi presenti sui container, alcuni di loro replicati. Una buona gestione del workload è fondamentale nelle situazioni di picco di utilizzo da parte dei clienti per garantire l'availability del prodotto.
 \end{itemize}
 
-\subsubsection{Vista da una prospettiva del cliente}
-
+\subsubsection{Viewpoint dell'utente utilizzatore}
+\begin{figure} [h!]
+	\centering
+	\includegraphics[width=1\linewidth]{capitoli/imgs/architectureUserViewpoint.png}
+	\caption{Archittettura di BigFix SaaS}
+	\label{fig:uviewpoint}
+\end{figure}
+Da questa immagine invece cerchiamo di ricostruire la struttura tradizionale di BigFix rivisitandola però in ottica SaaS. Le componenti del server e dei relay non sono più macchine fisiche facenti parte dell'infrastruttura del cliente. Il server e il relay sono comletamente sotto il controllo del provider e sono composti da opportuni microservizi che cooperano per garantire le funzionalità del servizio. L'unico componente che rimane fisicamente dal cliente è l'agent, che è presente ovviamente in ogni dispositivo della rete di endpoint.
 
 \section{Definizione dei processi di gestione}
+Una delle novità nel distribuire un servizio SaaS riguarda i processi di gestione. Analogamente alla progettazione archietturale, anche i processi di gestione vanno ben definiti e, successivamente, messi in opera.
+
 \subsection{Novità rispetto al prodotto già esistente}
+
+\paragraph{Onboarding}
+Si pensi ad esempio allo scenario dell'onboarding di  un nuovo cliente. Il sistema deve garantire che un processo completamente automatico possa portare il nuovo utente dal click sulla form di registrazione a tutto il servizio BigFix pronto all'utilizzo in pochi minuti, al massimo ore. Gli utilizzi del servizio hanno delle dinamiche molto diverse rispetto allo scenario on premise.
+
+\paragraph{Monitoring}
+Anche il monitoring delle attività e delle prestazioni richiede nuovi strumenti perchè sposta l'attenzione sull'utilizzo dei container e sul funzionamento dei microservizi. Abbiamo definito dei processi specifici (Prometheus) che sappiano monitorare i pod di Kubernetes e, conseguentemente, i container.
+
 \subsection{Disaster Recovering}
+Dal punto di vista del disaster recovery con un servizio SaaS abbiamo notevolmente diminuito il risco di verifiscarsi di situazioni di criticità, in quanto le infrastrutture fornite dal provider sono molto più efficenti da questo punto di vista. Al tempo stesso però, nel caso del verificarsi di qualche malfunzionamento il pericolo è notevolmente maggiore. A quel punto infatti potrebbero essere coinvolti tutti i clienti forniti dal servizio. In uno scenario del genere abbiamo progettato misure di emergenza che prevedono a redistribuzione del carico tra i microservizi ma anche l'attuazione del recovery di emergenza di db2.

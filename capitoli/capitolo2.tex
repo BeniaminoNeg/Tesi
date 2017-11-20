@@ -16,7 +16,7 @@ Ma partiamo subito con un esempio per avere un ponto di riferimento.
 	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/IEMArchitecture.png}
 	\caption{Un'architettura BigFix di esempio}
 \end{figure}
-Come possiamo notare, l'elemento centrale è il server di BigFix, il quale ha lo scopo di raccogliere dei particolari messaggi chiamati Fixlet. Questi messaggi dovono poi venire inoltrati ai Relay. E' competenza dei Relay interagire con i singoli client e assicurarsi l'esecuzione delle Fixlet. Le Fixlet, infatti, altro non sono che delle azioni che devono essere necessariamente compiute dai client. Una sorta di "catologo" delle Fixlet più utili può essere trovato sul Content server che è accessibile via internet da gli utilizzatori di BigFix. In tutto ciò la finestra dalla quale opera l'amministratore è ovviamente la Console, la quale monitora tutto il flusso di lavoro di BigFix. Andiamo ora ad analizzare le singole componenti dell'architettura.
+Come possiamo notare, l'elemento centrale è il server di BigFix, il quale ha lo scopo di raccogliere dei particolari messaggi chiamati Fixlet. Questi messaggi dovono poi venire inoltrati ai Relay. E' competenza dei Relay interagire con i singoli client e assicurarsi l'esecuzione delle Fixlet. Le Fixlet, infatti, altro non sono che delle azioni che devono essere necessariamente compiute dai client. Una sorta di catalogo" delle Fixlet più utili può essere trovato sul Content server che è accessibile via internet da gli utilizzatori di BigFix. In tutto ciò la finestra dalla quale opera l'amministratore è ovviamente la Console, la quale monitora tutto il flusso di lavoro di BigFix. Andiamo ora ad analizzare le singole componenti dell'architettura.
 \paragraph{Servers}
 Il server coordina tutto il flusso di informazioni e si preoccupa di salvare le informazioni sul database. Al tempo stesso però, lascia agli Agent il compito di effettuare analisi ed eseguire azioni specifiche. Ciò consente di liberare il server da un pesantissima computazione. Per questo motivo il server stesso può gestire un altissimo numero di client.
 \paragraph{Relays}
@@ -44,7 +44,7 @@ E' l'applicazione che consente la distribuzione di patch sia a livello di applic
 \paragraph{BigFix Compliance}
 Si utilizza questa applicazione per garantire la compliance dei dispositivi, identificare irregolarità e risolverle.
 \paragraph{BigFix Protection}
-Questa applicazione viene adoperata per garantire una protezione real-time contro qualsiasi genere di malware (virus, trojan, worms, spyware, rootkits e altre minacce web). Ha ovviamente effetto sia sugli endpoint fisici che sulle maccchine virtuali.
+Questa applicazione viene adoperata per garantire una protezione real-time contro qualsiasi genere di malware (virus, trojan, worms, spyware, rootkits e altre minacce web). Ha ovviamente effetto sia sugli endpoint fisici che sulle macchine virtuali.
 \paragraph{BigFix Inventory}
 Come dice la parola stessa, questa applicazione si occupa di analizzare gli endpoint e generare un inventario di tutti i software su essi installati, generando dei report ed evidenziando, eventualmente, le irregolarità.
 
@@ -58,7 +58,7 @@ Come detto, il lavoro di tesi si è svolto nell'ambito di un progetto formativo 
 \paragraph{}
 La storia dell'IBM ha inizio nei primi decenni del novecento, ma è dagli anni settanta che entra nel mercato dell'informatica, soprattutto nel settore hardware. Negli ultimi venti anni il business si è spostato sempre più sul software. In particolare soluzioni cognitive e piattaforme cloud.
 \paragraph{IBM Security}
-Presso la sede di Roma presente il più importante laboratorio IBM italiano, il Rome Softare Lab. Nella divisione italiana ci si concentra prevlentemente sullo sviluppo back-end. Una grossa fetta del laboratorio fa parte della divisione Security di IBM. Il portfolio di Security contiene per l'appunto prodotti che si occupano di diversi aspetti della security aziendale, tra questi BigFix è uno dei pù consolidati.
+Presso la sede di Roma presente il più importante laboratorio IBM italiano, il Rome Software Lab. Nella divisione italiana ci si concentra prevalentemente sullo sviluppo back-end. Una grossa fetta del laboratorio fa parte della divisione Security di IBM. Il portfolio di Security contiene per l'appunto prodotti che si occupano di diversi aspetti della security aziendale, tra questi BigFix è uno dei più consolidati.
 
 \section{Saas Exploration Project}
 Lo scopo del progetto al quale ho partecipato con il mio lavoro è quello di esplorare le tecnologie esistenti nel panorama cloud e realizzare il prototipo della versione SaaS di BigFix. A questo scopo, oltre a me, sono state allocate altre tre persone full time al conseguimento del progetto, sotto la guida dell'Architect Bernardo Pastorelli.
@@ -66,7 +66,7 @@ Lo scopo del progetto al quale ho partecipato con il mio lavoro è quello di esp
 \subsection{Il framework SCRUM}
 Il team adotta il framework agile SCRUM. Questo modo di operare è di sempre maggiore diffusione ed è basato su un approccio iterativo e incrementale nello sviluppo software. Il design e lo sviluppo sono divisi in iterazioni, denominate "Sprint", della durata fissa di due settimane. Queste due settimane terminano sempre con una versione funzionante del prodotto, il quale viene mostrato in una demo che evidenzia le nuove features implementate.
 \paragraph{}
-SCRUM utilizza un approccio empirico alla progettazione. La filosofia di fondo del framework è quella che la conoscenza deriva dall'esperienza, e quindi tutte le scelte che si prendono nel corso della progettazione devono avvenire alla luce di una sempre maggiore esperienza, la quale si ottiene avendo a disposizione il prima possibile un sottoinsieme del prodotto a se stante, testabile ed usabile. Dì quì l'approccio fortemente iterativo e incrementale massimizzando le opportunità di feedback. 
+SCRUM utilizza un approccio empirico alla progettazione. La filosofia di fondo del framework è quella che la conoscenza deriva dall'esperienza, e quindi tutte le scelte che si prendono nel corso della progettazione devono avvenire alla luce di una sempre maggiore esperienza, la quale si ottiene avendo a disposizione il prima possibile un sottoinsieme del prodotto a se stante, testabile ed usabile. Dì qui l'approccio fortemente iterativo e incrementale massimizzando le opportunità di feedback. 
 \paragraph{} 
 All'inizio del progetto vengono definiti i requisiti del prodotto (item), i quali vengono da un'attenta analisi dei bisogni dell'utente. Ogni bisogno viene modellato con una Epica, che a sua volta viene prioritizzata e aggiunta al Product Backlog che le indicizza. Le Epiche vengono poi scomposte in User Stories, le quali si suddividono a loro volta in Task, ossia l'elemento atomico del progetto la cui implementazione viene presa in carico da un singolo componente del team.
 \paragraph{}
@@ -83,11 +83,11 @@ A tal scopo si è adottato ormai da tempo, da tutto il team di BigFix, il softwa
 \paragraph{}
 Il flusso di lavoro è il seguente. Quando inizia il proprio task, il componente del team si pone su un proprio branch personale sul quale effettua i propri commit. Al termine del task viene fatta una merge request sul branch principale, sono una volta che si è testato il codice, per aggiungere i propri contributi al progetto. A questo punto, dopo una review effettuata da componenti del team accreditati, il nuovo branch verrà mergiato con il branch principale.
 \subsection{RTC}
-E' ovviamente necessario un tool che coordini anche la suddivisione dei task all'interno del team. A tal fine abbiamo utilizzato un software di IBM, ovvero Rational Team Concert (RTC), il quale è disponibile anche esternamente e gratuito nel caso di piccoli team. Esso offre comodi strumenti di agile planning e gestione di ciclo di vita del software. Ogni componente del team può così tracciare facilmente le aree di sua competenza. E' possibile inoltre usufruire di tool per il source control, controlo dei difetti e gestione delle build.
+E' ovviamente necessario un tool che coordini anche la suddivisione dei task all'interno del team. A tal fine abbiamo utilizzato un software di IBM, ovvero Rational Team Concert (RTC), il quale è disponibile anche esternamente e gratuito nel caso di piccoli team. Esso offre comodi strumenti di agile planning e gestione di ciclo di vita del software. Ogni componente del team può così tracciare facilmente le aree di sua competenza. E' possibile inoltre usufruire di tool per il source control, controllo dei difetti e gestione delle build.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/rtc2.PNG}
-	\caption{RTC. Un'esempio di come viene monitorato il completamneto dei diversi sprint}
+	\caption{RTC. Un'esempio di come viene monitorato il completamento dei diversi sprint}
 \end{figure}
 
 

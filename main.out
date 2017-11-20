@@ -26,7 +26,7 @@
 \BOOKMARK [2][-]{subsection.4.3.1}{Availability e Reliability nel contesto Cloud}{section.4.3}% 26
 \BOOKMARK [1][-]{section.4.4}{Scalability}{chapter.4}% 27
 \BOOKMARK [1][-]{section.4.5}{Monitoring}{chapter.4}% 28
-\BOOKMARK [0][-]{chapter.5}{SaaS, le teclologie che ne consentono la realizzazione}{}% 29
+\BOOKMARK [0][-]{chapter.5}{SaaS, le tecnologie che ne consentono la realizzazione}{}% 29
 \BOOKMARK [1][-]{section.5.1}{Microservizi}{chapter.5}% 30
 \BOOKMARK [2][-]{subsection.5.1.1}{Il modello monolitico a layer }{section.5.1}% 31
 \BOOKMARK [2][-]{subsection.5.1.2}{Confronto tra l'architettura a microservizi e il modello monolitico}{section.5.1}% 32
@@ -36,7 +36,7 @@
 \BOOKMARK [2][-]{subsection.5.2.2}{Vantaggi dei container}{section.5.2}% 36
 \BOOKMARK [2][-]{subsection.5.2.3}{I container e i microservizi}{section.5.2}% 37
 \BOOKMARK [2][-]{subsection.5.2.4}{Docker}{section.5.2}% 38
-\BOOKMARK [2][-]{subsection.5.2.5}{Kubernetes}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.5}{Un'esuberante}{section.5.2}% 39
 \BOOKMARK [1][-]{section.5.3}{Multitenancy}{chapter.5}% 40
 \BOOKMARK [1][-]{section.5.4}{Monitoring Tools}{chapter.5}% 41
 \BOOKMARK [2][-]{subsection.5.4.1}{Prometheus}{section.5.4}% 42

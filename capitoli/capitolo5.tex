@@ -1,11 +1,11 @@
-\chapter{SaaS, le teclologie che ne consentono la realizzazione}
+\chapter{SaaS, le tecnologie che ne consentono la realizzazione}
 Nel corso degli ultimi anni, con il proliferarsi delle piattaforme e dei servizi di Cloud Computing, sono nate e si sono sviluppate molte tecnologie per soddisfare le nuove esigenze e i nuovi requisiti appena visti che questa rivoluzione della fruizione del software ha comportato.
 
 \section{Microservizi}
 Un concetto fondamentale, di cui il Cloud Computing fa largamente uso, sono i mircoservizi. Cominciamo col darne una definizione abbastanza formale: "Lo stile architetturale a microservizi è un approccio allo sviluppo di una singola applicazione come insieme di piccoli servizi, ciascuno dei quali viene eseguito da un proprio processo e comunica con un meccanismo snello, spesso una HTTP API.(Martin Fowler)".
 
 \paragraph{}
-L'approccio è quello di dividere le funzionalità del sistema in più microservizi. Ad ogni microservizio corrisponde una necessità dell'utente. La filosofia di dividere il software in base alle resposabilità è già presente da tempo nell'ingegneria del software. Una suddivisione modulare del sistema in base ai casi d'uso dell'utente è già presente da tempo nell'Object Oriented Design, ma la novità apportata dai microservizi è che il sistema con essi risulta scomposto in realtà in piccoli servizi completamente indipendenti tra loro. Ogni microservizio si preoccupa infatti di risolvere un particolare problema del cliente, un unico scenario. La comunicazione tra i servizi avviene attraverso la rete al fine di garantire l’indipendenza tra i servizi ed evitare ogni forma di accoppiamento. Ogni microservizio, infatti, rappresenta un'entità separata che generalmente viene pubblicata come un modulo di una Platform as a Service.
+L'approccio è quello di dividere le funzionalità del sistema in più microservizi. Ad ogni microservizio corrisponde una necessità dell'utente. La filosofia di dividere il software in base alle responsabilità è già presente da tempo nell'ingegneria del software. Una suddivisione modulare del sistema in base ai casi d'uso dell'utente è già presente da tempo nell'Object Oriented Design, ma la novità apportata dai microservizi è che il sistema con essi risulta scomposto in realtà in piccoli servizi completamente indipendenti tra loro. Ogni microservizio si preoccupa infatti di risolvere un particolare problema del cliente, un unico scenario. La comunicazione tra i servizi avviene attraverso la rete al fine di garantire l'indipendenza tra i servizi ed evitare ogni forma di accoppiamento. Ogni microservizio, infatti, rappresenta un'entità separata che generalmente viene pubblicata come un modulo di una Platform as a Service.
 
 \subsection{Il modello monolitico a layer }
 Secondo il classico modello a layer le funzionalità vengono suddivise in base al grado di astrazione tra i vari livelli, usando delle tecnologie proprie di ogni livello. Questi sono separati a livello logico e comunicano tra di loro. Con questa architettura però, nonostante ci sia questa suddivisione a strati, il software risulta essere un unico sistema monolitico, sebbene molti componenti possano essere comunque riusabili.
@@ -45,7 +45,7 @@ Un'architettura di questo tipo porta con se ovviamente anche i suoi svantaggi e 
 	Con i microservizi la modularità del sistema è un notevole punto di forza. Sperimentare nuove tecnologie all'interno di un singolo microservizio ha un impatto nullo su tutti gli altri. Si è in questo modo molto più invogliati a ricercare sempre più nuove tecnologie da inserire nel proprio prodotto. Il rischio è minimo in quanto, anche nel caso l'esperienza risulti fallimentare, la mole di lavoro che comporta la modifica di un microservizio e veramente molto ridotta.
 	
 	\item Tecnologie ad hoc \\
-	Altro fattore da considerare è la possibilità di differenziare le tecnologie a seconda del microservizio. Si prenda come esempio la vastità di database che sono disponibili all'uso. Un database che è appropriato per un miocroservizio potrebbe non essere la scelta migliore per un altro. 
+	Altro fattore da considerare è la possibilità di differenziare le tecnologie a seconda del microservizio. Si prenda come esempio la vastità di database che sono disponibili all'uso. Un database che è appropriato per un microservizio potrebbe non essere la scelta migliore per un altro. 
 	
 	\item Scalabilità \\
 	I software con un'architettura a microservizi sono pensati per scalare orizzontalmente in maniera estremamente agevole. Si possono replicare a piacimento tramite l'utilizzo di containers e hanno un comportamento distribuito anche nel caso si trovino sulla stessa macchina, in quanto i container li isolano da tutti gli altri.
@@ -78,7 +78,7 @@ I container sono l'habitat naturale dei microservizi. Essi forniscono al softwar
 
 
 \paragraph{}
-Già la parola stessa container vuole alludere ad una analogia con l'attrezzatura specifica dei trasporti. Da dove è nata lì la neessità dell'utilizzo dei container? Immaginiamo lo scenario in cui alcune merci andassero trasportate prima via terra, magari con un camion, e poi via mare per raggiungere un altro stato. Prima dell'avvento dei container il camion arrivava al porto, andava aperto e il contenuto passato in un mercantile pronto sul molo. L’operazione era effettuata manualmente e i singoli imballaggi erano trasbordati uno alla volta con grande dispendio di tempo e mezzi. Si iniziò allora a considerare più pratica l’idea di trasbordare sulla nave l’intero corpo del camion. Nacquero così i container: contenitori multiuso, realizzati in formati standard che possono essere passati con facilità da un camion a una nave, poi magari su un treno merci e così via.
+Già la parola stessa container vuole alludere ad una analogia con l'attrezzatura specifica dei trasporti. Da dove è nata lì la necessità dell'utilizzo dei container? Immaginiamo lo scenario in cui alcune merci andassero trasportate prima via terra, magari con un camion, e poi via mare per raggiungere un altro stato. Prima dell'avvento dei container il camion arrivava al porto, andava aperto e il contenuto passato in un mercantile pronto sul molo. L'operazione era effettuata manualmente e i singoli imballaggi erano trasbordati uno alla volta con grande dispendio di tempo e mezzi. Si iniziò allora a considerare più pratica l'idea di trasbordare sulla nave l'intero corpo del camion. Nacquero così i container: contenitori multiuso, realizzati in formati standard che possono essere passati con facilità da un camion a una nave, poi magari su un treno merci e così via.
 
 \paragraph{}
 E così anche nel nostro caso abbiamo bisogno di uno strumento che possa contenere i microservizi e le applicazioni, che ci consenta di manovrarle con facilità senza sapere cosa facciano esattamente.
@@ -91,7 +91,7 @@ I containers sono infatti un metodo di virtualizzazione del sistema operativo ch
 \end{figure}
 
 \subsection{I containers e le Macchine Virtuali}
-Stando alla descrizione dei container che abbiamo dato fino a questo punto potrebbe sorgere una domanda: perchè utilizzare i container se potrebbero essere usate delle macchine virtuali? Una Virtual Machine è per sua natura già isolata dalla macchina che la ospita. La risposta sta nella leggerezza d'uso dei container. I container infatti non virtualizzano l'hardware della macchina, ma solamente il layer applicativo, rendendoli più portabili ed efficienti.
+Stando alla descrizione dei container che abbiamo dato fino a questo punto potrebbe sorgere una domanda: perché utilizzare i container se potrebbero essere usate delle macchine virtuali? Una Virtual Machine è per sua natura già isolata dalla macchina che la ospita. La risposta sta nella leggerezza d'uso dei container. I container infatti non virtualizzano l'hardware della macchina, ma solamente il layer applicativo, rendendoli più portabili ed efficienti.
 
 \paragraph{}
 Non avendo un proprio sistema operativo, il peso di un container e dell'ordine di qualche Megabyte, contro i Gigabyte di una macchina virtuale che sovrappone il proprio sistema operativo a quello della macchina ospitante. A differenza delle macchine virtuali inoltre, i container non necessitano dell'Hypervisor, un componente che svolge delle attività di controllo e coordinamento sulle macchine virtuali. 
@@ -106,7 +106,7 @@ Non avendo un proprio sistema operativo, il peso di un container e dell'ordine d
 Andiamo a ricapitolare quali sono le principali motivazioni che possono spingerci all'adozione dei container.
 \begin{itemize}
 	\item Coesione dell'ambiente \\
-	L'ambiente di un container è fortemente disaccoppiato dalla macchina in cui si trova. Questo fà si che il proprio contenuto sia facilmente replicabile e portabile ovunque.
+	L'ambiente di un container è fortemente disaccoppiato dalla macchina in cui si trova. Questo fa si che il proprio contenuto sia facilmente replicabile e portabile ovunque.
 	
 	\item Gestione delle risorse \\
 	Con i containers si ha una gestione delle risorse di calcolo molto più efficiente. Richiedendo poche risorse alla macchine ospitante, si ha la possibilità di eseguire molti più container contemporaneamente. 
@@ -119,7 +119,7 @@ Andiamo a ricapitolare quali sono le principali motivazioni che possono spingerc
 \end{itemize}
 
 \subsection{I container e i microservizi}
-Possiamo quindi comprendere come i container siano estremamente appropriati ad ospitare del microservizi. Ponendo un microservizio dentro ogni container, abbiamo la garanzia che ogni microservizio operi come un sistema sepato, anche nell'eventualità che due servizi risiedano nella stessa macchina fisica. Ogni microservizio inserito in un container gode automaticamente di tutti i vantaggi di portabilità e flessibilità che sono tra i requisiti fondamentali che ci spingono verso l'architettura a microservizi.
+Possiamo quindi comprendere come i container siano estremamente appropriati ad ospitare del microservizi. Ponendo un microservizio dentro ogni container, abbiamo la garanzia che ogni microservizio operi come un sistema separato, anche nell'eventualità che due servizi risiedano nella stessa macchina fisica. Ogni microservizio inserito in un container gode automaticamente di tutti i vantaggi di portabilità e flessibilità che sono tra i requisiti fondamentali che ci spingono verso l'architettura a microservizi.
 
 \subsection{Docker}
 
@@ -130,7 +130,7 @@ Possiamo quindi comprendere come i container siano estremamente appropriati ad o
 \end{figure}
 
 \paragraph{}
-Docker è una piattaforma open source nata nel 2013 e scritta in linguaggio Go. Il suo scopo è quello di facilitare ed automatizzare il deployment delle applicazioni all'interno dei continer. Il tool offre allo sviluppatore delle comode API di gestione cher consentono agli sviluppatori di testare le applicazioni, effettuare build e distribuire il proprio prodotto. Docker fa utilizzo di numerose librarie come, ad esempio, libcontainer che ha lo scopo di interagire con il kernel di Linux.  In questo modo, isolando risorse, servizi e processi, dalla prospettiva dell'utilizzatore del container si ha l'impressione di un utilizzo esclusivo del sistema operativo.
+Docker è una piattaforma open source nata nel 2013 e scritta in linguaggio Go. Il suo scopo è quello di facilitare ed automatizzare il deployment delle applicazioni all'interno dei container. Il tool offre allo sviluppatore delle comode API di gestione che consentono agli sviluppatori di testare le applicazioni, effettuare build e distribuire il proprio prodotto. Docker fa utilizzo di numerose librarie come, ad esempio, libcontainer che ha lo scopo di interagire con il kernel di Linux.  In questo modo, isolando risorse, servizi e processi, dalla prospettiva dell'utilizzatore del container si ha l'impressione di un utilizzo esclusivo del sistema operativo.
 
 \paragraph{}
 Il contiene diviene con Docker così l'unità di distribuzione del prodotto. Quando il servizio è stato correttamente implementato, è pronto per essere distribuito e, attraverso il container, può essere inserito in un orchestratore per garantirne il ciclo di vita.
@@ -164,11 +164,11 @@ I componenti che vanno a costituire l'architettura di Docker sono i seguenti:
 	\item Docker client \\
 	Lo scopo principale del client è interagire con chi sviluppa il contenuto dei container. Questo componente recepisce i comandi da parte dello sviluppatore e li traduce in chiamate per il deamon.
 	\item Docker registries \\
-	E' un registro che consente di conservare le immagini di Docker. Immaginiamo che sia interesse di chi li sviluppa poter conservare e mettere in vendita servizi implementati all'interno dei container. Vengono offerte anche delle comode API e uno store nel quae mettere in mostra le proprie immagini.
+	E' un registro che consente di conservare le immagini di Docker. Immaginiamo che sia interesse di chi li sviluppa poter conservare e mettere in vendita servizi implementati all'interno dei container. Vengono offerte anche delle comode API e uno store nel quale mettere in mostra le proprie immagini.
 	\item  docker objects \\
-	In questa categoria rientrano iù tipologie di oggetti Docker, come quelli che andiamo ad analizzare quì di seguito.
+	In questa categoria rientrano più tipologie di oggetti Docker, come quelli che andiamo ad analizzare qui di seguito.
 	\item  Images \\
-	un imaggine è un template standard di sola lettura che si utilizza per parametrizzare un nuovo container che si sta per mettere in piedi. Per creare la propria immagine  con i parametri personalizzati, si dichiarano nel Dockerfile gli step necessari. Successivamente ad ogni step corrinsponderà a un layer del container.
+	un immagine è un template standard di sola lettura che si utilizza per parametrizzare un nuovo container che si sta per mettere in piedi. Per creare la propria immagine  con i parametri personalizzati, si dichiarano nel Dockerfile gli step necessari. Successivamente ad ogni step corrisponderà a un layer del container.
 	\item  Container \\
 	Un container è proprio l'istanziazione di una immagine, è infatti definito univocamente dalla propria immagine. E' un elemento che può essere gestito a piacimento e può essere collegato ad una o più reti, fattore importantissimo per far interagire il proprio contenuto con quello di altri container.
 	\item Services \\
@@ -177,20 +177,20 @@ I componenti che vanno a costituire l'architettura di Docker sono i seguenti:
 
 
 
-\subsection{Kubernetes}
+\subsection{Un'esuberante}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/kubernetes_full.png}
-	\caption{Logo di Kubernetes}
+	\caption{Logo di Un'esuberante}
 \end{figure}
 
 \paragraph{}
-Abbiamo appena tessuto le lodi di Docker. Ora però poniamoci alcune domande: come possono essere coordinati, distribuiti e gestiti i container e il loro workload, man a mano che vengono consumate le risorse disponibili nell’infrastruttura sottostante? Come operano i container in un ambiente network multi-tenant? Quale livello di sicurezza propone Docker? E chi decide quale sia il giusto livello di astrazione?
+Abbiamo appena tessuto le lodi di Docker. Ora però poniamoci alcune domande: come possono essere coordinati, distribuiti e gestiti i container e il loro workload, man a mano che vengono consumate le risorse disponibili nell'infrastruttura sottostante? Come operano i container in un ambiente network multi-tenant? Quale livello di sicurezza propone Docker? E chi decide quale sia il giusto livello di astrazione?
 
 \paragraph{}
-Per far fronte a queste necessità è nato da Google nel 2014 Kubernetes. Esso offre un layer di astrazione per migliorare le performance dei container stessi eliminando molti dei processi manuali coinvolti nel deployment e nella scalabilità di applicazioni containerizzate. Consente di far cooperare opportunamente insiemi di container componendo dele untà logiche utili nelle nostre applicazioni.
+Per far fronte a queste necessità è nato da Google nel 2014 Kubernetes. Esso offre un layer di astrazione per migliorare le performance dei container stessi eliminando molti dei processi manuali coinvolti nel deployment e nella scalabilità di applicazioni containerizzate. Consente di far cooperare opportunamente insiemi di container componendo delle unità logiche utili nelle nostre applicazioni.
 
-\paragraph{Perchè utilizzare Kubernetes?}
+\paragraph{Perché utilizzare Kubernetes?}
 Le applicazioni di produzione si espandono su più container, che devono essere distribuiti su più server host. Kubernetes ti offre le capacità di orchestrazione e gestione necessarie per distribuire i container, in modo scalabile, al fine di gestire i carichi di lavoro. L'orchestrazione di Kubernetes consente di creare servizi applicativi che si estendono su più container, programmare tali container in un cluster, gestirne la scalabilità e l'integrità nel tempo.
 
 \begin{figure}[h!]
@@ -218,11 +218,11 @@ Andiamo a definire quelli che sono i termini di riferimento in Kubernetes:
 	\item Pod \\
 	Rappresenta un gruppo di uno o più container distribuiti su un singolo nodo. Tutti i container presenti in un pod condividono indirizzo IP, IPC, nome host ed altre risorse. I pod astraggono la rete e lo storage dal container sottostante, consentendo di spostare i container nei cluster con maggiore facilità.
 	\item Servizio \\
-	Questa comonente ha la funzionalità di disaccoppiare le definizioni del lavoro dai pod. I proxy di servizio di Kubernetes ricevono automaticamente le richieste di servizio al pod corretto, indipendentemente dagli spostamenti nel cluster, anche nel caso in cui esso sia stato riposizionato.
+	Questa componente ha la funzionalità di disaccoppiare le definizioni del lavoro dai pod. I proxy di servizio di Kubernetes ricevono automaticamente le richieste di servizio al pod corretto, indipendentemente dagli spostamenti nel cluster, anche nel caso in cui esso sia stato riposizionato.
 	\item Kubelet \\
 	Questo servizio viene eseguito sui nodi, legge i manifest del container e garantisce che i container definiti vengano avviati ed eseguiti.
 	\item Kubctl \\
-	Questo componente si interfaccia direttamente con il programmatore. Presenta una riga di comando per la creazione e festione dei pod.
+	Questo componente si interfaccia direttamente con il programmatore. Presenta una riga di comando per la creazione e gestione dei pod.
 \end{itemize}
 
 \paragraph{E Docker?}

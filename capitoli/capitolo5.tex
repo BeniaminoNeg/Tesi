@@ -69,7 +69,19 @@ Un'architettura di questo tipo porta con se ovviamente anche i suoi svantaggi e 
 \section{Containers}
 I container sono l'habitat naturale dei microservizi. Essi forniscono al software tutto ciò che gli è necessario, garantendogli un ambiente estremamente leggero e flessibile.
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/spostamentocontainer.png}
+	\caption{Containers nell'accezione dell'industria dei trasporti}
+\end{figure}
+
+
+
 \paragraph{}
+Già la parola stessa container vuole alludere ad una analogia con l'attrezzatura specifica dei trasporti. Da dove è nata lì la neessità dell'utilizzo dei container? Immaginiamo lo scenario in cui alcune merci andassero trasportate prima via terra, magari con un camion, e poi via mare per raggiungere un altro stato. Prima dell'avvento dei container il camion arrivava al porto, andava aperto e il contenuto passato in un mercantile pronto sul molo. L’operazione era effettuata manualmente e i singoli imballaggi erano trasbordati uno alla volta con grande dispendio di tempo e mezzi. Si iniziò allora a considerare più pratica l’idea di trasbordare sulla nave l’intero corpo del camion. Nacquero così i container: contenitori multiuso, realizzati in formati standard che possono essere passati con facilità da un camion a una nave, poi magari su un treno merci e così via.
+
+\paragraph{}
+E così anche nel nostro caso abbiamo bisogno di uno strumento che possa contenere i microservizi e le applicazioni, che ci consenta di manovrarle con facilità senza sapere cosa facciano esattamente.
 I containers sono infatti un metodo di virtualizzazione del sistema operativo che ha come obiettivo quello di isolare il software che ospita, permettendo di eseguire le applicazioni e le loro dipendenze in processi completamente isolati. L'infrastruttura del container interagisce direttamente con il kernel della macchina che lo ospita, scavalcando gli altri layer. In qualsiasi sistema operativo collochiamo il container, le sue configurazioni interne rimarranno sempre separate, e l'applicazione contenuta avrà garantito il suo ecosistema necessario all'esecuzione. Non ci si deve preoccupare, ad esempio, di produrre una versione software per Windows e una per sistemi UNIX, ma la soluzione a container e unica e portabile. 
 
 \begin{figure}[h!]
@@ -117,7 +129,106 @@ Possiamo quindi comprendere come i container siano estremamente appropriati ad o
 	\caption{Logo di Docker}
 \end{figure}
 
+\paragraph{}
+Docker è una piattaforma open source nata nel 2013 e scritta in linguaggio Go. Il suo scopo è quello di facilitare ed automatizzare il deployment delle applicazioni all'interno dei continer. Il tool offre allo sviluppatore delle comode API di gestione cher consentono agli sviluppatori di testare le applicazioni, effettuare build e distribuire il proprio prodotto. Docker fa utilizzo di numerose librarie come, ad esempio, libcontainer che ha lo scopo di interagire con il kernel di Linux.  In questo modo, isolando risorse, servizi e processi, dalla prospettiva dell'utilizzatore del container si ha l'impressione di un utilizzo esclusivo del sistema operativo.
+
+\paragraph{}
+Il contiene diviene con Docker così l'unità di distribuzione del prodotto. Quando il servizio è stato correttamente implementato, è pronto per essere distribuito e, attraverso il container, può essere inserito in un orchestratore per garantirne il ciclo di vita.
+
+\paragraph{Docker Engine}
+L'Engine di Docker è una struttura a strati, troviamo:
+\begin{itemize}
+	\item Il server, un demone chiamato dockerd che è sempre in running. E' il componente che maneggia gli oggetti Docker.
+	\item Le REST API, che rappresentano l'interfaccia per interrogare il server.
+	\item La Command Line Interface, che è quella con la quale si interfaccia l'utente e si aggancia alla REST API.
+\end{itemize}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/dockerThinking.png}
+	\caption{Docker engine}
+\end{figure}
+
+\paragraph{Architettura di Docker}
+L'architettura di Docker è la classica architettura client-server. Il client parla direttamente con il Docker deamon che si trova sul server. E' proprio il dockerd che si prende l'onere di fare gran parte del lavoro, quello di far partire e distribuire i container.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/architecturedocker.png}
+	\caption{Architettura di Docker}
+\end{figure}
+\paragraph{}
+I componenti che vanno a costituire l'architettura di Docker sono i seguenti:
+\begin{itemize}
+	\item Docker deamon \\
+	Dockerd è in ascolto di chiamate da parte della REST API. E' sua responsabilità far funzionare tutto l'engine della gestione dei container.
+	\item Docker client \\
+	Lo scopo principale del client è interagire con chi sviluppa il contenuto dei container. Questo componente recepisce i comandi da parte dello sviluppatore e li traduce in chiamate per il deamon.
+	\item Docker registries \\
+	E' un registro che consente di conservare le immagini di Docker. Immaginiamo che sia interesse di chi li sviluppa poter conservare e mettere in vendita servizi implementati all'interno dei container. Vengono offerte anche delle comode API e uno store nel quae mettere in mostra le proprie immagini.
+	\item  docker objects \\
+	In questa categoria rientrano iù tipologie di oggetti Docker, come quelli che andiamo ad analizzare quì di seguito.
+	\item  Images \\
+	un imaggine è un template standard di sola lettura che si utilizza per parametrizzare un nuovo container che si sta per mettere in piedi. Per creare la propria immagine  con i parametri personalizzati, si dichiarano nel Dockerfile gli step necessari. Successivamente ad ogni step corrinsponderà a un layer del container.
+	\item  Container \\
+	Un container è proprio l'istanziazione di una immagine, è infatti definito univocamente dalla propria immagine. E' un elemento che può essere gestito a piacimento e può essere collegato ad una o più reti, fattore importantissimo per far interagire il proprio contenuto con quello di altri container.
+	\item Services \\
+	I servizi permettono di scalare i container attraverso più Docker deamon. In questo modo si riesce a dare ugualmente l'impressione all'utente di utilizzare comunque un servizio esclusivo e centralizzato.
+\end{itemize}
+
+
+
 \subsection{Kubernetes}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/kubernetes_full.png}
+	\caption{Logo di Kubernetes}
+\end{figure}
+
+\paragraph{}
+Abbiamo appena tessuto le lodi di Docker. Ora però poniamoci alcune domande: come possono essere coordinati, distribuiti e gestiti i container e il loro workload, man a mano che vengono consumate le risorse disponibili nell’infrastruttura sottostante? Come operano i container in un ambiente network multi-tenant? Quale livello di sicurezza propone Docker? E chi decide quale sia il giusto livello di astrazione?
+
+\paragraph{}
+Per far fronte a queste necessità è nato da Google nel 2014 Kubernetes. Esso offre un layer di astrazione per migliorare le performance dei container stessi eliminando molti dei processi manuali coinvolti nel deployment e nella scalabilità di applicazioni containerizzate. Consente di far cooperare opportunamente insiemi di container componendo dele untà logiche utili nelle nostre applicazioni.
+
+\paragraph{Perchè utilizzare Kubernetes?}
+Le applicazioni di produzione si espandono su più container, che devono essere distribuiti su più server host. Kubernetes ti offre le capacità di orchestrazione e gestione necessarie per distribuire i container, in modo scalabile, al fine di gestire i carichi di lavoro. L'orchestrazione di Kubernetes consente di creare servizi applicativi che si estendono su più container, programmare tali container in un cluster, gestirne la scalabilità e l'integrità nel tempo.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/kubernetes-diagram.png}
+	\caption{Ruolo di orchestratore di Kubernetes}
+\end{figure}
+
+\paragraph{I Pod di Kubernetes, cosa sono?}
+Kubernetes risolve molti dei noti problemi relativi alla proliferazione dei container, raggruppandoli in un Pod. I pod aggiungono quindi un livello di astrazione ai cluster di container. La loro funzione è quella di alleggerire i carichi di lavoro e fornire i servizi necessari, tra cui rete e storage, ai container stessi. Kubernetes agevola, inoltre, il bilanciamento del carico all'interno dei pod e garantisce l'utilizzo di un numero di container adeguato per supportare i tuoi carichi di lavoro.
+
+\paragraph{Architettura di Kubernetes}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/kubernetesarchitetcture.png}
+	\caption{Architettura di Kubernetes}
+\end{figure}
+
+Andiamo a definire quelli che sono i termini di riferimento in Kubernetes:
+\begin{itemize}
+	\item Master \\
+	E' la macchina che controlla i nodi Kubernetes. È il punto di origine di tutte le attività assegnate.
+	\item Nodi \\
+	Queste macchine eseguono le attività assegnate richieste. Sono controllate dal nodo master di Kubernetes. Possono essere assimilate con gli host dei container.
+	\item Pod \\
+	Rappresenta un gruppo di uno o più container distribuiti su un singolo nodo. Tutti i container presenti in un pod condividono indirizzo IP, IPC, nome host ed altre risorse. I pod astraggono la rete e lo storage dal container sottostante, consentendo di spostare i container nei cluster con maggiore facilità.
+	\item Servizio \\
+	Questa comonente ha la funzionalità di disaccoppiare le definizioni del lavoro dai pod. I proxy di servizio di Kubernetes ricevono automaticamente le richieste di servizio al pod corretto, indipendentemente dagli spostamenti nel cluster, anche nel caso in cui esso sia stato riposizionato.
+	\item Kubelet \\
+	Questo servizio viene eseguito sui nodi, legge i manifest del container e garantisce che i container definiti vengano avviati ed eseguiti.
+	\item Kubctl \\
+	Questo componente si interfaccia direttamente con il programmatore. Presenta una riga di comando per la creazione e festione dei pod.
+\end{itemize}
+
+\paragraph{E Docker?}
+La piattaforma docker mantiene le proprie funzioni. Quando Kubernetes assegna un pod ad un nodo, il kubelet su quel nodo chiede a docker di lanciare i container specificati. Quindi, il kubelet legge continuamente lo stato di quei container da docker e aggrega le informazioni nel nodo master. Docker invia i container sul nodo, avvia e arresta normalmente i container. La differenza è che un sistema automatizzato con Kubernetes chiede a docker di eseguire queste operazioni, anziché assegnarle ad un amministratore, il quale deve eseguirle manualmente su tutti i nodi, in tutti i container.
+
+
 
 \section{Multitenancy}
 \section{Monitoring Tools}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  18 NOV 2017 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.5.24)  20 NOV 2017 02:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,45 +959,105 @@ Package pdftex.def Info: capitoli/imgs/monosvmicro.png used on input line 32.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[35] [36 <./capitoli/imgs/monosvmicro.png>] [37]
-<capitoli/imgs/container.PNG, id=701, 341.77687pt x 188.95593pt>
+[35] [36 <./capitoli/imgs/monosvmicro.png>]
+<capitoli/imgs/spostamentocontainer.png, id=695, 602.25pt x 327.2225pt>
+File: capitoli/imgs/spostamentocontainer.png Graphic file (type png)
+
+<use capitoli/imgs/spostamentocontainer.png>
+Package pdftex.def Info: capitoli/imgs/spostamentocontainer.png used on input l
+ine 74.
+(pdftex.def)             Requested size: 426.98857pt x 232.00505pt.
+ [37] [38 <./capitoli/imgs/spostamentocontainer.png>]
+<capitoli/imgs/container.PNG, id=708, 341.77687pt x 188.95593pt>
 File: capitoli/imgs/container.PNG Graphic file (type png)
 
 <use capitoli/imgs/container.PNG>
-Package pdftex.def Info: capitoli/imgs/container.PNG used on input line 77.
+Package pdftex.def Info: capitoli/imgs/container.PNG used on input line 89.
 (pdftex.def)             Requested size: 426.98857pt x 236.08186pt.
- [38 <./capitoli/imgs/container.PNG>]
-<capitoli/imgs/ContainersvsVms.PNG, id=709, 432.61626pt x 236.885pt>
+ [39 <./capitoli/imgs/container.PNG>]
+<capitoli/imgs/ContainersvsVms.PNG, id=716, 701.62125pt x 328.22626pt>
 File: capitoli/imgs/ContainersvsVms.PNG Graphic file (type png)
 
 <use capitoli/imgs/ContainersvsVms.PNG>
-Package pdftex.def Info: capitoli/imgs/ContainersvsVms.PNG used on input line 8
-9.
-(pdftex.def)             Requested size: 426.98857pt x 233.81203pt.
- [39 <./capitoli/imgs/ContainersvsVms.PNG>] <capitoli/imgs/docker.png, id=717, 
+Package pdftex.def Info: capitoli/imgs/ContainersvsVms.PNG used on input line 1
+01.
+(pdftex.def)             Requested size: 426.98857pt x 199.75696pt.
+ [40 <./capitoli/imgs/ContainersvsVms.PNG>] <capitoli/imgs/docker.png, id=723, 
 794.97pt x 269.3262pt>
 File: capitoli/imgs/docker.png Graphic file (type png)
 
 <use capitoli/imgs/docker.png>
-Package pdftex.def Info: capitoli/imgs/docker.png used on input line 116.
+Package pdftex.def Info: capitoli/imgs/docker.png used on input line 128.
 (pdftex.def)             Requested size: 426.98857pt x 144.66138pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (./capitoli/capitolo6.tex [40] [41 <./capitoli/imgs/docker.png>]
+[41] <capitoli/imgs/dockerThinking.png, id=730, 493.845pt x 386.44376pt>
+File: capitoli/imgs/dockerThinking.png Graphic file (type png)
+
+<use capitoli/imgs/dockerThinking.png>
+Package pdftex.def Info: capitoli/imgs/dockerThinking.png used on input line 14
+8.
+(pdftex.def)             Requested size: 426.98857pt x 334.12183pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<capitoli/imgs/architecturedocker.png, id=731, 766.5pt x 400.77pt>
+File: capitoli/imgs/architecturedocker.png Graphic file (type png)
+
+<use capitoli/imgs/architecturedocker.png>
+Package pdftex.def Info: capitoli/imgs/architecturedocker.png used on input lin
+e 156.
+(pdftex.def)             Requested size: 426.98857pt x 223.26166pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[42 <./capitoli/imgs/docker.png>] [43 <./capitoli/imgs/dockerThinking.png (PNG 
+copy)>] [44 <./capitoli/imgs/architecturedocker.png>]
+<capitoli/imgs/kubernetes_full.png, id=754, 602.25pt x 147.55125pt>
+File: capitoli/imgs/kubernetes_full.png Graphic file (type png)
+
+<use capitoli/imgs/kubernetes_full.png>
+Package pdftex.def Info: capitoli/imgs/kubernetes_full.png used on input line 1
+83.
+(pdftex.def)             Requested size: 426.98857pt x 104.61575pt.
+ [45 <./capitoli/imgs/kubernetes_full.png>] <capitoli/imgs/kubernetes-diagram.p
+ng, id=764, 905.3825pt x 417.56pt>
+File: capitoli/imgs/kubernetes-diagram.png Graphic file (type png)
+
+<use capitoli/imgs/kubernetes-diagram.png>
+Package pdftex.def Info: capitoli/imgs/kubernetes-diagram.png used on input lin
+e 198.
+(pdftex.def)             Requested size: 426.98857pt x 196.92221pt.
+
+<capitoli/imgs/kubernetesarchitetcture.png, id=765, 827.09pt x 438.63875pt>
+File: capitoli/imgs/kubernetesarchitetcture.png Graphic file (type png)
+
+<use capitoli/imgs/kubernetesarchitetcture.png>
+Package pdftex.def Info: capitoli/imgs/kubernetesarchitetcture.png used on inpu
+t line 208.
+(pdftex.def)             Requested size: 426.98857pt x 226.45364pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[46 <./capitoli/imgs/kubernetes-diagram.png>] [47 <./capitoli/imgs/kubernetesar
+chitetcture.png (PNG copy)>]) (./capitoli/capitolo6.tex [48]
 Capitolo 6.
-<capitoli/imgs/Design-Thinking.png, id=729, 747.79375pt x 261.97874pt>
+<capitoli/imgs/Design-Thinking.png, id=784, 747.79375pt x 261.97874pt>
 File: capitoli/imgs/Design-Thinking.png Graphic file (type png)
 
 <use capitoli/imgs/Design-Thinking.png>
 Package pdftex.def Info: capitoli/imgs/Design-Thinking.png used on input line 1
 1.
 (pdftex.def)             Requested size: 426.98857pt x 149.58926pt.
- [42
+ [49
 
-] [43 <./capitoli/imgs/Design-Thinking.png (PNG copy)>]
-<capitoli/imgs/StakeholderMap.PNG, id=741, 855.94781pt x 455.45157pt>
+] [50 <./capitoli/imgs/Design-Thinking.png (PNG copy)>]
+<capitoli/imgs/StakeholderMap.PNG, id=796, 855.94781pt x 455.45157pt>
 File: capitoli/imgs/StakeholderMap.PNG Graphic file (type png)
 
 <use capitoli/imgs/StakeholderMap.PNG>
@@ -1008,30 +1068,30 @@ Package pdftex.def Info: capitoli/imgs/StakeholderMap.PNG used on input line 34
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[44] [45 <./capitoli/imgs/StakeholderMap.PNG>] [46]
-<capitoli/imgs/empatymap.png, id=760, 721.94719pt x 356.83313pt>
+[51] [52 <./capitoli/imgs/StakeholderMap.PNG>] [53]
+<capitoli/imgs/empatymap.png, id=815, 721.94719pt x 356.83313pt>
 File: capitoli/imgs/empatymap.png Graphic file (type png)
 
 <use capitoli/imgs/empatymap.png>
 Package pdftex.def Info: capitoli/imgs/empatymap.png used on input line 71.
 (pdftex.def)             Requested size: 298.89069pt x 147.72906pt.
 
-<capitoli/imgs/HugoEM.PNG, id=761, 834.11626pt x 577.40718pt>
+<capitoli/imgs/HugoEM.PNG, id=816, 834.11626pt x 577.40718pt>
 File: capitoli/imgs/HugoEM.PNG Graphic file (type png)
 
 <use capitoli/imgs/HugoEM.PNG>
 Package pdftex.def Info: capitoli/imgs/HugoEM.PNG used on input line 77.
 (pdftex.def)             Requested size: 298.89069pt x 206.90608pt.
 
-<capitoli/imgs/scenarioRafael.PNG, id=762, 1160.08406pt x 572.89032pt>
+<capitoli/imgs/scenarioRafael.PNG, id=817, 1160.08406pt x 572.89032pt>
 File: capitoli/imgs/scenarioRafael.PNG Graphic file (type png)
 
 <use capitoli/imgs/scenarioRafael.PNG>
 Package pdftex.def Info: capitoli/imgs/scenarioRafael.PNG used on input line 86
 .
 (pdftex.def)             Requested size: 298.89069pt x 147.60176pt.
- [47 <./capitoli/imgs/empatymap.png> <./capitoli/imgs/HugoEM.PNG>]
-<capitoli/imgs/schizzodesthink.PNG, id=772, 734.745pt x 192.72pt>
+ [54 <./capitoli/imgs/empatymap.png> <./capitoli/imgs/HugoEM.PNG>]
+<capitoli/imgs/schizzodesthink.PNG, id=827, 734.745pt x 192.72pt>
 File: capitoli/imgs/schizzodesthink.PNG Graphic file (type png)
 
 <use capitoli/imgs/schizzodesthink.PNG>
@@ -1039,7 +1099,7 @@ Package pdftex.def Info: capitoli/imgs/schizzodesthink.PNG used on input line 9
 5.
 (pdftex.def)             Requested size: 298.89069pt x 78.39816pt.
 
-<capitoli/imgs/scenario.PNG, id=773, 355.3275pt x 211.54031pt>
+<capitoli/imgs/scenario.PNG, id=828, 355.3275pt x 211.54031pt>
 File: capitoli/imgs/scenario.PNG Graphic file (type png)
 
 <use capitoli/imgs/scenario.PNG>
@@ -1049,9 +1109,9 @@ Package pdftex.def Info: capitoli/imgs/scenario.PNG used on input line 104.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[48 <./capitoli/imgs/scenarioRafael.PNG> <./capitoli/imgs/schizzodesthink.PNG>]
-[49 <./capitoli/imgs/scenario.PNG>]
-<capitoli/imgs/db2.PNG, id=791, 470.50781pt x 154.32657pt>
+[55 <./capitoli/imgs/scenarioRafael.PNG> <./capitoli/imgs/schizzodesthink.PNG>]
+[56 <./capitoli/imgs/scenario.PNG>]
+<capitoli/imgs/db2.PNG, id=846, 470.50781pt x 154.32657pt>
 File: capitoli/imgs/db2.PNG Graphic file (type png)
 
 <use capitoli/imgs/db2.PNG>
@@ -1061,8 +1121,8 @@ Package pdftex.def Info: capitoli/imgs/db2.PNG used on input line 126.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[50] [51 <./capitoli/imgs/db2.PNG>] [52] [53]
-<capitoli/imgs/BfsaasArchitecture.png, id=818, 1261.71375pt x 1499.6025pt>
+[57] [58 <./capitoli/imgs/db2.PNG>] [59] [60]
+<capitoli/imgs/BfsaasArchitecture.png, id=874, 1261.71375pt x 1499.6025pt>
 File: capitoli/imgs/BfsaasArchitecture.png Graphic file (type png)
 
 <use capitoli/imgs/BfsaasArchitecture.png>
@@ -1074,7 +1134,7 @@ e 163.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-<capitoli/imgs/architectureUserViewpoint.png, id=819, 1643.13875pt x 1375.1375p
+<capitoli/imgs/architectureUserViewpoint.png, id=875, 1643.13875pt x 1375.1375p
 t>
 File: capitoli/imgs/architectureUserViewpoint.png Graphic file (type png)
  <use capitoli/imgs/architectureUserViewpoint.png>
@@ -1085,41 +1145,41 @@ put line 180.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[54] [55 <./capitoli/imgs/BfsaasArchitecture.png>] [56 <./capitoli/imgs/archite
-ctureUserViewpoint.png>]) (./capitoli/capitolo7.tex [57]
+[61] [62 <./capitoli/imgs/BfsaasArchitecture.png>] [63 <./capitoli/imgs/archite
+ctureUserViewpoint.png>]) (./capitoli/capitolo7.tex [64]
 Capitolo 7.
-) (./capitoli/capitolo8.tex [58
+) (./capitoli/capitolo8.tex [65
 
 ]
 Overfull \vbox (99.36116pt too high) has occurred while \output is active []
 
 
-[59]
+[66]
 Capitolo 8.
-) (./capitoli/capitolo9.tex [60
+) (./capitoli/capitolo9.tex [67
 
 ]
 Capitolo 9.
 )
 No file main.bbl.
-[61
+[68
 
 ]
 No file main.gls.
 (./appendici/tecnologie.tex
 Appendice A.
-<capitoli/imgs/LoadBalancer.png, id=870, 642.4pt x 327.2225pt>
+<capitoli/imgs/LoadBalancer.png, id=925, 642.4pt x 327.2225pt>
 File: capitoli/imgs/LoadBalancer.png Graphic file (type png)
 
 <use capitoli/imgs/LoadBalancer.png>
 Package pdftex.def Info: capitoli/imgs/LoadBalancer.png used on input line 5.
 (pdftex.def)             Requested size: 426.98857pt x 217.50037pt.
- [62
+ [69
 
  <./capitoli/imgs/LoadBalancer.png>]
-[63]) [64] [65
+[70]) [71] [72
 
-] [66
+] [73
 
 
 ]
@@ -1136,10 +1196,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 360109C54C9D35767A0CEBFBE91A9B97;6269.
  ) 
 Here is how much of TeX's memory you used:
- 11352 strings out of 493089
- 164588 string characters out of 6134842
+ 11408 strings out of 493089
+ 166007 string characters out of 6134842
  524335 words of memory out of 5000000
- 14317 multiletter control sequences out of 15000+600000
+ 14342 multiletter control sequences out of 15000+600000
  14766 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,7n,38p,1009b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1151,10 +1211,10 @@ e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2015/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (66 pages, 3362088 bytes).
+Output written on main.pdf (73 pages, 3432643 bytes).
 PDF statistics:
- 1000 PDF objects out of 1000 (max. 8388607)
- 869 compressed objects within 9 object streams
- 273 named destinations out of 1000 (max. 500000)
- 833 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1063 PDF objects out of 1200 (max. 8388607)
+ 916 compressed objects within 10 object streams
+ 298 named destinations out of 1000 (max. 500000)
+ 863 words of extra memory for PDF output out of 10000 (max. 10000000)
 

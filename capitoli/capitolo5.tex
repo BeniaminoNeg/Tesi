@@ -228,11 +228,58 @@ Andiamo a definire quelli che sono i termini di riferimento in Kubernetes:
 \paragraph{E Docker?}
 La piattaforma docker mantiene le proprie funzioni. Quando Kubernetes assegna un pod ad un nodo, il kubelet su quel nodo chiede a docker di lanciare i container specificati. Quindi, il kubelet legge continuamente lo stato di quei container da docker e aggrega le informazioni nel nodo master. Docker invia i container sul nodo, avvia e arresta normalmente i container. La differenza è che un sistema automatizzato con Kubernetes chiede a docker di eseguire queste operazioni, anziché assegnarle ad un amministratore, il quale deve eseguirle manualmente su tutti i nodi, in tutti i container.
 
-
-
 \section{Multitenancy}
+La multitenancy è un paradigma che, andando a braccetto con il cloud computing, si sta diffondendo sempre di più nel panorama delle architetture software. Esso prevede che una singola istanza del software in questione, situato su un server, sia utilizzato da molti utenti, chiamati tenant. I tenant condividono l'accesso comune al servizio con privilegi differenziati sulle istanze software. L'obiettivo principale è quello di garantire scalabilità al servizio e dare al tenant la percezione di un possesso esclusivo del software.
+
+\paragraph{Vantaggi della Multitenancy}
+\begin{itemize}
+	\item Costi \\
+	Scalare un'architettura multitenant è più economico, in quanto si interviene solamente in un'unica macchina fisica e acquistare hardware più performante risulta meno dispendioso. Inoltre in questo modo si riduce anche il numero di licenze da acquistare, nel caso siano necessarie, il che può comportare un notevole risparmio.
+	\item Data Mining \\
+	Nel caso sia necessario estrapolare dei dati da tutti i clienti, avere dei tenant tutti sulla stessa macchina rende l'operazione molto più immediata.
+	\item  Release Management \\
+	Al rilascio di una nuova versione il processo risulta essere molto semplificato. Ciò viene ovviamente dal fatto che dovendo aggiornare una sola istanza del software su una sola macchina fisica la mole di lavoro è sicuramente minore.
+\end{itemize}
+
+\paragraph{Requisiti}
+Ovviamente un'architettura multitenant ha anche dei requisiti. Sicuramente, nonostante l'unicità del software, si deve garantire un alto grado di "personalizzazione" ai diversi tenant, proprio come se avessero un utilizzo esclusivo del servizio. Da un altro lato ci si aspettano elevati parametri di security, robustezza e prestazioni.
+
 \section{Monitoring Tools}
+La centralizzazione portata dal SaaS comporta anche un radicale cambiamento delle modalità di monitoring del sistema. Non è pensabile che una persona possa andare a controllare tutti i log dei servizi e misurare le prestazioni degli stessi manualmente. E' necessario l'utilizzo di appositi tool che hanno come finalità quella di raccogliere questa mole di informazioni, elaborarle e presentarle al personale addetto del provider nel modo più intellegibile possibile. In questa ottica andiamo a presentare due tool utilizzati nel progetto: Prometheus e Grafana.
 \subsection{Prometheus}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\textwidth,keepaspectratio=true]{capitoli/imgs/prometheuslogo.png}
+	\caption{Logo di Prometheus}
+\end{figure}
+\paragraph{}
+prometheus è un tool di monitoring open-source nato nel 2012 e scritto in Go. Si adatta sia alle architetture centralizzate che a quelle distribuite. La struttura del tool e pensata per garantire un validissimo supporto nel caso il servizio monitorato abbia dei malfunzionamenti. Vediamo un elenco delle caratteristiche principali.
+\begin{itemize}
+	\item Un data model multidimensionale che ha lo scopo di raccogliere tutti i dati
+	\item Un query language flessibile per far fronte a questi dati
+	\item Engine per la rielaborazione dei dati
+	\item Meccanismi sofisticati per collezionare serie storiche
+	\item Supporto per le dashboard
+\end{itemize}
 \subsection{Grafana}
-\section{BlueMix Service}
-db2
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.3\textwidth,keepaspectratio=true]{capitoli/imgs/grafanalogo.png}
+	\caption{Logo di Grafana}
+\end{figure}
+Grafana consente di avere un portale centralizzato da cui monitorare tutti i servizi. Consente di visualizzare dati, creare degli alert e visualizzare tutte le informazioni in comode interfacce per gli utenti.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth,keepaspectratio=true]{capitoli/imgs/grafanainterface.PNG}
+	\caption{Una delle interfacce di Grafana}
+\end{figure}
+
+\section{BlueMix Services}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth,keepaspectratio=true]{capitoli/imgs/bluemixlogo.png}
+	\caption{Logo di IBM BlueMix}
+\end{figure}
+Come abbiamo accennato precedentemente, IBM BlueMix è una PaaS che offre molti microservizi utili per il cloud computing. Il vantaggio dei microservizi è proprio questo, possono essere utilizzati a piacimento in qualsivoglia progetto. Alcuni dei servizi BlueMix sono stati anche utilizzati nel nostro progetto e altri lo saranno in seguito, con degli sviluppi futuri.
+\paragraph{}
+Ne sono un esempio il database DB2 e Kubernetes, che nel nostro caso sono stati proprio integrati nelle loro versioni presenti su BlueMix. E' possibile inoltre che in futuro si adotti un'altro database IBM sempre presente su BlueMix, Cloudant, un database NoSQL nativo cloud.

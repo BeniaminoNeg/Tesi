@@ -1,11 +1,11 @@
 \chapter{IBM BigFix on SaaS, la progettazione}
-Per la realizzazione di un prototipo di questo tipo, è necessaria un'attenta progettazione. Quella di cui andremo a parlare a breve è la fase dell'ideazione che va dall'identificazione dei requisiti funzionali, dei bisogni dell'utente, alla definizione dei parametri qualitativi che deve avere il prodotto finale, determinando scelte molto importanti dal punto di vista architetturale. Al termine di questa fase il team inizia gli sprint di development, raffinando sempre di più il modello del servizio che si vuole realizzare. Andiamo ora a vedere quali sono i primi passi che si sono mossi nella realizzazione del progetto.
+Per la realizzazione di un prototipo di questo tipo, è necessaria un'attenta progettazione. Quella di cui andremo a parlare a breve è la fase dell'ideazione che va dall'identificazione dei requisiti funzionali, dei bisogni dell'utente, alla definizione dei parametri qualitativi che deve avere il prodotto finale. Determiniamo in questo modo scelte molto importanti dal punto di vista architetturale. Al termine di questa fase iniziano gli sprint di development, raffinando sempre di più il modello del servizio che si vuole realizzare. Andiamo ora a vedere quali sono i primi passi che si sono mossi nella realizzazione del progetto.
 
 \section{Interaction Design}
-Non si può prescindere dal fatto ce l'interaction design sia la primissima fase da affrontare all'inizio del progetto. Se non si parte dai reali bisogni dell'utente finale, si rischia inevitabilmente di sbagliare strada e realizzare un prodotto che non avrà mai successo sul mercato. Nell'affrontare questo tipo di progettazione l'IBM ha adottato un framework sempre più diffuso nel panorama dello studio dell'usabilità, il Design Thinking.
+Non si può prescindere dal fatto ce l'interaction design sia la primissima fase da affrontare quando si realizza un progetto. Se non si parte dai reali bisogni dell'utente finale, si rischia inevitabilmente di sbagliare strada e realizzare un prodotto che non avrà mai successo sul mercato. Nell'affrontare questo tipo di progettazione l'IBM ha adottato un framework sempre più diffuso nel panorama dello studio dell'usabilità, il Design Thinking.
 
 \subsection{Design Thinking}
-Empatia. E' questa la parola chiave della filosofia del Design Thinking. E' un processo creativo che ha come scopo quello di mettere al centro del progetto le necessità dell'utente. Ma proprio per meglio comprendere queste necessità è indispensabile instaurare un rapporto di empatia con gli utenti stessi. Capire i loro reali bisogni, ma anche osservarli durante la loro vita quotidiana per comprendere quelle necessità che non vengono direttamente esternate. Al tempo stesso si vogliono massimizzare le occasioni di feedback cercando di produrre il prima possibile degli output che permettano di comparare più soluzioni alternative. Aumentando per quanto possibile gli input, si riducono le probabilità di fallimento. Ma analizziamo i diversi step che accompagnano un percorso di design thinking.
+Empatia. E' questa la parola chiave della filosofia del Design Thinking. E' un processo creativo che ha come scopo quello di mettere al centro del progetto le necessità dell'utente. Ma proprio per meglio comprendere queste necessità è indispensabile instaurare un rapporto di empatia con gli utenti stessi. Capire i loro reali bisogni, ma anche osservarli durante la loro vita quotidiana per comprendere quelle necessità che non vengono direttamente esternate. Al tempo stesso, si vogliono massimizzare le occasioni di feedback cercando di produrre il prima possibile degli output che permettano di comparare più soluzioni alternative. Aumentando per quanto possibile gli input, si riducono le probabilità di fallimento. Ma analizziamo i diversi step che accompagnano un percorso di design thinking.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/Design-Thinking.png}
@@ -15,7 +15,7 @@ Empatia. E' questa la parola chiave della filosofia del Design Thinking. E' un p
 	\item Definire il problema \\
 	In questa fase del lavoro è fondamentale osservare, capire le abitudini degli utenti ed immedesimarsi in loro.
 	\item Divergere \\
-	Qui entra in gioco la creatività, cercando di mettere sul piatto il maggior numero di soluzioni possibili, evitando però preconcetti sulle soluzioni e concentrandosi solamente sul problema.
+	Qui entra in gioco la creatività, cercando di mettere sul piatto il maggior numero di soluzioni possibili, evitando però preconcetti e concentrandosi solamente sul problema.
 	\item Testare \\
 	E' necessario ora produrre dei prototipi testabili in modo che si possano comparare le diverse soluzioni e ricevere feedback dagli utenti.
 	\item Convergere \\
@@ -24,11 +24,10 @@ Empatia. E' questa la parola chiave della filosofia del Design Thinking. E' un p
 
 
 \subsection{BigFix SaaS Interaction Design}
-Il nodo cruciale di questa fase del lavoro e stato per noi quello di capire realmente quale fosse il target del nuovo servizio SaaS e quali siano i reali bisogni che possano spingere i clienti ad adottare un prodotto SaaS, siano essi già degli utenti della versione on premise o no. Il problema principale prima dell'avvento del paradigma design thinking era che i requisiti funzionali dei prodotti che venivano realizzati per le aziende erano stabiliti tramite delle contrattazioni svolte tra i progettisti e gli addetti agli acquisti delle aziende clienti, spesso trascurando i reali beneficiari del prodotto, ossia i tecnici dell'azienda cliente. Questo spesso porta a realizzare dei prodotti che non fanno fronte ai reali bisogni dell'utente. 
-
+Il nodo cruciale di questa fase del lavoro e stato quello di capire realmente quale fosse il target del nuovo servizio SaaS e quali siano i reali bisogni che possano spingere i clienti ad adottare un prodotto SaaS, siano essi già degli utenti della versione on premise o no. Il problema principale prima dell'avvento del paradigma design thinking era che i requisiti funzionali dei prodotti che venivano realizzati per le aziende erano stabiliti tramite delle contrattazioni svolte tra i progettisti e gli addetti agli acquisti delle aziende clienti, spesso trascurando i reali beneficiari del prodotto, ossia i tecnici dell'azienda cliente. Questo spesso porta a realizzare dei prodotti che non fanno fronte ai reali bisogni dell'utente. 
 
 \paragraph{Stakeholder Map}
-L'obiettivo principale di questa fase del lavoro è stata per noi quella di allineare tutti gli interessati, sviluppatori, dirigenti e potenziali utenti, sugli obiettivi del progetto SaaS. Per fare ciò si è fatto uso della Stakeholder Map, un artefatto che raffigura per l'appunto tutti gli Stackeholder interessati alla realizzazione del progetto. 
+L'obiettivo principale di questa fase del lavoro è stata quella di allineare tutti gli interessati, sviluppatori, dirigenti e potenziali utenti, sugli obiettivi del progetto SaaS. Per fare ciò si è fatto uso della Stakeholder Map, un artefatto che raffigura per l'appunto tutti gli Stackeholder interessati alla realizzazione del progetto. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=\textwidth,keepaspectratio=true]{capitoli/imgs/StakeholderMap.PNG}
@@ -40,10 +39,10 @@ Possiamo notare come gli input vengano da figure dirigenziali, che dettano le di
 Il coinvolgimento della figura dell'utente finale è avvenuto fin dalla progettazione. Questo è stato fatto tramite interviste strutturate, ma anche osservando gli utenti nella loro routine lavorative, cercando di captare necessità e frustrazioni che vogliono essere eliminate e annotarle. L'obiettivo di fondo di questa fase del lavoro era quello di instaurare un rapporto di empatia tra gli utenti e chi realizza il progetto.
 
 \paragraph{Nascita delle personas}
-A questa punto occorreva fare un'operazione di astrazione. Cercare di identificare degli elementi chiave dal lavoro precedente e impersonare i bisogni e le caratteristiche scoperte in delle personas. Le personas sono personaggi fittizi che vengono creati per rappresentare i diversi tipi di utenti in base alle loro caratteristiche comportamentali. Vengono utilizzate per creare degli scenari e capire meglio il target del lavoro che si sta per compiere. Nel nostro caso sono state individuate le seguenti personas:
+A questa punto occorreva fare un'operazione di astrazione. Cercare di identificare degli elementi chiave dal lavoro precedente e impersonare i bisogni e le caratteristiche scoperte in delle personas. Le personas sono personaggi fittizi che vengono creati per rappresentare i diversi tipi di utenti in base alle loro caratteristiche comportamentali. Vengono utilizzate per creare degli scenari e capire meglio il target del lavoro che si sta per compiere. Per il progetto sono state individuate le seguenti personas:
 \begin{itemize}
 	\item Rick - BigFix Operator \\
-	Rick è l'amministratore che utilizza BigFix nella sua versione SaaS. Vuole poter gestire gli endpoint della sua azienda come farebbe con la versione on premise, distribuire contenuti e forzare le policy aziendali. usa le applications di BigFix.
+	Rick è l'amministratore che utilizza BigFix nella sua versione SaaS. Vuole poter gestire gli endpoint della sua azienda come farebbe con la versione on premise, distribuire contenuti e forzare le policy aziendali. Usa le applications di BigFix.
 	\item James - Content Creator \\
 	James crea i contenuti per BigFix, crea Fixlet e task ad hoc per la propria azienda e crea pacchetti da deployare su diversi endpoint aziendali.
 	\item Scott - BigFix Architect \\

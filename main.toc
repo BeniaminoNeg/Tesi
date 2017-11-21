@@ -100,7 +100,7 @@
 \contentsline {paragraph}{Docker Engine}{42}{section*.76}
 \contentsline {paragraph}{Architettura di Docker}{42}{section*.78}
 \contentsline {paragraph}{}{43}{section*.80}
-\contentsline {subsection}{\numberline {5.2.5}Un'esuberante}{45}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.5}Kubernetes}{45}{subsection.5.2.5}
 \contentsline {paragraph}{}{45}{section*.82}
 \contentsline {paragraph}{}{45}{section*.83}
 \contentsline {paragraph}{Perch\IeC {\'e} utilizzare Kubernetes?}{45}{section*.84}
@@ -112,7 +112,7 @@
 \contentsline {paragraph}{Requisiti}{49}{section*.91}
 \contentsline {section}{\numberline {5.4}Monitoring Tools}{49}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Prometheus}{49}{subsection.5.4.1}
-\contentsline {paragraph}{}{50}{section*.93}
+\contentsline {paragraph}{}{49}{section*.93}
 \contentsline {subsection}{\numberline {5.4.2}Grafana}{50}{subsection.5.4.2}
 \contentsline {section}{\numberline {5.5}BlueMix Services}{50}{section.5.5}
 \contentsline {paragraph}{}{51}{section*.97}

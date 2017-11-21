@@ -44,11 +44,11 @@ A questa punto occorreva fare un'operazione di astrazione. Cercare di identifica
 	\item Rick - BigFix Operator \\
 	Rick è l'amministratore che utilizza BigFix nella sua versione SaaS. Vuole poter gestire gli endpoint della sua azienda come farebbe con la versione on premise, distribuire contenuti e forzare le policy aziendali. Usa le applications di BigFix.
 	\item James - Content Creator \\
-	James crea i contenuti per BigFix, crea Fixlet e task ad hoc per la propria azienda e crea pacchetti da deployare su diversi endpoint aziendali.
+	James crea i contenuti per BigFix, crea Fixlet e task ad hoc per la propria azienda e distribuisce pacchetti da deployare su diversi endpoint aziendali.
 	\item Scott - BigFix Architect \\
-	Scott è l'architetto dell'azienda cliente. Si occupa di installare la suite BigFix, che nel caso della versione SaaS risulta essere molto più agevole. Deve stabilire quale sia l'architettura azienda aziendale, relay e la rete di agent.
+	Scott è l'architetto dell'azienda cliente. Si occupa di installare la suite BigFix. Nel caso della versione SaaS questo risulta essere molto più agevole. Deve stabilire quale sia l'architettura aziendale, i relay e la rete di endpoint con agent.
 	\item  Rafael - Security Analyst \\
-	Rafael è la figura che si occupa di controllare che gli endpoint rispettino le policy aziendali e può mandare dei messaggi per sollecitare l'attuazione della compliance.
+	Rafael è la figura che si occupa di controllare che gli endpoint rispettino le policy aziendali. Può mandare dei messaggi per sollecitare l'attuazione della compliance.
 	\item Lucy - IT Manager \\
 	Si occupa della gestione dell'infrastruttura IT dell'azienda. Ha bisogno di accedere a molti contenuti dell'operator e si interfaccia spesso con Rick.
 	\item Hugo - OPS engineer \\
@@ -56,14 +56,14 @@ A questa punto occorreva fare un'operazione di astrazione. Cercare di identifica
 \end{itemize}
 
 \paragraph{Empathy Map}
-A questo punto è stato necessario definire gli aspetti caratteriali dal punto di vista lavorativo delle personas appena individuate. Questo si formalizza attraverso una Empathy Map per ogni peronas che si vuole analizzare. In questo artefatto vengono poste al centro e ne vengono appuntate le peculiarità. Abbiamo scritto cosa fa durante la giornata e le sue necessità, ma anche dopo un'analisi quelli che possono essere i suoi sentimenti durante lo svolgimento dei task quotidiani. tra le caratteristiche che abbiamo cercato di delineare nei personaggi ci sono:
+A questo punto è stato necessario definire gli aspetti caratteriali dal punto di vista lavorativo delle personas appena individuate. Questo si formalizza attraverso una Empathy Map per ogni peronas. In questo artefatto queste ultime vengono poste al centro e ne vengono appuntate le peculiarità. Viene scritto cosa ogni personas fa durante la giornata e le sue necessità, ma anche quelli che possono essere i suoi sentimenti durante lo svolgimento dei task quotidiani. Tra le caratteristiche che si sono cercate di delineare nei personaggi ci sono:
 \begin{itemize}
 	\item Profilo professionale
 	\item Attività
 	\item Attitudini
 	\item Bisogni
 	\item Obiettivi
-	\item Cosa possiamo fare per aiutarlo
+	\item Cosa si può fare per aiutarlo
 \end{itemize}
 \begin{figure} [h!]
 	\centering
@@ -79,7 +79,7 @@ A questo punto è stato necessario definire gli aspetti caratteriali dal punto d
 \end{figure}
 
 \paragraph{Scenario Map}
-In questo nuovo elaborato le personas con le quali siamo entrati in confidenza nella fase precedente iniziano ad essere inserite nel loro ciclo di vita quotidiano. Con lo scenario viene descritto un flusso di lavoro tipico del personaggio in questione. Nel succedersi degli stages, ovvero i passi in cui si divide lo scenario, si annotano quelli che possono essere i sentimenti dell'utente, cercando di individuare gli elementi di frustrazione e le opportunità per intervenire nella progettazione risolvendo i problemi dell'utente tipo. Vediamo qui di seguito una scenario map per Rafael.
+In questo nuovo elaborato le personas con le quali si è entrati in confidenza nella fase precedente iniziano ad essere inserite nel loro ciclo di vita quotidiano. Con lo scenario viene descritto un flusso di lavoro tipico del personaggio in questione. Nel succedersi degli stages, ovvero i passi in cui si divide lo scenario, si annotano quelli che possono essere i sentimenti dell'utente, cercando di individuare gli elementi di frustrazione e le opportunità per intervenire nella progettazione risolvendo i problemi dell'utente tipo. Vediamo qui di seguito una scenario map per Rafael.
 \begin{figure} [h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{capitoli/imgs/scenarioRafael.PNG}
@@ -88,16 +88,16 @@ In questo nuovo elaborato le personas con le quali siamo entrati in confidenza n
 \end{figure}
 
 \paragraph{}
-Vediamo qui di seguito uno schizzo riassuntivo degli step del Design Thinking che abbiamo adottato:
+Vediamo qui di seguito uno schizzo riassuntivo degli step del Design Thinking che si sono adottati:
 \begin{figure} [h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{capitoli/imgs/schizzodesthink.PNG}
-	\caption{Step del Design Thinking adottati nel nostro progetto}
+	\caption{Step del Design Thinking adottati nel progetto}
 	\label{fig:dt}
 \end{figure}
 
 \paragraph{}
-Gli scenari in questo modo individuato vanno a rappresentare la base per la stesura delle Epiche. Queste, come abbiamo descritto nella sezione 2.3 verranno poi raffinate con la stesura delle Storie e infine divide nei Task implementabili dagli sviluppatori.
+Gli scenari in questo modo individuati vanno a rappresentare la base per la stesura delle Epiche. Queste, come abbiamo descritto nella sezione 2.3 verranno poi raffinate con la stesura delle Storie e infine divise nei Task implementabili dagli sviluppatori.
 \begin{figure} [h!]
 	\centering
 	\includegraphics[width=0.7\linewidth]{capitoli/imgs/scenario.PNG}
@@ -112,13 +112,13 @@ Abbiamo già parlato nel capitolo 4 di quali sono le nuove problematiche alle qu
 Il servizio di BigFix SaaS è stato progettato per garantire, quando sarà in produzione, un'availability che si mantenga sempre su valori superiori al 99. Ovviamente si prevedono carichi di utilizzo che possono essere anche molto elevati. La suite di BigFix è utilizzata contemporaneamente da clienti di tutto il mondo, alcuni dei quali possiedono una rete di endpoint composta da un numero considerevole di nodi. Tutto ciò può portare a picchi di carico molto elevati nonostante i quali il servizio deve continuare a essere disponibile con prestazioni sopra delle soglie minime di accettabilità.
 
 \paragraph{Microservizi e container}
-Come abbiamo potuto osservare nei capitoli precedenti, l'adozione di microservizi e container è un must per i servizi cloud. Grazie a questa scelta possiamo garantire agli utenti di BigFix SaaS un'alta Dependability, fattore fondamentale nel contesto della security aziendale in cui si va a calare questa suite di prodotti. I microservizi di BigFix, infatti, verranno replicati tramite i container in data center IBM in tutto il mondo, ciò potrà garantire anche tolleranza ai guasti che possono presentarsi. Il grado di replicazione dei diversi microservizi sarà ovviamente proporzionale all'importanza del microservizio stesso. Ci saranno ovviamente dei microservizi con dei ruoli più centrali di altri.
+Come abbiamo potuto osservare nei capitoli precedenti, l'adozione di microservizi e container è un must per i servizi cloud. Grazie a questa scelta possiamo garantire agli utenti di BigFix SaaS un'alta Dependability, fattore fondamentale nel contesto della security aziendale in cui si va a calare questa suite di prodotti. I microservizi di BigFix, infatti, verranno replicati tramite i container in data center IBM in tutto il mondo, ciò potrà garantire anche tolleranza ai guasti che possono presentarsi in futuro. Il grado di replicazione dei diversi microservizi sarà ovviamente proporzionale all'importanza del microservizio stesso. Ci saranno poi, ovviamente, dei microservizi, con dei ruoli più centrali di altri, che richiederanno un maggior numero di repliche.
 
 \subsubsection{Rolling Update}
-Un'altro aspetto critico nel garantire un'alta availability è quello dell'aggiornamento del servizio. Facendo un paragone con i servizi SaaS che utilizziamo quotidianamente per consultare la posta elettronica, notiamo che non assistiamo mai a fenomeni di mancanza del servizio quando il prodotto si aggiorna, ma, all'occorrenza, troviamo già il prodotto nella sua versione aggiornata. Vogliamo che questo comportamento si verifichi anche con la suite SaaS di BigFix e per questo occorre attuare una politica di Rolling Update. Silentemente, vengono aggiornate a turno tutte le repliche dei microservizi interessanti dall'aggiornamento. Nel fare ciò però, l'esperienza utente non risente di peggioramenti, in quanto le repliche che rimangono in servizio garantiscono l'efficienza del servizio.
+Un'altro aspetto critico nel garantire un'alta availability è quello dell'aggiornamento del servizio. Facciamo un paragone con i servizi SaaS che utilizziamo quotidianamente per consultare la posta elettronica. Notiamo che non assistiamo mai a fenomeni di mancanza del servizio quando il prodotto si aggiorna, bensì troviamo già il prodotto nella sua versione aggiornata quando questa viene distribuita. Vogliamo che questo comportamento si verifichi anche con la suite SaaS di BigFix e per questo occorre attuare una politica di Rolling Update. Silentemente, vengono aggiornate a turno tutte le repliche dei microservizi interessati dall'aggiornamento. Nel fare ciò però, l'esperienza utente non risente di peggioramenti, in quanto le repliche che rimangono funzionanti garantiscono l'efficienza del servizio.
 
 \subsubsection{Utilizzo di DB2}
-Anche la persistenza dei dati può risultare essere un elemento critico per la dependability. Occorre uno strumento che garantisca l'integrità dei dati, la resistenza ai guasti con adeguate misure di ripristino e soprattutto la riservatezza dei dati che, in un contesto come la security aziendale, possono essere molto sensibili. Si è scelto di utilizzare come DBMS DB2, un database relazionale prodotto da IBM. Una peculiarità di questo prodotto è la HADR (High Availability and Disaster Recovery). Diamo un'occhiata all'architettura di DB2 per capire di cosa si tratta.
+Anche la persistenza dei dati può risultare essere un elemento critico per la dependability. Occorre uno strumento che garantisca l'integrità dei dati, la resistenza ai guasti con adeguate misure di ripristino e soprattutto la riservatezza dei dati che, in un contesto come la security aziendale, possono essere molto sensibili. Si è scelto di utilizzare come Database Management System DB2, un database relazionale prodotto da IBM. Una peculiarità di questo prodotto è la HADR (High Availability and Disaster Recovery). Diamo un'occhiata all'architettura di DB2 per capire di cosa si tratta.
 
 \begin{figure}[h!]
 	\centering
@@ -127,30 +127,33 @@ Anche la persistenza dei dati può risultare essere un elemento critico per la d
 \end{figure}
 
 \paragraph{}
-DB2 replica tutto il contenuto del suo database, chiamato Primary Database, in un secondo database detto Standby Database, il quale svolge anche il ruolo di backup. I dati di questi due sono consistenti e vengono sincronizzati costantemente. Qualunque malfunzionamento del database principale normalmente comporterebbe dei tempi di non availability più o meno lunghi. Con questa architettura HADR, invece, nel momento in cui il Primary Database presenta un guasto, lo Standby Database assume il suo ruolo (Failover) finché il database primario non torna disponibile e, a qual punto, i due database tornano a svolgere il loro compito originario (Role switch). Una prerogativa importante però è che i due database risiedano in due data center distinti, o comunque provengano da due fonti di energia distinte nel caso si trovino nello stesso luogo geografico, per evitare che dei guasti possano colpirli entrambi. 
+DB2 replica tutto il contenuto del suo database, chiamato Primary Database, in un secondo database detto Standby Database, il quale svolge anche il ruolo di backup. I dati di questi due sono consistenti e vengono sincronizzati costantemente. Qualunque malfunzionamento del database principale normalmente comporterebbe dei tempi di non availability più o meno lunghi nei comuni database. Con questa architettura HADR, invece, nel momento in cui il Primary Database presenta un guasto, lo Standby Database assume il suo ruolo (Failover) finché il database primario non torna disponibile e, solo a qual punto, i due database tornano a svolgere il loro compito originario (Role switch). Un requisito importante però è che i due database risiedano in due data center distinti, o comunque provengano da due fonti di energia distinte nel caso si trovino nello stesso luogo geografico, per evitare che dei guasti possano colpirli entrambi. 
 
 \subsection{Scalabilità}
-Per quanto riguarda la Scalabilità ci prefiggiamo di garantire le stesse specifiche del prodotto in versione on premise, quindi di supportare fino a 250.000 endpoint per server. Il soddisfacimento di questa specifica, nel contesto SaaS, sposta l'attenzione ovviamente sul nuovo concetto di server, ossia una serie di microservizi distribuiti che svolgono le funzionalità che nella versione on premise era svolta dal server presso il client. Ancora una volta sta nella ridondanza dei microservizi la chiave per garantire la scalabilità prefissata.
+Per quanto riguarda la Scalabilità ci si prefigge di garantire le stesse specifiche del prodotto in versione on premise, quindi di supportare fino a 250.000 endpoint per server. Il soddisfacimento di questa specifica, nel contesto SaaS, sposta l'attenzione ovviamente sul nuovo concetto di server, ossia una serie di microservizi distribuiti che svolgono le funzionalità che nella versione on premise era svolta dal server localizzato presso il cliente. Ancora una volta sta nella ridondanza dei microservizi la chiave per garantire la scalabilità prefissata.
 
 \subsection{Monitoring}
-Sotto l'aspetto del monitoring ci siamo dovuti scontrare con una nuova complessità nel saper monitorare un servizio così diffuso come quello di SaaS. La necessità è quella di sostituire l'intervento umano nella consultazione dei log di tutti i servizi. Il requisito che abbiamo è quello di analizzare i risultati, saper effettuare delle medie e calcolare dei picchi di parametri come il throughput o la latenza. Vogliamo infine che questa mole di dati fosse facilmente consultabile agli occhi di chi effettua la manutenzione del prodotto, magari sotto forma di grafici facilmente intellegibili. Per soddisfare queste necessità abbiamo individuato i tool Prometheus e Grafana che si sono rivelati molto utili nelle fasi successive al deployment, come vedremo in seguito.  
-
+Sotto l'aspetto del monitoring ci si è dovuti scontrare con una nuova complessità nata nel monitorare un servizio così diffuso come quello di SaaS. La necessità è quella di sostituire l'intervento umano nella consultazione dei log di tutti i servizi. Occorre analizzare i risultati, saper effettuare delle medie e calcolare dei picchi di variabili come il throughput o la latenza. Vogliamo infine che questa mole di dati fosse facilmente consultabile agli occhi di chi effettua la manutenzione del prodotto, magari sotto forma di grafici facilmente intellegibili. Per soddisfare queste necessità abbiamo individuato i tool Prometheus e Grafana che si sono rivelati molto utili nelle fasi successive al deployment, come vedremo in seguito.  
 
 \section{Gap con il prodotto on premise}
-La natura di un servizio SaaS porta con se alcune differenze strutturali importanti con il prodotto già esistente. La modalità di fruizione del prodotto è completamente diversa dal prodotto on premise infatti e gli accorgimenti sono da prendere subito in considerazione in quanto impattano pesantemente sulle scelte architetturali.
+La natura di un servizio SaaS porta con se alcune differenze strutturali importanti con il prodotto già esistente. La modalità di fruizione del prodotto è completamente diversa da quello on premise. E' necessario prendere subito in considerazione questi aspetti in quanto risultano essere molto impattanti dal punto di vista architetturale.
 \paragraph{Introduzione della multitenancy}
-Uno di questi è sicuramente la multitenancy. Nel modello SaaS può capitare che sulla stessa macchina fisica risiedano più server di clienti diversi. Dalla prospettiva utente però si deve dare l'impressione di un possesso esclusivo del server tramite strategie di multitenancy. E' di fondamentale importanza che un cliente non entri in contatto con dati afferenti al server di altre organizzazioni, anche se queste risiedono sullo stesso server fisico. Tra gli accorgimenti attuati c'è la modifica della modalità di archiviazione dei dati, permettendo di filtrare i dati appartenenti al tenant corretto e speciali privilegi di utilizzo dei servizi server. 
+Uno di questi è sicuramente la multitenancy. Nel modello SaaS può capitare che sulla stessa macchina fisica risiedano più server di clienti diversi. Dalla prospettiva utente però si deve dare l'impressione di un possesso esclusivo del server tramite strategie di multitenancy. E' di fondamentale importanza che un cliente non entri in contatto con dati afferenti al server di altre organizzazioni. Tra le misure attuate ci sono:
+\begin{itemize}
+	\item Modifica della modalità di archiviazione dei dati, permettendo di filtrare i dati appartenenti al tenant corretto.
+	\item Speciali privilegi di utilizzo dei servizi server. Sono una sorta di utenza con privilegi a livello intermedio tra un semplice agent e quello che possiamo assimilare ad un root dell'intero server.
+\end{itemize}
 \paragraph{Introduzione dei microservizi}
-L'introduzione dei microservizi è un elemento centrale della conversione a SaaS. Per attuarla è necessario un attento percorso di refactoring del codice del prodotto, suddividendolo in servizi coesi che possano rappresentare delle entità separate che cooperino tra loro.
+L'introduzione dei microservizi è un elemento centrale della conversione della suite a SaaS. Per attuarla è necessario un attento percorso di refactoring del codice del prodotto, suddividendolo in servizi coesi che possano rappresentare delle entità separate che cooperano tra loro.
 
 \section{Scelta dei tool e dei servizi da utilizzare}
-Nel mio caso mi sono mosso in un ambito, quello del cloud computing, si privo di una consolidata storia alle spalle, ma anche ricco di continui nuovi contributi. Infatti compaiono sempre nuove tecnologie dedicate esclusivamente all'ambiente cloud, molte delle quali open-source con frequentissimi contributi da parte degli sviluppatori.
+Nel mio caso mi sono mosso in un ambito, quello del cloud computing, da un lato privo di una consolidata storia alle spalle, ma anche ricco di continui nuovi contributi. Infatti compaiono sempre nuove tecnologie dedicate esclusivamente all'ambiente cloud, molte delle quali open-source con frequentissimi contributi da parte degli sviluppatori.
 
 \paragraph{}
-Trattandosi della realizzazione di un prototipo SaaS, l'attenzione principale non poteva che ricadere sui container e sui più diffusi trend in ambito cloud. Si è scelto di adottare l'utilizzo dei container. Come largamente trattato nella sezione 5.2 essi rappresentano una tecnologia fondamentale per realizzare un servizio SaaS. Avendo scelto di adottare i container occorreva quindi scegliere una piattaforma che automatizzi il deployment dei container in maniera efficace. Da questo punto di vista la scelta è ricaduta su Docker, una scelta quasi obbligata vista l'alta competitività del tool e l'affermazione ormai incontrastata. In questo modo ci si alleggerisce dall'overhead di utilizzare un'intera macchina virtuale per ogni container in quanto tutti i container sulla stessa macchina fisica condividono lo stesso sistema operativo, ma al tempo stesso sono isolati. 
+Trattandosi della realizzazione di un prototipo SaaS, l'attenzione principale non poteva che ricadere sui più diffusi trend in ambito cloud. Tra questi si è scelto di adottare l'utilizzo dei container. Come largamente trattato nella sezione 5.2, essi rappresentano una tecnologia fondamentale per realizzare un servizio SaaS. Occorreva quindi scegliere una piattaforma che automatizzi il deployment dei container in maniera efficace. Da questo punto di vista la scelta è ricaduta su Docker, una scelta quasi obbligata vista l'alta competitività del tool e la sua affermazione ormai incontrastata. In questo modo ci si alleggerisce dall'overhead di utilizzare un'intera macchina virtuale per ogni container in quanto tutti i container sulla stessa macchina fisica condividono lo stesso sistema operativo, ma al tempo stesso sono isolati. 
 
 \paragraph{}
-A questo punto però bisogna immaginare uno scenario in cui il servizio che sono andato a realizzare e scomposto in un numero piuttosto elevato di container, alcuni andranno creati in delle situazioni specifiche, altri eliminati o modificati. Per queste funzionalità l'IBM ha come direttiva quella di utilizzare Kubernetes, del quale abbiamo parlato anche nella sezione 5.2. Tramite questo tool sono in grado di orchestrare i container e controllarne il flusso di vita tramite i pod.
+A questo punto però bisogna immaginare uno scenario in cui il servizio che sono andato a realizzare e scomposto in un numero piuttosto elevato di container, alcuni andranno creati per delle situazioni specifiche, altri eliminati o modificati. Per queste funzionalità l'IBM ha come direttiva quella di utilizzare Kubernetes, del quale abbiamo parlato anche nella sezione 5.2. Tramite questo tool sono in grado di orchestrare i container e controllarne il flusso di vita tramite i pod.
 
 \section{Definizione Architetturale}
 La definizione di un'architettura di un prodotto così complesso è guidata da un'attenta analisi dei requisiti appena descritti. Occorre stabilire quali siano i componenti da implementare, altri da riutilizzare e alcuni da adattare. Inoltre occorre stabilire come interfacciarsi con nuove tecnologie che devono essere opportunamente inserite nel contesto di applicazione.
@@ -163,12 +166,12 @@ La definizione di un'architettura di un prodotto così complesso è guidata da u
 	\caption{Architettura di BigFix SaaS}
 	\label{fig:arch}
 \end{figure}
-Questa è la più significativa delle viste architetturali. Da questa immagine possiamo chiaramente evincere la struttura a microservizi del SaaS di BigFix. Ogni microservizio è deployato in un container. Volutamente non si sono volute raffigurare macchine che ospitano i container per rendere il senso di portabilità dei container stessi. Potrebbero trovarsi tutti sulla stessa macchina fisica come in parti del mondo differenti. Tutti i container, come abbiamo sottolineato precedentemente, adottano Docker come gestore. Da questa architettura notiamo anche la presenza di nuovi componenti:
+Questa è la più significativa delle viste architetturali. Da questa immagine possiamo chiaramente evincere la struttura a microservizi del SaaS di BigFix. Ogni microservizio è deployato in un container. Volutamente non si sono volute raffigurare macchine che ospitano i container per rendere il senso di portabilità dei container stessi. Potrebbero trovarsi tutti sulla stessa macchina fisica come in parti del mondo differenti. Tutti, come abbiamo sottolineato precedentemente, adottano Docker come gestore. Da questa architettura notiamo anche la presenza di nuovi componenti:
 \begin{itemize}
 	\item Container Master \\
-	Questo container ospita il componente Kubernetes master, il quale ha il compito di governare il comportamento di tutti gli altri nodi container. Questi ultimi rappresentano infatti dei Kubernetes node.
+	Questo container ospita il componente Kubernetes master, il quale ha il compito di governare il comportamento di tutti gli altri Kubernetes node.
 	\item BigFix Automation Manager \\
-	Questo componente è fondamentale per tutti i processi di gestione, che vedremo in seguito. SI immagino ad esempio scenari come l'onboarding di un nuovo cliente o la distribuzione di una versione del servizio.
+	Questo componente è fondamentale per i processi di gestione, che vedremo in seguito. Si immaginino ad esempio scenari come l'onboarding di un nuovo cliente o la distribuzione di una versione del servizio.
 	\item Load Balancer \\
 	Come suggerisce il nome stesso è il componente che ha la responsabilità di ripartire il carico di lavoro sui microservizi presenti sui container, alcuni di loro replicati. Una buona gestione del workload è fondamentale nelle situazioni di picco di utilizzo da parte dei clienti per garantire l'availability del prodotto.
 \end{itemize}
@@ -180,7 +183,7 @@ Questa è la più significativa delle viste architetturali. Da questa immagine p
 	\caption{Architettura di BigFix SaaS}
 	\label{fig:uviewpoint}
 \end{figure}
-Da questa immagine invece cerchiamo di ricostruire la struttura tradizionale di BigFix rivisitandola però in ottica SaaS. Le componenti del server e dei relay non sono più macchine fisiche facenti parte dell'infrastruttura del cliente. Il server e il relay sono completamente sotto il controllo del provider e sono composti da opportuni microservizi che cooperano per garantire le funzionalità del servizio. L'unico componente che rimane fisicamente dal cliente è l'agent, che è presente ovviamente in ogni dispositivo della rete di endpoint.
+Da questa immagine invece cerchiamo di ricostruire la struttura tradizionale di BigFix rivisitandola però in ottica SaaS. Le componenti del server e dei relay non sono più macchine fisiche facenti parte dell'infrastruttura del cliente. Essi sono completamente sotto il controllo del provider e sono composti da opportuni microservizi che cooperano per garantire le funzionalità del servizio. L'unico componente che rimane fisicamente dal cliente è l'agent, che è presente ovviamente in ogni dispositivo della rete di endpoint.
 
 \section{Definizione dei processi di gestione}
 Una delle novità nel distribuire un servizio SaaS riguarda i processi di gestione. Analogamente alla progettazione architetturale, anche i processi di gestione vanno ben definiti e, successivamente, messi in opera.
@@ -188,10 +191,10 @@ Una delle novità nel distribuire un servizio SaaS riguarda i processi di gestio
 \subsection{Novità rispetto al prodotto già esistente}
 
 \paragraph{Onboarding}
-Si pensi ad esempio allo scenario dell'onboarding di  un nuovo cliente. Il sistema deve garantire che un processo completamente automatico possa portare il nuovo utente dal click sulla form di registrazione a tutto il servizio BigFix pronto all'utilizzo in pochi minuti, al massimo ore. Gli utilizzi del servizio hanno delle dinamiche molto diverse rispetto allo scenario on premise.
+Si pensi ad esempio allo scenario dell'onboarding di un nuovo cliente. Il sistema deve garantire che un processo completamente automatico possa portare il nuovo utente dal click sulla form di registrazione al servizio BigFix su SaaS pronto all'utilizzo in pochi minuti, al massimo ore. Gli utilizzi del servizio hanno delle dinamiche molto diverse rispetto allo scenario on premise.
 
 \paragraph{Monitoring}
-Anche il monitoring delle attività e delle prestazioni richiede nuovi strumenti perché sposta l'attenzione sull'utilizzo dei container e sul funzionamento dei microservizi. Abbiamo definito dei processi specifici (Prometheus) che sappiano monitorare i pod di Kubernetes e, conseguentemente, i container.
+Anche il monitoring delle attività e delle prestazioni richiede nuovi strumenti perché sposta l'attenzione sui container e sul funzionamento dei microservizi. Abbiamo definito dei processi specifici (Prometheus) che sappiano monitorare i pod di Kubernetes e i container.
 
 \subsection{Disaster Recovering}
-Dal punto di vista del disaster recovery con un servizio SaaS abbiamo notevolmente diminuito il rischio di verificarsi di situazioni di criticità, in quanto le infrastrutture fornite dal provider sono molto più efficienti da questo punto di vista. Al tempo stesso però, nel caso del verificarsi di qualche malfunzionamento il pericolo è notevolmente maggiore. A quel punto infatti potrebbero essere coinvolti tutti i clienti forniti dal servizio. In uno scenario del genere abbiamo progettato misure di emergenza che prevedono a redistribuzione del carico tra i microservizi ma anche l'attuazione del recovery di emergenza di db2.
+Dal punto di vista del disaster recovery, con il servizio SaaS abbiamo notevolmente diminuito il rischio di episodi di criticità dal punto di vista delle prestazioni, in quanto le infrastrutture fornite dal provider sono molto più efficienti da questo punto di vista. Al tempo stesso però, nel caso del verificarsi di qualche malfunzionamento, il pericolo è notevolmente maggiore. A quel punto infatti potrebbero essere coinvolti tutti i clienti forniti dal servizio. In sostanza avremo delle criticità molto più rare ma potenzialmente più dannose. In uno scenario del genere si sono progettate misure di emergenza che prevedono la redistribuzione del carico tra i microservizi ma anche l'attuazione del recovery di emergenza di db2.

@@ -36,7 +36,7 @@
 \BOOKMARK [2][-]{subsection.5.2.2}{Vantaggi dei container}{section.5.2}% 36
 \BOOKMARK [2][-]{subsection.5.2.3}{I container e i microservizi}{section.5.2}% 37
 \BOOKMARK [2][-]{subsection.5.2.4}{Docker}{section.5.2}% 38
-\BOOKMARK [2][-]{subsection.5.2.5}{Un'esuberante}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.5}{Kubernetes}{section.5.2}% 39
 \BOOKMARK [1][-]{section.5.3}{Multitenancy}{chapter.5}% 40
 \BOOKMARK [1][-]{section.5.4}{Monitoring Tools}{chapter.5}% 41
 \BOOKMARK [2][-]{subsection.5.4.1}{Prometheus}{section.5.4}% 42

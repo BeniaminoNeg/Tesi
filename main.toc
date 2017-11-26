@@ -153,45 +153,45 @@
 \contentsline {chapter}{\numberline {7}IBM BigFix on SaaS, l'implementazione del prototipo}{68}{chapter.7}
 \contentsline {section}{\numberline {7.1}Container e microservizi di BigFix}{68}{section.7.1}
 \contentsline {section}{\numberline {7.2}Gli ambienti di sviluppo }{69}{section.7.2}
-\contentsline {section}{\numberline {7.3}Generazione delle immagini Docker (nel senso a mano)}{69}{section.7.3}
-\contentsline {section}{\numberline {7.4}L'introduzione di Kubernetes}{69}{section.7.4}
-\contentsline {section}{\numberline {7.5}Relay scaling}{69}{section.7.5}
-\contentsline {section}{\numberline {7.6}NFS vs }{69}{section.7.6}
-\contentsline {section}{\numberline {7.7}Il database DB2}{69}{section.7.7}
-\contentsline {section}{\numberline {7.8}Automazione del Deployment}{69}{section.7.8}
-\contentsline {subsection}{\numberline {7.8.1}Releases vs DevOps vs Continuous Delivery}{69}{subsection.7.8.1}
-\contentsline {subsection}{\numberline {7.8.2}Bash Scripting}{69}{subsection.7.8.2}
-\contentsline {paragraph}{Utilizzo degli script Bash nel progetto}{69}{section*.128}
-\contentsline {subsection}{\numberline {7.8.3}Jenkins}{70}{subsection.7.8.3}
-\contentsline {subsection}{\numberline {7.8.4}UrbanCode}{70}{subsection.7.8.4}
-\contentsline {subsection}{\numberline {7.8.5}Ansible}{70}{subsection.7.8.5}
-\contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{70}{section.7.9}
-\contentsline {section}{\numberline {7.10}Scenario di upgrade del servizio}{70}{section.7.10}
-\contentsline {section}{\numberline {7.11}Automazione del Testing}{70}{section.7.11}
-\contentsline {subsection}{\numberline {7.11.1}Functional Test}{70}{subsection.7.11.1}
-\contentsline {subsubsection}{JUnit}{70}{section*.129}
-\contentsline {subsubsection}{JUTAA}{70}{section*.130}
-\contentsline {subsection}{\numberline {7.11.2}Security Test}{70}{subsection.7.11.2}
-\contentsline {subsubsection}{AppScan}{70}{section*.131}
-\contentsline {subsubsection}{Image Compliance}{70}{section*.132}
-\contentsline {subsection}{\numberline {7.11.3}Performance Test}{70}{subsection.7.11.3}
-\contentsline {subsection}{\numberline {7.11.4}Penetration Test}{70}{subsection.7.11.4}
-\contentsline {subsection}{\numberline {7.11.5}Rielaborazione degli output del testing}{70}{subsection.7.11.5}
-\contentsline {section}{\numberline {7.12}Scenario di testing}{70}{section.7.12}
-\contentsline {section}{\numberline {7.13}Il passaggio all'ambiente di produzione}{70}{section.7.13}
-\contentsline {chapter}{\numberline {8}Conclusioni}{71}{chapter.8}
-\contentsline {section}{\numberline {8.1}Sviluppi futuri}{71}{section.8.1}
-\contentsline {section}{\numberline {8.2}Considerazioni}{71}{section.8.2}
-\contentsline {chapter}{\numberline {9}Ringraziamenti}{72}{chapter.9}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{73}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{74}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{74}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{74}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{74}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{74}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{75}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{75}{section*.134}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{75}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{75}{section*.135}
-\contentsline {subsubsection}{Google Chrome}{75}{section*.136}
-\contentsline {subsubsection}{Responsive Testing}{75}{section*.137}
+\contentsline {section}{\numberline {7.3}Generazione delle immagini Docker (nel senso a mano)}{70}{section.7.3}
+\contentsline {section}{\numberline {7.4}L'introduzione di Kubernetes}{70}{section.7.4}
+\contentsline {section}{\numberline {7.5}Relay scaling}{70}{section.7.5}
+\contentsline {section}{\numberline {7.6}NFS vs }{70}{section.7.6}
+\contentsline {section}{\numberline {7.7}Il database DB2}{70}{section.7.7}
+\contentsline {section}{\numberline {7.8}Automazione del Deployment}{70}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}Releases vs DevOps vs Continuous Delivery}{70}{subsection.7.8.1}
+\contentsline {subsection}{\numberline {7.8.2}Bash Scripting}{70}{subsection.7.8.2}
+\contentsline {paragraph}{Utilizzo degli script Bash nel progetto}{70}{section*.128}
+\contentsline {subsection}{\numberline {7.8.3}Jenkins}{71}{subsection.7.8.3}
+\contentsline {subsection}{\numberline {7.8.4}UrbanCode}{71}{subsection.7.8.4}
+\contentsline {subsection}{\numberline {7.8.5}Ansible}{71}{subsection.7.8.5}
+\contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{71}{section.7.9}
+\contentsline {section}{\numberline {7.10}Scenario di upgrade del servizio}{71}{section.7.10}
+\contentsline {section}{\numberline {7.11}Automazione del Testing}{71}{section.7.11}
+\contentsline {subsection}{\numberline {7.11.1}Functional Test}{71}{subsection.7.11.1}
+\contentsline {subsubsection}{JUnit}{71}{section*.129}
+\contentsline {subsubsection}{JUTAA}{71}{section*.130}
+\contentsline {subsection}{\numberline {7.11.2}Security Test}{71}{subsection.7.11.2}
+\contentsline {subsubsection}{AppScan}{71}{section*.131}
+\contentsline {subsubsection}{Image Compliance}{71}{section*.132}
+\contentsline {subsection}{\numberline {7.11.3}Performance Test}{71}{subsection.7.11.3}
+\contentsline {subsection}{\numberline {7.11.4}Penetration Test}{71}{subsection.7.11.4}
+\contentsline {subsection}{\numberline {7.11.5}Rielaborazione degli output del testing}{71}{subsection.7.11.5}
+\contentsline {section}{\numberline {7.12}Scenario di testing}{71}{section.7.12}
+\contentsline {section}{\numberline {7.13}Il passaggio all'ambiente di produzione}{71}{section.7.13}
+\contentsline {chapter}{\numberline {8}Conclusioni}{72}{chapter.8}
+\contentsline {section}{\numberline {8.1}Sviluppi futuri}{72}{section.8.1}
+\contentsline {section}{\numberline {8.2}Considerazioni}{72}{section.8.2}
+\contentsline {chapter}{\numberline {9}Ringraziamenti}{73}{chapter.9}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{74}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{75}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{75}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{75}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{75}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{75}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{76}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{76}{section*.134}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{76}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{76}{section*.135}
+\contentsline {subsubsection}{Google Chrome}{76}{section*.136}
+\contentsline {subsubsection}{Responsive Testing}{76}{section*.137}

@@ -262,14 +262,14 @@
 \noindent\hspace*{\centeroffset}\makebox[0pt][l]{\begin{minipage}{\textwidth}
 \center
 {\bfseries
-\large Facolt\`a di Ingegneria\\[1ex]}
+Dipartimento di Ingegneria e Scienze dell'Informazione e Matematica\\[1ex]}
 \end{minipage}}
 
 \noindent\rule[-1ex]{\textwidth}{1pt}\\[0.5ex]
 \noindent\hspace*{\centeroffset}\makebox[0pt][l]{\begin{minipage}{\textwidth}
 \center
 {\bfseries
-Tesi di Laurea \ifspecialistica Specialistica \fi in Ingegneria Informatica e Automatica\\[1ex]}
+Tesi di Laurea \ifspecialistica Magistrale \fi in Ingegneria Informatica e Automatica\\[1ex]}
 \end{minipage}}
 \vfill
 \noindent\hspace*{\centeroffset}\makebox[0pt][l]{\begin{minipage}{\textwidth}

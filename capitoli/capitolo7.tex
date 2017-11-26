@@ -1,15 +1,32 @@
 \chapter{IBM BigFix on SaaS, l'implementazione del prototipo}
+L'attenta progettazione giudata dall'architect che abbiamo visto nel capitolo precedente è servita da base per la vera ralizzazione del prototipo che rappresenta l'aspetto implementativo del progetto BigFix SaaS. Ma queste due fasi del lavoro che stiamo presetando non sono l'una successiva l'altra. Infatti è bene rimarcare che, sguendo un approccio agile, iterativo e incrementale, l'intero disegno del progetto si è ottenuto solamente a fronte di una continua esplorazione dei requisiti che si è protratta durante tutta la fase implementativa. Il metronomo dello sviluppo sono state infatti le sprint demo, le quali vedevano la partecipazione anche di altri stackeholders interni all'azienda, oltre che al team stesso. Da questi confronti sono risultati continui feedback che hanno contribuito a portare il lavoro nel suo stato attuale.
+\section{Container e microservizi di BigFix}
+Per la necessità di continui feedback già dalla prima fase del progetto si è scelto di adottare, per i primi sprint, una soluzione intermedia per quanto riguarda la scomposizione del prodotto nei container. Si deciso infatti di fare in modo che, all'inizio, ogni container ospitasse un realay o un server di uno dei clienti forniti dal SaaS, e non un microservizio vero e proprio del prodotto. Questa scelta è avvenuta dopo un analisi dei requisiti. Scomporre BigFix in microservizi è un'operazione che richiede molte ore uomo di lavoro e affrontarla all'inizio del progetto non avrebbe consentito ti testare nelle primissime fasi le tecnologie che si erano individuate per il deployment. Avendo presto a disposizione gli ambienti cliente con relay e server, si sono subito testati scenari tipici del prodotto on premises nelle nuove tecnologie SaaS adottate.
 
-\section{Relazione tra il prodotto BigFix e i container}
-\section{Generazione delle immagini}
+\section{Gli ambienti di sviluppo }
+ambientisviluppo.png
+\section{Generazione delle immagini Docker (nel senso a mano)}
+
+\section{L'introduzione di Kubernetes}
+
+\section{Relay scaling}
+
+\section{NFS vs }
+
+\section{Il database DB2}
 
 \section{Automazione del Deployment}
 \subsection{Releases vs DevOps vs Continuous Delivery}
 \subsection{Bash Scripting}
+Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con sistemi UNIX esso è stato spesso inserito in processi di automazione presenti nel 
+\paragraph{Utilizzo degli script Bash nel progetto}
 \subsection{Jenkins}
 \subsection{UrbanCode}
 \subsection{Ansible}
-\subsection{Scenario di onboarding di un nuovo cliente}
+
+\section{Scenario di onboarding di un nuovo cliente}
+
+\section{Scenario di upgrade del servizio}
 
 \section{Automazione del Testing}
 \subsection{Functional Test}
@@ -21,4 +38,8 @@
 \subsection{Performance Test}
 \subsection{Penetration Test}
 \subsection{Rielaborazione degli output del testing}
+
+\section{Scenario di testing}
+
+\section{Il passaggio all'ambiente di produzione}
 

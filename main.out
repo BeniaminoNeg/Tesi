@@ -64,34 +64,33 @@
 \BOOKMARK [1][-]{section.7.4}{Re-working degli installer del server e del relay di BigFix}{chapter.7}% 64
 \BOOKMARK [1][-]{section.7.5}{Generazione delle immagini Docker}{chapter.7}% 65
 \BOOKMARK [1][-]{section.7.6}{Docker containers, Pods e services}{chapter.7}% 66
-\BOOKMARK [1][-]{section.7.7}{NFS vs Storage del container}{chapter.7}% 67
-\BOOKMARK [1][-]{section.7.8}{Il database DB2 e il driver ODBC nei container}{chapter.7}% 68
-\BOOKMARK [1][-]{section.7.9}{Relay scaling}{chapter.7}% 69
-\BOOKMARK [1][-]{section.7.10}{Automazione del Deployment}{chapter.7}% 70
-\BOOKMARK [2][-]{subsection.7.10.1}{Releases vs DevOps vs Continuous Delivery}{section.7.10}% 71
-\BOOKMARK [2][-]{subsection.7.10.2}{Bash Scripting}{section.7.10}% 72
-\BOOKMARK [2][-]{subsection.7.10.3}{Jenkins}{section.7.10}% 73
-\BOOKMARK [2][-]{subsection.7.10.4}{UrbanCode}{section.7.10}% 74
-\BOOKMARK [2][-]{subsection.7.10.5}{Ansible}{section.7.10}% 75
-\BOOKMARK [1][-]{section.7.11}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 76
-\BOOKMARK [1][-]{section.7.12}{Scenario di upgrade del servizio}{chapter.7}% 77
-\BOOKMARK [1][-]{section.7.13}{Automazione del Testing}{chapter.7}% 78
-\BOOKMARK [2][-]{subsection.7.13.1}{Functional Test}{section.7.13}% 79
-\BOOKMARK [2][-]{subsection.7.13.2}{Security Test}{section.7.13}% 80
-\BOOKMARK [2][-]{subsection.7.13.3}{Performance Test}{section.7.13}% 81
-\BOOKMARK [2][-]{subsection.7.13.4}{Penetration Test}{section.7.13}% 82
-\BOOKMARK [2][-]{subsection.7.13.5}{Rielaborazione degli output del testing}{section.7.13}% 83
-\BOOKMARK [1][-]{section.7.14}{Scenario di testing}{chapter.7}% 84
-\BOOKMARK [1][-]{section.7.15}{Il passaggio all'ambiente di produzione}{chapter.7}% 85
-\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 86
-\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 87
-\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 88
-\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 89
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 90
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 91
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 92
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 93
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 94
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 95
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 96
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 97
+\BOOKMARK [1][-]{section.7.7}{Il database DB2 e il driver ODBC nei container}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.8}{Relay scaling}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.9}{Automazione del Deployment}{chapter.7}% 69
+\BOOKMARK [2][-]{subsection.7.9.1}{Releases vs DevOps vs Continuous Delivery}{section.7.9}% 70
+\BOOKMARK [2][-]{subsection.7.9.2}{Bash Scripting}{section.7.9}% 71
+\BOOKMARK [2][-]{subsection.7.9.3}{Jenkins}{section.7.9}% 72
+\BOOKMARK [2][-]{subsection.7.9.4}{UrbanCode}{section.7.9}% 73
+\BOOKMARK [2][-]{subsection.7.9.5}{Ansible}{section.7.9}% 74
+\BOOKMARK [1][-]{section.7.10}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 75
+\BOOKMARK [1][-]{section.7.11}{Scenario di upgrade del servizio}{chapter.7}% 76
+\BOOKMARK [1][-]{section.7.12}{Automazione del Testing}{chapter.7}% 77
+\BOOKMARK [2][-]{subsection.7.12.1}{Functional Test}{section.7.12}% 78
+\BOOKMARK [2][-]{subsection.7.12.2}{Security Test}{section.7.12}% 79
+\BOOKMARK [2][-]{subsection.7.12.3}{Performance Test}{section.7.12}% 80
+\BOOKMARK [2][-]{subsection.7.12.4}{Penetration Test}{section.7.12}% 81
+\BOOKMARK [2][-]{subsection.7.12.5}{Rielaborazione degli output del testing}{section.7.12}% 82
+\BOOKMARK [1][-]{section.7.13}{Scenario di testing}{chapter.7}% 83
+\BOOKMARK [1][-]{section.7.14}{Il passaggio all'ambiente di produzione}{chapter.7}% 84
+\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 85
+\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 86
+\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 87
+\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 88
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 89
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 90
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 91
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 92
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 93
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 94
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 95
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 96

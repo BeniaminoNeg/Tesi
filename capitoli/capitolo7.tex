@@ -17,9 +17,10 @@ Vediamo una schematizzazione dell'ambiente di sviluppo nella figura 7.2. Kuberne
 \paragraph{}
 Il Kubernetes master si interfaccia, come posiamo vedere, anche con altre due macchine presenti nella rete: La macchina DB2 e la macchina NFS. Andiamo a vedere di cosa si tratta.
 \paragraph{DB2}
-E' la macchina che ospita una replica del database. Spiegheremo in seguito come, nel processo di onboarding di un nuovo cliente, vengono dinamicamente allocate le risorse del database al nuovo utente.
-\paragraph{NFS}
-scrivere
+E' la macchina che ospita una replica del database. Spiegheremo in seguito come, nel processo di onboarding di un nuovo cliente, vengono dinamicamente allocate le risorse del database al nuovo utente. Le modalità di interazione tra i componenti BigFix nei container e il database ricalcano quelle del prodotto on premise.
+\paragraph{Network File System (NFS)}
+Questo componente è pensato per fornire storage per i container tramite protocollo NFS. L'NFS è un protocollo di rete sviluppato dalla Sun negli anni 80. Esso rappresenta un file system distribuito che consente ai computer di utilizzare la rete per accedere ai dischi rigidi remoti come fossero dischi locali. La componente NFS è stata utilizzata solamente in una prima fase del progetto in quanto, con il passaggio all'ambiente ufficiale, si è fatto affidamento allo storage fornito da un particolare componente di Kubernetes, il service. 
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.5\textwidth,keepaspectratio=true]{capitoli/imgs/EnvironmentsComponentDiagram.png}
@@ -28,6 +29,7 @@ scrivere
 
 
 \section{Re-working degli installer del server e del relay di BigFix}
+Il server e il relay di BigFix hanno i loro tradizionali installer relativi alla versione on premise del prodotto. Ovviamente è stato necessario un grosso lavoro di re-working di questi componenti per fare in modo che risultassero molto più leggeri e adatti al deployment in un container.
 
 \section{Generazione delle immagini Docker}
 docker centos 7 
@@ -39,11 +41,10 @@ start.sh
 
 \section{Docker containers, Pods e services}
 
-\section{NFS vs Storage del container}
-
 \section{Il database DB2 e il driver ODBC nei container}
 
 \section{Relay scaling}
+l
 
 \section{Automazione del Deployment}
 \subsection{Releases vs DevOps vs Continuous Delivery}

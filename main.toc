@@ -156,34 +156,33 @@
 \contentsline {section}{\numberline {7.3}Costruzione dell'ambiente e installazione di Docker e Kubernetes}{69}{section.7.3}
 \contentsline {paragraph}{}{70}{section*.129}
 \contentsline {paragraph}{DB2}{70}{section*.130}
-\contentsline {paragraph}{NFS}{70}{section*.131}
-\contentsline {section}{\numberline {7.4}Re-working degli installer del server e del relay di BigFix}{70}{section.7.4}
-\contentsline {section}{\numberline {7.5}Generazione delle immagini Docker}{70}{section.7.5}
+\contentsline {paragraph}{Network File System (NFS)}{70}{section*.131}
+\contentsline {section}{\numberline {7.4}Re-working degli installer del server e del relay di BigFix}{71}{section.7.4}
+\contentsline {section}{\numberline {7.5}Generazione delle immagini Docker}{71}{section.7.5}
 \contentsline {section}{\numberline {7.6}Docker containers, Pods e services}{72}{section.7.6}
-\contentsline {section}{\numberline {7.7}NFS vs Storage del container}{72}{section.7.7}
-\contentsline {section}{\numberline {7.8}Il database DB2 e il driver ODBC nei container}{72}{section.7.8}
-\contentsline {section}{\numberline {7.9}Relay scaling}{72}{section.7.9}
-\contentsline {section}{\numberline {7.10}Automazione del Deployment}{72}{section.7.10}
-\contentsline {subsection}{\numberline {7.10.1}Releases vs DevOps vs Continuous Delivery}{72}{subsection.7.10.1}
-\contentsline {subsection}{\numberline {7.10.2}Bash Scripting}{72}{subsection.7.10.2}
+\contentsline {section}{\numberline {7.7}Il database DB2 e il driver ODBC nei container}{72}{section.7.7}
+\contentsline {section}{\numberline {7.8}Relay scaling}{72}{section.7.8}
+\contentsline {section}{\numberline {7.9}Automazione del Deployment}{72}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}Releases vs DevOps vs Continuous Delivery}{72}{subsection.7.9.1}
+\contentsline {subsection}{\numberline {7.9.2}Bash Scripting}{72}{subsection.7.9.2}
 \contentsline {paragraph}{Utilizzo degli script Bash nel progetto}{72}{section*.133}
-\contentsline {subsection}{\numberline {7.10.3}Jenkins}{73}{subsection.7.10.3}
-\contentsline {subsection}{\numberline {7.10.4}UrbanCode}{73}{subsection.7.10.4}
-\contentsline {subsection}{\numberline {7.10.5}Ansible}{73}{subsection.7.10.5}
-\contentsline {section}{\numberline {7.11}Scenario di onboarding di un nuovo cliente}{73}{section.7.11}
-\contentsline {section}{\numberline {7.12}Scenario di upgrade del servizio}{73}{section.7.12}
-\contentsline {section}{\numberline {7.13}Automazione del Testing}{73}{section.7.13}
-\contentsline {subsection}{\numberline {7.13.1}Functional Test}{73}{subsection.7.13.1}
+\contentsline {subsection}{\numberline {7.9.3}Jenkins}{73}{subsection.7.9.3}
+\contentsline {subsection}{\numberline {7.9.4}UrbanCode}{73}{subsection.7.9.4}
+\contentsline {subsection}{\numberline {7.9.5}Ansible}{73}{subsection.7.9.5}
+\contentsline {section}{\numberline {7.10}Scenario di onboarding di un nuovo cliente}{73}{section.7.10}
+\contentsline {section}{\numberline {7.11}Scenario di upgrade del servizio}{73}{section.7.11}
+\contentsline {section}{\numberline {7.12}Automazione del Testing}{73}{section.7.12}
+\contentsline {subsection}{\numberline {7.12.1}Functional Test}{73}{subsection.7.12.1}
 \contentsline {subsubsection}{JUnit}{73}{section*.134}
 \contentsline {subsubsection}{JUTAA}{73}{section*.135}
-\contentsline {subsection}{\numberline {7.13.2}Security Test}{73}{subsection.7.13.2}
+\contentsline {subsection}{\numberline {7.12.2}Security Test}{73}{subsection.7.12.2}
 \contentsline {subsubsection}{AppScan}{73}{section*.136}
 \contentsline {subsubsection}{Image Compliance}{73}{section*.137}
-\contentsline {subsection}{\numberline {7.13.3}Performance Test}{73}{subsection.7.13.3}
-\contentsline {subsection}{\numberline {7.13.4}Penetration Test}{73}{subsection.7.13.4}
-\contentsline {subsection}{\numberline {7.13.5}Rielaborazione degli output del testing}{73}{subsection.7.13.5}
-\contentsline {section}{\numberline {7.14}Scenario di testing}{73}{section.7.14}
-\contentsline {section}{\numberline {7.15}Il passaggio all'ambiente di produzione}{73}{section.7.15}
+\contentsline {subsection}{\numberline {7.12.3}Performance Test}{73}{subsection.7.12.3}
+\contentsline {subsection}{\numberline {7.12.4}Penetration Test}{73}{subsection.7.12.4}
+\contentsline {subsection}{\numberline {7.12.5}Rielaborazione degli output del testing}{73}{subsection.7.12.5}
+\contentsline {section}{\numberline {7.13}Scenario di testing}{73}{section.7.13}
+\contentsline {section}{\numberline {7.14}Il passaggio all'ambiente di produzione}{73}{section.7.14}
 \contentsline {chapter}{\numberline {8}Conclusioni}{74}{chapter.8}
 \contentsline {section}{\numberline {8.1}Sviluppi futuri}{74}{section.8.1}
 \contentsline {section}{\numberline {8.2}Considerazioni}{74}{section.8.2}

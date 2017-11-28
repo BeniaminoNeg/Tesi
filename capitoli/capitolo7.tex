@@ -13,7 +13,7 @@ La realizzazione di un progetto aziendale richiede più ambienti nei quali, sequ
 \end{figure}
 
 \section{Costruzione dell'ambiente e installazione di Docker e Kubernetes}
-Vediamo una schematizzazione dell'ambiente di sviluppo nella figura 7.2. Kubernetes è il tool che muove le danze avendo proprio la funzione di orchestratore dei container. L'architettura di Kubernetes richiede che ci sia un nodo master che coordina i nodi denominati kube-node, che possono rappresentare macchine diverse. Su tutti i kube-node è installato anche docker, in quanto ci permetterà di ospitare su di essi i container. Questi vengono deployati su tutti i nodi a disposizione seguendo l'algoritmo di scheduling round-robin in modo da gestire al meglio le risorse di calcolo. 
+Vediamo una schematizzazione dell'ambiente di sviluppo nella figura \ref{ambs}. Kubernetes è il tool che muove le danze avendo proprio la funzione di orchestratore dei container. L'architettura di Kubernetes richiede che ci sia un nodo master che coordina i nodi denominati kube-node, che possono rappresentare macchine diverse. Su tutti i kube-node è installato anche docker, in quanto ci permetterà di ospitare su di essi i container. Questi vengono deployati su tutti i nodi a disposizione seguendo l'algoritmo di scheduling round-robin in modo da gestire al meglio le risorse di calcolo. 
 \paragraph{}
 Il Kubernetes master si interfaccia, come posiamo vedere, anche con altre due macchine presenti nella rete: La macchina DB2 e la macchina NFS. Andiamo a vedere di cosa si tratta.
 \paragraph{DB2}
@@ -25,29 +25,40 @@ Questo componente è pensato per fornire storage per i container tramite protoco
 	\centering
 	\includegraphics[width=0.5\textwidth,keepaspectratio=true]{capitoli/imgs/EnvironmentsComponentDiagram.png}
 	\caption{L'ambiente di sviluppo di BigFix SaaS}
+	\label{ambs}
 \end{figure}
 
 
 \section{Re-working degli installer del server e del relay di BigFix}
 Il server e il relay di BigFix hanno i loro tradizionali installer relativi alla versione on premise del prodotto. Ovviamente è stato necessario un grosso lavoro di re-working di questi componenti per fare in modo che risultassero molto più leggeri e adatti al deployment in un container.
 
-\section{Generazione delle immagini Docker}
-docker centos 7 
-relay
-server
-cartelle di bigfix
-install.sh
-start.sh
+\section{Le immagini Docker}
+Docker consente di deployare i container partendo da immagini di una repository fornita da Docker stesso. Nel nostro caso si è scelto di porre come base di tutti i container del servizio una macchina Linux CentOS 7 sia per i relay che per i server, una scelta dettata da esigenze aziendali. Docker fornisce delle versioni a container di molti sistemi operativi in modo da personalizzare secondo le proprie esigenze i container che si vanno ad implementare.
+
+\paragraph{}
+Questa macchina CentOS è ovviamente una versione molto embrionale dei servizi necessari per il prodotto. E' stato necessario creare delle directory di BigFix apposite per ospitare l'installer del server o del relay, a seconda dei casi. Si sono poste poi, all'interno di opportune cartelle, due file bash fondamentali per il deployment: install.sh e start.sh. Nella prossima sezione spieghiamo il loro compito.
 
 \section{Docker containers, Pods e services}
+install.sh
+start.sh
+yaml
+docker
+kubernetes
+services
 
 \section{Il database DB2 e il driver ODBC nei container}
 
 \section{Relay scaling}
-l
+
+
 
 \section{Automazione del Deployment}
-\subsection{Releases vs DevOps vs Continuous Delivery}
+Facciamo il punto della situazione cercando di individuare gli elementi che sono stati definiti fino a questo punto. Abbiamo da un lato la possibilità di deployare dei container che svolgano le funzioni di server o di relay perfettamente funzionanti, da un'altro c'è il database DB2 pronto a fornire persistenza a tutti i dati del cliente, da un'altro ancora altri componenti necessari all'ambiente per il corretto funzionamento, come l'NFS. Supponiamo che in un istante non predicibile un nuovo cliente acquisti la licenza ad utilizzare BigFix SaaS e abbia appena compilato la form con tutti i dati necessari. Cosa manca? 
+\paragraph{}
+Non è certo pensabile che a questo punto ci sia bisogno di un intervento umano per mettere a disposizione del nuovo cliente tutte le risorse necessarie. Ci si aspetta che il servizio sia disponibile nel giro di poche ore e la richiesta può essere avvenuta da qualunque parte del mondo e in qualunque momento della giornata.
+\paragraph{}
+Ecco quindi che è stato necessario un processo di software automation. Un processo automatico cioè che porti il prodotto ad essere pronto all'utilizzo da parte del nuovo cliente. Questo processo deve essere tollerante a malfunzionamenti e deve poter interagire con tutte le componenti facenti parte del sistema. Deve, in sostanza, comportarsi come una figura umana dedita all'istallazione. 
+
 \subsection{Bash Scripting}
 Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con sistemi UNIX esso è stato spesso inserito in processi di automazione presenti nel 
 \paragraph{Utilizzo degli script Bash nel progetto}
@@ -74,4 +85,8 @@ Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con s
 
 \section{Il passaggio all'ambiente di produzione}
 kubernetes -> ip pubblico, dns
+
+\section{Releases, DevOps and Continuous Delivery}
+continuous integration
+
 

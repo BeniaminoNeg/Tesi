@@ -62,26 +62,26 @@
 \BOOKMARK [1][-]{section.7.2}{Gli ambienti di sviluppo }{chapter.7}% 62
 \BOOKMARK [1][-]{section.7.3}{Costruzione dell'ambiente e installazione di Docker e Kubernetes}{chapter.7}% 63
 \BOOKMARK [1][-]{section.7.4}{Re-working degli installer del server e del relay di BigFix}{chapter.7}% 64
-\BOOKMARK [1][-]{section.7.5}{Generazione delle immagini Docker}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.5}{Le immagini Docker}{chapter.7}% 65
 \BOOKMARK [1][-]{section.7.6}{Docker containers, Pods e services}{chapter.7}% 66
 \BOOKMARK [1][-]{section.7.7}{Il database DB2 e il driver ODBC nei container}{chapter.7}% 67
 \BOOKMARK [1][-]{section.7.8}{Relay scaling}{chapter.7}% 68
 \BOOKMARK [1][-]{section.7.9}{Automazione del Deployment}{chapter.7}% 69
-\BOOKMARK [2][-]{subsection.7.9.1}{Releases vs DevOps vs Continuous Delivery}{section.7.9}% 70
-\BOOKMARK [2][-]{subsection.7.9.2}{Bash Scripting}{section.7.9}% 71
-\BOOKMARK [2][-]{subsection.7.9.3}{Jenkins}{section.7.9}% 72
-\BOOKMARK [2][-]{subsection.7.9.4}{UrbanCode}{section.7.9}% 73
-\BOOKMARK [2][-]{subsection.7.9.5}{Ansible}{section.7.9}% 74
-\BOOKMARK [1][-]{section.7.10}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 75
-\BOOKMARK [1][-]{section.7.11}{Scenario di upgrade del servizio}{chapter.7}% 76
-\BOOKMARK [1][-]{section.7.12}{Automazione del Testing}{chapter.7}% 77
-\BOOKMARK [2][-]{subsection.7.12.1}{Functional Test}{section.7.12}% 78
-\BOOKMARK [2][-]{subsection.7.12.2}{Security Test}{section.7.12}% 79
-\BOOKMARK [2][-]{subsection.7.12.3}{Performance Test}{section.7.12}% 80
-\BOOKMARK [2][-]{subsection.7.12.4}{Penetration Test}{section.7.12}% 81
-\BOOKMARK [2][-]{subsection.7.12.5}{Rielaborazione degli output del testing}{section.7.12}% 82
-\BOOKMARK [1][-]{section.7.13}{Scenario di testing}{chapter.7}% 83
-\BOOKMARK [1][-]{section.7.14}{Il passaggio all'ambiente di produzione}{chapter.7}% 84
+\BOOKMARK [2][-]{subsection.7.9.1}{Bash Scripting}{section.7.9}% 70
+\BOOKMARK [2][-]{subsection.7.9.2}{Jenkins}{section.7.9}% 71
+\BOOKMARK [2][-]{subsection.7.9.3}{UrbanCode}{section.7.9}% 72
+\BOOKMARK [2][-]{subsection.7.9.4}{Ansible}{section.7.9}% 73
+\BOOKMARK [1][-]{section.7.10}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.11}{Scenario di upgrade del servizio}{chapter.7}% 75
+\BOOKMARK [1][-]{section.7.12}{Automazione del Testing}{chapter.7}% 76
+\BOOKMARK [2][-]{subsection.7.12.1}{Functional Test}{section.7.12}% 77
+\BOOKMARK [2][-]{subsection.7.12.2}{Security Test}{section.7.12}% 78
+\BOOKMARK [2][-]{subsection.7.12.3}{Performance Test}{section.7.12}% 79
+\BOOKMARK [2][-]{subsection.7.12.4}{Penetration Test}{section.7.12}% 80
+\BOOKMARK [2][-]{subsection.7.12.5}{Rielaborazione degli output del testing}{section.7.12}% 81
+\BOOKMARK [1][-]{section.7.13}{Scenario di testing}{chapter.7}% 82
+\BOOKMARK [1][-]{section.7.14}{Il passaggio all'ambiente di produzione}{chapter.7}% 83
+\BOOKMARK [1][-]{section.7.15}{Releases, DevOps and Continuous Delivery}{chapter.7}% 84
 \BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 85
 \BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 86
 \BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 87

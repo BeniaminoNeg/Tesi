@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  29 NOV 2017 12:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  29 NOV 2017 19:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -1326,32 +1326,32 @@ Package pdftex.def Info: capitoli/imgs/EnvironmentsComponentDiagram.png used on
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [70 <./capitoli/imgs/ambientisviluppo.png>] [71 <./capitoli/imgs/EnvironmentsCo
-mponentDiagram.png>] [72] [73] [74]) (capitoli/capitolo8.tex [75] [76]
+mponentDiagram.png>] [72] [73] [74] [75]) (capitoli/capitolo8.tex [76] [77]
 Capitolo 8.
-) (capitoli/capitolo9.tex [77
+) (capitoli/capitolo9.tex [78
 
 ]
 Capitolo 9.
 )
 No file main.bbl.
-[78
+[79
 
 ]
 No file main.gls.
 (appendici/tecnologie.tex
 Appendice A.
-<capitoli/imgs/LoadBalancer.png, id=1038, 642.4pt x 327.2225pt>
+<capitoli/imgs/LoadBalancer.png, id=1046, 642.4pt x 327.2225pt>
 File: capitoli/imgs/LoadBalancer.png Graphic file (type png)
 
 <use capitoli/imgs/LoadBalancer.png>
 Package pdftex.def Info: capitoli/imgs/LoadBalancer.png used on input line 5.
 (pdftex.def)             Requested size: 426.98857pt x 217.50037pt.
- [79
+ [80
 
  <./capitoli/imgs/LoadBalancer.png>]
-[80]) [81] [82
+[81]) [82] [83
 
-] [83
+] [84
 
 
 ]
@@ -1368,8 +1368,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 7E63D1815D1DAC1D97C0087F4D423E12;7111.
  ) 
 Here is how much of TeX's memory you used:
- 11597 strings out of 493328
- 168443 string characters out of 3136526
+ 11601 strings out of 493328
+ 168486 string characters out of 3136526
  527220 words of memory out of 3000000
  14535 multiletter control sequences out of 15000+200000
  14766 words of font info for 48 fonts, out of 3000000 for 9000
@@ -1383,9 +1383,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (83 pages, 4914550 bytes).
+Output written on main.pdf (84 pages, 4916780 bytes).
 PDF statistics:
- 1180 PDF objects out of 1200 (max. 8388607)
- 337 named destinations out of 1000 (max. 500000)
+ 1187 PDF objects out of 1200 (max. 8388607)
+ 341 named destinations out of 1000 (max. 500000)
  970 words of extra memory for PDF output out of 10000 (max. 10000000)
 

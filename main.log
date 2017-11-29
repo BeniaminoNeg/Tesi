@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  28 NOV 2017 13:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6300) (preloaded format=pdflatex 2017.9.27)  29 NOV 2017 12:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -1158,38 +1158,46 @@ Package pdftex.def Info: capitoli/imgs/multitenancy.png used on input line 231.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[47] <capitoli/imgs/prometheuslogo.png, id=822, 1567.8575pt x 477.785pt>
+[47] [48 <./capitoli/imgs/multitenancy.png>]
+<capitoli/imgs/prometheuslogo.png, id=829, 1567.8575pt x 477.785pt>
 File: capitoli/imgs/prometheuslogo.png Graphic file (type png)
 
 <use capitoli/imgs/prometheuslogo.png>
 Package pdftex.def Info: capitoli/imgs/prometheuslogo.png used on input line 25
-3.
+5.
 (pdftex.def)             Requested size: 213.49428pt x 65.05954pt.
- [48 <./capitoli/imgs/multitenancy.png>]
+
 <capitoli/imgs/grafanalogo.png, id=830, 200.75pt x 200.75pt>
 File: capitoli/imgs/grafanalogo.png Graphic file (type png)
 
 <use capitoli/imgs/grafanalogo.png>
-Package pdftex.def Info: capitoli/imgs/grafanalogo.png used on input line 268.
+Package pdftex.def Info: capitoli/imgs/grafanalogo.png used on input line 270.
 (pdftex.def)             Requested size: 128.09787pt x 128.10583pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 <capitoli/imgs/grafanainterface.PNG, id=831, 556.32843pt x 339.51843pt>
 File: capitoli/imgs/grafanainterface.PNG Graphic file (type png)
 
 <use capitoli/imgs/grafanainterface.PNG>
 Package pdftex.def Info: capitoli/imgs/grafanainterface.PNG used on input line 
-274.
+276.
 (pdftex.def)             Requested size: 298.89069pt x 182.40988pt.
- [49 <./capitoli/imgs/prometheuslogo.png (PNG copy)> <./capitoli/imgs/grafanalo
-go.png (PNG copy)>]
-<capitoli/imgs/bluemixlogo.png, id=840, 803.0pt x 297.11pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<capitoli/imgs/bluemixlogo.png, id=832, 803.0pt x 297.11pt>
 File: capitoli/imgs/bluemixlogo.png Graphic file (type png)
 
 <use capitoli/imgs/bluemixlogo.png>
-Package pdftex.def Info: capitoli/imgs/bluemixlogo.png used on input line 281.
+Package pdftex.def Info: capitoli/imgs/bluemixlogo.png used on input line 283.
 (pdftex.def)             Requested size: 298.89069pt x 110.59087pt.
-) (capitoli/capitolo6.tex [50 <./capitoli/imgs/grafanainterface.PNG> <./capitol
-i/imgs/bluemixlogo.png>] [51]
+ [49 <./capitoli/imgs/prometheuslogo.png (PNG copy)>] [50 <./capitoli/imgs/graf
+analogo.png (PNG copy)> <./capitoli/imgs/grafanainterface.PNG> <./capitoli/imgs
+/bluemixlogo.png>]) (capitoli/capitolo6.tex
+[51]
 Capitolo 6.
 <capitoli/imgs/Design-Thinking.png, id=854, 747.79375pt x 261.97874pt>
 File: capitoli/imgs/Design-Thinking.png Graphic file (type png)
@@ -1318,32 +1326,32 @@ Package pdftex.def Info: capitoli/imgs/EnvironmentsComponentDiagram.png used on
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [70 <./capitoli/imgs/ambientisviluppo.png>] [71 <./capitoli/imgs/EnvironmentsCo
-mponentDiagram.png>] [72] [73]) (capitoli/capitolo8.tex [74] [75]
+mponentDiagram.png>] [72] [73] [74]) (capitoli/capitolo8.tex [75] [76]
 Capitolo 8.
-) (capitoli/capitolo9.tex [76
+) (capitoli/capitolo9.tex [77
 
 ]
 Capitolo 9.
 )
 No file main.bbl.
-[77
+[78
 
 ]
 No file main.gls.
 (appendici/tecnologie.tex
 Appendice A.
-<capitoli/imgs/LoadBalancer.png, id=1032, 642.4pt x 327.2225pt>
+<capitoli/imgs/LoadBalancer.png, id=1038, 642.4pt x 327.2225pt>
 File: capitoli/imgs/LoadBalancer.png Graphic file (type png)
 
 <use capitoli/imgs/LoadBalancer.png>
 Package pdftex.def Info: capitoli/imgs/LoadBalancer.png used on input line 5.
 (pdftex.def)             Requested size: 426.98857pt x 217.50037pt.
- [78
+ [79
 
  <./capitoli/imgs/LoadBalancer.png>]
-[79]) [80] [81
+[80]) [81] [82
 
-] [82
+] [83
 
 
 ]
@@ -1357,11 +1365,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 404204721093EC0DD310AD0068767415;7101.
+(rerunfilecheck)             Checksum: 7E63D1815D1DAC1D97C0087F4D423E12;7111.
  ) 
 Here is how much of TeX's memory you used:
- 11594 strings out of 493328
- 168404 string characters out of 3136526
+ 11597 strings out of 493328
+ 168443 string characters out of 3136526
  527220 words of memory out of 3000000
  14535 multiletter control sequences out of 15000+200000
  14766 words of font info for 48 fonts, out of 3000000 for 9000
@@ -1375,9 +1383,9 @@ x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/Mi
 KTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (82 pages, 4910906 bytes).
+Output written on main.pdf (83 pages, 4914550 bytes).
 PDF statistics:
- 1173 PDF objects out of 1200 (max. 8388607)
- 334 named destinations out of 1000 (max. 500000)
+ 1180 PDF objects out of 1200 (max. 8388607)
+ 337 named destinations out of 1000 (max. 500000)
  970 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -46,11 +46,10 @@ docker
 kubernetes
 services
 
-\section{Il database DB2 e il driver ODBC nei container}
-
-\section{Relay scaling}
-
-
+\section{Modifiche al relay necessarie per la versione SaaS}
+Il componente relay ha avuto bisogno di numerosi accorgimenti per permettere il suo funzionamento in prospettiva SaaS. Per sua natura, ha bisogno di numerose informazioni a riguardo del server al quale fanno riferimento. Per configurare il relay correttamente è necessario far rinvenire al relay alcuni file contenenti queste informazioni. Questa era una procedura che nella versione on premise veniva fatta a mano. Ora, nella realizzazione del servizio in SaaS, si è implementato un procedimento automatico che fa affidamento sullo storage condiviso fornito dall'NFS.
+\paragraph{Relay scaling}
+Altra proprietà del relay è la capacità di scalare adeguatamente rispondendo alle necessità. Durante il tipico utilizzo del prodotto è molto comune che il numero dei client o la mole di lavoro richiesta cambino dinamicamente. Superata una certa soglia di workload o un certo numero di client (circa 1000), un singolo relay non è più in grado di far fronte alle richieste, ma ha bisogno che parte dell'onere di lavoro venga presa in carico da una sua copia identica. Questo processo viene chiamato si "scale up". Analogamente possono verificarsi delle situazioni in cui le risorse allocate siano sovradimensionate rispetto al carico di lavoro. Fortunatamente Kubernetes fornisce un comando ad hoc per queste necessità. Questo strumento utilizza dei volumi condivisi di appoggio per fare si che le nuove copie dei relay non si debbano configurare da capo. Il nuovo relay infatti eredita dal primo sia tutte le configurazioni di BigFix e di Docker, ma anche la cache dell'altro relay, in maniera tale da essere subito operativo in pochi secondi
 
 \section{Automazione del Deployment}
 Facciamo il punto della situazione cercando di individuare gli elementi che sono stati definiti fino a questo punto. Abbiamo da un lato la possibilità di deployare dei container che svolgano le funzioni di server o di relay perfettamente funzionanti, da un'altro c'è il database DB2 pronto a fornire persistenza a tutti i dati del cliente, da un'altro ancora altri componenti necessari all'ambiente per il corretto funzionamento, come l'NFS. Supponiamo che in un istante non predicibile un nuovo cliente acquisti la licenza ad utilizzare BigFix SaaS e abbia appena compilato la form con tutti i dati necessari. Cosa manca? 
@@ -60,8 +59,11 @@ Non è certo pensabile che a questo punto ci sia bisogno di un intervento umano 
 Ecco quindi che è stato necessario un processo di software automation. Un processo automatico cioè che porti il prodotto ad essere pronto all'utilizzo da parte del nuovo cliente. Questo processo deve essere tollerante a malfunzionamenti e deve poter interagire con tutte le componenti facenti parte del sistema. Deve, in sostanza, comportarsi come una figura umana dedita all'istallazione. 
 
 \subsection{Bash Scripting}
-Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con sistemi UNIX esso è stato spesso inserito in processi di automazione presenti nel 
+Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con sistemi UNIX esso è sta to spesso inserito in processi di automazione presenti negli scenari di gestione del sistema.
+\paragraph{}
+Bash, acronimo che sta per Bourne-Again-Shell, è un'interfaccia a riga di comando pensata per gestire i sistemi operativi UNIX nata alla fine degli anni '80. Come altri strumenti analoghi, oltre alla modalità interattiva, prevede anche la possibilità di creare script, con funzioni, cicli e costrutti tipici, e di eseguirli poi in blocco. Questi script sono contraddistinti dall'estensione .sh e dall'incipit "\#!/bin/bash", il quale indica il percorso della shell che dovrà eseguire lo script, Bash per l'appunto. 
 \paragraph{Utilizzo degli script Bash nel progetto}
+Gli script Bash sono stati di fondamentale importanza per il progetto. Data la loro versatilità e potenza è stato possibile utilizzarli per molti scopi di configurazione. Sono entrati, ad esempio, in dei flussi Ansible e Jenkins. Questi script venivano mandati tramite scp su opportune macchine macchine e, una volta configurati i permessi, venivano eseguiti per svolgere i più disparati compiti necessari.
 \subsection{Jenkins}
 \subsection{UrbanCode}
 \subsection{Ansible}
@@ -85,8 +87,6 @@ Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con s
 
 \section{Il passaggio all'ambiente di produzione}
 kubernetes -> ip pubblico, dns
-
-\section{Releases, DevOps and Continuous Delivery}
-continuous integration
-
+\subsection{}
+code promotion e continuos delivery
 

@@ -169,12 +169,12 @@
 \contentsline {paragraph}{Air-gap}{75}{section*.138}
 \contentsline {section}{\numberline {7.8}Automazione del Deployment}{75}{section.7.8}
 \contentsline {paragraph}{}{75}{section*.139}
-\contentsline {paragraph}{}{76}{section*.140}
+\contentsline {paragraph}{}{75}{section*.140}
 \contentsline {subsection}{\numberline {7.8.1}Bash Scripting}{76}{subsection.7.8.1}
 \contentsline {paragraph}{}{76}{section*.141}
 \contentsline {paragraph}{Utilizzo degli script Bash nel progetto}{76}{section*.142}
 \contentsline {subsection}{\numberline {7.8.2}Jenkins}{76}{subsection.7.8.2}
-\contentsline {paragraph}{}{77}{section*.143}
+\contentsline {paragraph}{}{76}{section*.143}
 \contentsline {paragraph}{}{77}{section*.144}
 \contentsline {paragraph}{}{77}{section*.145}
 \contentsline {paragraph}{}{77}{section*.146}
@@ -185,7 +185,7 @@
 \contentsline {paragraph}{}{78}{section*.151}
 \contentsline {subsection}{\numberline {7.8.4}UrbanCode Deploy e code promotion}{78}{subsection.7.8.4}
 \contentsline {paragraph}{}{79}{section*.152}
-\contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{79}{section.7.9}
+\contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{80}{section.7.9}
 \contentsline {section}{\numberline {7.10}Scenario di upgrade del servizio}{80}{section.7.10}
 \contentsline {section}{\numberline {7.11}Automazione del Testing}{80}{section.7.11}
 \contentsline {subsection}{\numberline {7.11.1}Functional Test}{80}{subsection.7.11.1}

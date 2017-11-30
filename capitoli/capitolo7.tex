@@ -39,21 +39,23 @@ Docker consente di deployare i container partendo da immagini di una repository 
 Questa macchina CentOS è ovviamente una versione molto embrionale dei servizi necessari per il prodotto. E' stato necessario creare delle directory di BigFix apposite per ospitare l'installer del server o del relay, a seconda dei casi. Si sono poste poi, all'interno di opportune cartelle, due file bash fondamentali per il deployment: install.sh e start.sh. Nella prossima sezione spieghiamo il loro compito.
 
 \section{Docker containers, Pods e services}
-I due file bash di abbiamo parlato nella sezione precedente vengono in realtà eseguiti in contesti differenti. Install.sh viene chiamato in causa da Docker che in questo modo installa appunto il container. Successivamente Kubernetes chiama start.sh e avvia a tutti gli effetti i servizi del container.
+I file bash di cui abbiamo parlato nella sezione precedente vengono in realtà eseguiti in contesti differenti. Install.sh viene chiamato in causa da Docker che in questo modo installa appunto il container. Successivamente Kubernetes chiama start.sh e avvia a tutti gli effetti i servizi di server e relay.
 \paragraph{}
-Ora occorre porre maggiormente l'accento sui container di Docker e la loro interazione con Kubernetes. La scelta in questo progetto è stata quella di avere una corrispondenza diretta tra i container di Docker e i pod di Kubernetes in modo da avere una semplicità di gestione dei container stessi. Vi è inoltre un ulteriore livello di astrazione sopra i Pod. Kubernetes offre infatti la possibilità di utilizzare il componente Service, che raggruppa in se uno o più pod. In questo progetto è stato utilizzato con il fine di poter utilizzare il pod nella rete in maniera più efficente.
+Ora occorre porre l'accento su come i container interagiscono con Kubernetes. La scelta in questo progetto è stata quella di avere una corrispondenza biunivoca tra i container di Docker e i pod di Kubernetes in modo da avere una semplicità di gestione dei container stessi. Vi è inoltre un ulteriore livello di astrazione sopra i Pod. Kubernetes offre infatti la possibilità di utilizzare il componente Service, che raggruppa in se uno o più pod. In questo progetto è stato utilizzato con il fine di poter utilizzare il pod nella rete in maniera più efficiente.
 \paragraph{Yaml} 
-install.sh
-start.sh
-yaml
-docker
-kubernetes
-services
+I pod di Kubernetes utilizzano un particolare linguaggio di serializzazione lo YAML (YAML Ain't Markup Language). Esso è per certi versi molto simile all'XML e al JSON, ma è molto più essenziale e quasi tutto il suo contenuto rappresenta il dato da serializzare. I suoi punti di forza sono la manutenibilità e la flessibilità. Un file JSON infatti è anche un file YAML valido. All'interno dei file YAML si sono configurati tutti gli aspetti dei pod che sono necessari a Kubernetes per far partire i servizi relay e server con la struttura desiderata. Vediamo nella figura \ref{fig:yaml} un esempio di configurazione per un pod.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\linewidth]{capitoli/imgs/yaml}
+	\caption{Esempio di YAML di configurazione per Kubernetes}
+	\label{fig:yaml}
+\end{figure}
+
 
 \section{Modifiche al relay necessarie per la versione SaaS}
 Il componente relay ha avuto bisogno di numerosi accorgimenti per permettere il suo funzionamento in prospettiva SaaS. Per sua natura, ha bisogno di numerose informazioni a riguardo del server al quale fanno riferimento. Per configurare il relay correttamente è necessario far rinvenire al relay alcuni file contenenti queste informazioni. Questa era una procedura che nella versione on premise veniva fatta a mano. Ora, nella realizzazione del servizio in SaaS, si è implementato un procedimento automatico che fa affidamento sullo storage condiviso fornito dall'NFS.
 \paragraph{Relay scaling}
-Altra proprietà del relay è la capacità di scalare adeguatamente rispondendo alle necessità. Durante il tipico utilizzo del prodotto è molto comune che il numero dei client o la mole di lavoro richiesta cambino dinamicamente. Superata una certa soglia di workload o un certo numero di client (circa 1000), un singolo relay non è più in grado di far fronte alle richieste, ma ha bisogno che parte dell'onere di lavoro venga presa in carico da una sua copia identica. Questo processo viene chiamato si "scale up". Analogamente possono verificarsi delle situazioni in cui le risorse allocate siano sovradimensionate rispetto al carico di lavoro. Fortunatamente Kubernetes fornisce un comando ad hoc per queste necessità. Questo strumento utilizza dei volumi condivisi di appoggio per fare si che le nuove copie dei relay non si debbano configurare da capo. Il nuovo relay infatti eredita dal primo sia tutte le configurazioni di BigFix e di Docker, ma anche la cache dell'altro relay, in maniera tale da essere subito operativo in pochi secondi. 
+Altra proprietà del relay è la capacità di scalare adeguatamente rispondendo alle necessità. Durante il tipico utilizzo del prodotto è molto comune che il numero dei client o la mole di lavoro richiesta cambino dinamicamente. Superata una certa soglia di workload o un certo numero di client (circa 1000), un singolo relay non è più in grado di far fronte alle richieste, ma ha bisogno che parte dell'onere di lavoro venga presa in carico da una sua copia identica. Questo processo viene chiamato di "scale up". Analogamente possono verificarsi delle situazioni in cui le risorse allocate siano sovradimensionate rispetto al carico di lavoro. Fortunatamente Kubernetes fornisce un comando ad hoc per queste necessità. Questo strumento utilizza dei volumi condivisi di appoggio per fare si che le nuove copie dei relay non si debbano configurare da capo. Il nuovo relay infatti eredita dal primo sia tutte le configurazioni di BigFix e di Docker, ma anche la cache dell'altro relay, in maniera tale da essere subito operativo in pochi secondi. 
 \paragraph{Air-gap}
 Un'altro elemento che è necessario per abbattere i tempi per ottenere il nuovo relay funzionante è l'Air-gap. Senza scendere il dettagli e tecnicismi, questo componente ci consente di scaricare fixlet e altre configurazioni proprie di BigFix sul nuovo relay in tempi estremamente rapidi. 
 \section{Automazione del Deployment}
@@ -64,17 +66,58 @@ Non è certo pensabile che a questo punto ci sia bisogno di un intervento umano 
 Ecco quindi che è stato necessario un processo di software automation. Un processo automatico cioè che porti il prodotto ad essere pronto all'utilizzo da parte del nuovo cliente. Questo processo deve essere tollerante a malfunzionamenti e deve poter interagire con tutte le componenti facenti parte del sistema. Deve, in sostanza, comportarsi come una figura umana dedita all'istallazione. 
 
 \subsection{Bash Scripting}
-Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con sistemi UNIX esso è sta to spesso inserito in processi di automazione presenti negli scenari di gestione del sistema.
+Nel progetto si è fatto largo uso del linguaggio Bash. Dovendo interagire con sistemi UNIX esso è stato spesso inserito in processi di automazione presenti negli scenari di gestione del sistema.
 \paragraph{}
 Bash, acronimo che sta per Bourne-Again-Shell, è un'interfaccia a riga di comando pensata per gestire i sistemi operativi UNIX nata alla fine degli anni '80. Come altri strumenti analoghi, oltre alla modalità interattiva, prevede anche la possibilità di creare script, con funzioni, cicli e costrutti tipici, e di eseguirli poi in blocco. Questi script sono contraddistinti dall'estensione .sh e dall'incipit "\#!/bin/bash", il quale indica il percorso della shell che dovrà eseguire lo script, Bash per l'appunto. 
 \paragraph{Utilizzo degli script Bash nel progetto}
-Gli script Bash sono stati di fondamentale importanza per il progetto. Data la loro versatilità e potenza è stato possibile utilizzarli per molti scopi di configurazione. Sono entrati, ad esempio, in dei flussi Ansible e Jenkins. Questi script venivano mandati tramite scp su opportune macchine macchine e, una volta configurati i permessi, venivano eseguiti per svolgere i più disparati compiti necessari.
+Gli script Bash sono stati di fondamentale importanza per il progetto. Data la loro versatilità e potenza è stato possibile utilizzarli per molti scopi di configurazione. Sono entrati, ad esempio, in dei flussi Ansible e Jenkins. Questi script venivano mandati tramite scp su opportune macchine e, una volta configurati i permessi, venivano eseguiti per svolgere i più disparati compiti necessari.
 \subsection{Jenkins}
-\subsection{UrbanCode}
+Il solo utilizzo di script bash non può garantire la corretta gestione di un'architettura così complessa come quella del SaaS di BigFix. Gli step di configurazione necessari ogni qualvolta si debba effettuare l'onboarding di un nuovo cliente sono numerosi e ripetitivi e quindi risulta molto utile adoperare un tool di automation.
+\paragraph{}
+Per questo motivo, almeno in un primo momento, si è utilizzato uno dei più diffusi strumenti di continuous integration: Jenkins. Esso è un progetto open-source nato da Oracle negli ultimi anni. Jenkins ci consente di eseguire e monitorare sistematicamente task ripetitivi come possono essere ad esempio i processi di building. Il sistema, disponibile tramite server web, ha la possibilità di essere integrato con innumerevoli plugin che lo rendono adatto a automatizzare i task più disparati sulle macchine più eterogenee. 
+\paragraph{}
+Nel lavoro di tesi si sono utilizzati proprio alcuni di questi plugin per permettere, a partire dalla macchina di Automation Manager in cui è installato, di orchestrare tutti i task sulle singole macchine dell'ambiente tramite ssh e scp.
+\paragraph{}
+Uno step preliminare che è stato necessario è quello di distribuire opportuni certificati alle macchine in modo da poter consentire la comunicazione tramite Jenkins. In questo modo non era più necessario esplicitare ogni volta la chiave ssh, ma si instaura una comunicazione a chiave pubblica e chiave privata. 
+\paragraph{}
+A questo punto necessario scrivere opportuni script bash per i diversi task che erano necessari per allocare le opportune risorse a ogni cliente.I tipici step necessari nelle diverse macchine del nostro ambiente sono i seguenti:
+\begin{itemize}
+	\item Creazione di opportune directory nell'nfs per ospitare file di configurazione.
+	\item Validazione della licenza di utilizzo del servizio 
+	\item Creazione e connessione al database per i dati dell'utente e configurazione dello stesso.
+	\item Personalizzazione degli YAML relativi al server e al relay
+	\item Creazione e avvio dei servizi del server
+	\item Creazione e avvio dei servizi dei relay
+\end{itemize}
+\paragraph{}
+Ovviamente per eseguire questi passaggi è necessario interagire con tutte le macchine dell'ambiente. Jenkins ha la responsabilità di guidare tutti questi passaggi e prendere opportune contromisure a eventuali malfunzionamenti. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/jenkisProj}
+	\caption{Una delle schermate di configurazione di Jenkins}
+	\label{fig:jenkisproj}
+\end{figure}
+
 \subsection{Ansible}
+\paragraph{}
+scrivere qui perchè si è passati ad ansible anzichè jenkins
+\paragraph{}
+Relativamente alle modalità di utilizzo che si sono fatte in questo progetto Ansible rappresenta un'alternativa all'utilizzo di Jenkins. Ansible è uno strumento di automation nato nel 2012. Il tool si basa su due tipi di componenti, le macchine controllori che fanno partire l'automation e i nodi che sono le macchine dove avvengono eseguiti i task. 
+\paragraph{}
+Nel progetto è stata sfruttata molto la modularità di Ansible che permettere di sfruttare le strutture dei playbook e dei roles. Sostanzialmente un role è una successione di determinati task che hanno un fine e un target comune. I playbook sono delle collezioni di roles, i quali vengono così assemblati a piacimento per ottenere le configurazioni desiderate, come nel caso dell'ambiente di BigFix SaaS. 
+\subsection{UrbanCode Deploy e code promotion}
+C'è ancora un tool che è necessario integrare per garantire continuous integration e continuous delivery. Teniamo per un attimo in mente gli ambienti di sviluppo di cui abbiamo parlato nella sezione 7.2. Sarebbe molto utile che, ogni qualvolta viene effettuata una modifica al codice, un processo automatico integri questa modifica sequenzialmente negli ambienti di development, pre-production e production. Il passaggio tra questi ambienti può essere automatizzato ponendo come condizione di promozione all'ambiente successivo opportuni test automatici. Questo processo è chiamato di code promotion. 
+\paragraph{}
+Il tool in questione è un prodotto di IBM chiamato UrbanCode Deploy. Esso consente di coordinare e automatizzare le implementazioni delle applicazioni, le configurazioni di middleware e le modifiche ai database in ambienti di produzione e di test on-premise o basati su cloud. Nel progetto di tesi UrbanCode monitora l'esito dei playbook di Ansible e, in base al loro esito, decreta se fare o meno code promotion.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/ucd}
+	\caption{IBM UrbanCode Deploy}
+	\label{fig:ucd}
+\end{figure}
 
 \section{Scenario di onboarding di un nuovo cliente}
-
+corregere immagine bern
 \section{Scenario di upgrade del servizio}
 
 \section{Automazione del Testing}
@@ -92,6 +135,5 @@ Gli script Bash sono stati di fondamentale importanza per il progetto. Data la l
 
 \section{Il passaggio all'ambiente di produzione}
 kubernetes -> ip pubblico, dns
-\subsection{}
-code promotion e continuos delivery
+
 

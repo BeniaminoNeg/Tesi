@@ -6,7 +6,7 @@
 \BOOKMARK [2][-]{subsection.2.1.3}{BigFix Applications}{section.2.1}% 6
 \BOOKMARK [2][-]{subsection.2.1.4}{Fixlets}{section.2.1}% 7
 \BOOKMARK [1][-]{section.2.2}{IBM}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Saas Exploration Project}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{SaaS Exploration Project}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.3.1}{Il framework SCRUM}{section.2.3}% 10
 \BOOKMARK [2][-]{subsection.2.3.2}{Sistemi di controllo di versione}{section.2.3}% 11
 \BOOKMARK [2][-]{subsection.2.3.3}{RTC}{section.2.3}% 12
@@ -69,8 +69,8 @@
 \BOOKMARK [1][-]{section.7.8}{Automazione del Deployment}{chapter.7}% 69
 \BOOKMARK [2][-]{subsection.7.8.1}{Bash Scripting}{section.7.8}% 70
 \BOOKMARK [2][-]{subsection.7.8.2}{Jenkins}{section.7.8}% 71
-\BOOKMARK [2][-]{subsection.7.8.3}{UrbanCode}{section.7.8}% 72
-\BOOKMARK [2][-]{subsection.7.8.4}{Ansible}{section.7.8}% 73
+\BOOKMARK [2][-]{subsection.7.8.3}{Ansible}{section.7.8}% 72
+\BOOKMARK [2][-]{subsection.7.8.4}{UrbanCode Deploy e code promotion}{section.7.8}% 73
 \BOOKMARK [1][-]{section.7.9}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 74
 \BOOKMARK [1][-]{section.7.10}{Scenario di upgrade del servizio}{chapter.7}% 75
 \BOOKMARK [1][-]{section.7.11}{Automazione del Testing}{chapter.7}% 76
@@ -81,16 +81,15 @@
 \BOOKMARK [2][-]{subsection.7.11.5}{Rielaborazione degli output del testing}{section.7.11}% 81
 \BOOKMARK [1][-]{section.7.12}{Scenario di testing}{chapter.7}% 82
 \BOOKMARK [1][-]{section.7.13}{Il passaggio all'ambiente di produzione}{chapter.7}% 83
-\BOOKMARK [2][-]{subsection.7.13.1}{}{section.7.13}% 84
-\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 85
-\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 86
-\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 87
-\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 88
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 89
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 90
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 91
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 92
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 93
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 94
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 95
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 96
+\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 84
+\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 85
+\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 86
+\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 87
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 88
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 89
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 90
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 91
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 92
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 93
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 94
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 95

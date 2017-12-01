@@ -147,17 +147,11 @@ Gli YAML che ora sono personalizzati con i dati e le configurazioni del nuovo ut
 \paragraph{}
 Gli ultimi step da compiere sono quelli fornire un ip pubblico a questi servizi, in modo da renderli accessibili al cliente, e mandare una mail al cliente fornendo un comodo link per accedere ai servizi della suite BigFix SaaS. Come possiamo notare, dalla prospettiva dell'esperienza utente, è richiesto solamente che il cliente compili la form iniziale. Dopo una breve attesa i servizi sono pronti all'utilizzo direttamente dal dispositivo dal quale è stata compiuta la richiesta. Questo scenario può rappresentare una vera rivoluzione confrontandolo con l'analogo caso d'uso nella versione on premise di BigFix.
  
-\section{Scenario di upgrade del servizio}
-Questo scenario vede invece come attori del sistema il team di DevOps. E' anche questo uno scenario emblematico del passaggio al SaaS in quanto mostra le peculiarità di un aggiornamento del prodotto, o per meglio dire una parte di esso, ovvero i microservizi.
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\linewidth]{capitoli/imgs/upgradescenarioScheda}
-	\caption{Scheda dello scenario di onboarding}
-	\label{fig:upgradescenarioscheda}
-\end{figure}
-\paragraph{}
-scrivere qui
+
 \section{Automazione del Testing}
+Quella del test automation è un'attività molto importante nel contesto di un progetto SaaS. Non si può pensare infatti di fare continuous integration delle continue modifiche che si apportano ai microservizi effettuato un collaudo manuale del software. Occorre che un processo automatico si sostituisca all'uomo e effettui test approfonditi sia dal punto di vista funzionale che qualitativo al termine dei quali si prendono provvedimenti o si portano le modifiche il produzione in modo che siano fruibili da tutti. Il test non fa altro che comparare i risultati ottenuti dalle sue simulazioni con i risultati attesi dal prodotto. Al termine di ogni test è necessario che venga prodotto un report che possa essere consultabile dai team di operations. Alcuni progetti danno tanta importanza al test automation da sviluppare il realtà prima i test e poi il prodotto stesso. Si sviluppa poi il prodotto guidati dall'obiettivo di far superare tali test. Questa tecnica è chamata viluppo guidato dal test.
+\paragraph{Rolling update}
+Nel nostro caso.. parlare prima dei tre step e poi di rolling
 \subsection{Functional Test}
 \subsubsection{JUnit}
 \subsubsection{JUTAA}
@@ -168,7 +162,16 @@ scrivere qui
 \subsection{Penetration Test}
 \subsection{Rielaborazione degli output del testing}
 
-\section{Scenario di testing}
+\section{Scenario di upgrade del servizio}
+Questo scenario vede come attori del sistema il team di DevOps. E' anche questo uno scenario emblematico del passaggio al SaaS in quanto mostra le peculiarità di un aggiornamento del prodotto, o per meglio dire una parte di esso, ovvero i microservizi.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/upgradescenarioScheda}
+	\caption{Scheda dello scenario di onboarding}
+	\label{fig:upgradescenarioscheda}
+\end{figure}
+\paragraph{}
+La problematica principale da risolvere è quella mantenera un'alta availability del sistema nonostate alcune sue componenti vengano aggiornate e sostituite. Prima di giungere ai clienti però, 
 
 \section{Il passaggio all'ambiente di produzione}
 kubernetes -> ip pubblico, dns

@@ -100,7 +100,7 @@ Ovviamente per eseguire questi passaggi è necessario interagire con tutte le ma
 
 \subsection{Ansible}
 \paragraph{}
-scrivere qui perchè si è passati ad ansible anzichè jenkins
+Dopo un confronto con il security operations team però, si è deciso di sostituire l'utilizzo di Jenkins con l'adozione di Ansible e UrbanCode Deploy. Il security operation è un team di IBM, situato in Irlanda, che avrà il compito di porsi tra i clienti BigFix SaaS e il team di sviluppo. Tra i suoi compito ci sono quello di monitorare le attività del SaaS, di porre rimedi a eventuali miglioramenti, di intervenire in caso di cali di prestazioni e molto altro. Dal confronto tra questi due team si è evinta la necessità di allineare i tool di BigFix SaaS a quelli degli altri prodotti cloud di IBM, in particolar modo UrbanCode. Un'altra motivazione che ha spinto la scelta verso UrbanCode è la possibilità di fare code promotion tra più ambienti di sviluppo, come vedremo in seguito. 
 \paragraph{}
 Relativamente alle modalità di utilizzo che si sono fatte in questo progetto Ansible rappresenta un'alternativa all'utilizzo di Jenkins. Ansible è uno strumento di automation nato nel 2012. Il tool si basa su due tipi di componenti, le macchine controllori che fanno partire l'automation e i nodi che sono le macchine dove avvengono eseguiti i task. 
 \paragraph{}
@@ -117,9 +117,46 @@ Il tool in questione è un prodotto di IBM chiamato UrbanCode Deploy. Esso conse
 \end{figure}
 
 \section{Scenario di onboarding di un nuovo cliente}
-
+Questo scenario è stato il uno di quelli che ha richiesto più attenzione. Dato il coinvolgimento di molte componenti del sistema è stato uno dei primissimi ad essere realizzato e testato. 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/onbordingScenarioScheda}
+	\caption{Scheda dello scenario di onboarding}
+	\label{fig:onbordingscenarioscheda}
+\end{figure}
+\paragraph{}
+L'utente, come primo step, riempie una form come quella nella figura \ref{fig:saasform} con tutti i dati necessari al sistema per configurare correttamente il suo ambiente. Tra questi dati necessario troviamo anche l'indirizzo email in modo da notificare la disponibilità del servizio al termine del processo. 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/saasForm}
+	\caption{Form per il cliente di BigFixSaaS}
+	\label{fig:saasform}
+\end{figure}
+\paragraph{}
+A questo punto entra in gioco l'automation di UrbanCode e Ansible che prende in pasto i dati appena inseriti nella from. Come prima cosa si mette in piedi il database per l'utente corrente. Questa operazione richiede un considerevole numero di configurazioni, che come anche le successive, vengono effettuate grazie a file bash opportunamente richiamati da Ansible. 
+\paragraph{}
+Una volta fatto partire il database, occorre "costruire" i file di YAML necessari per creare i pod di Kubernetes. Questi file vengono scritti partendo da un template che presenta dei placeholder. Questi placeholder rappresentano sia i dati dell'utente corrente, sia le versioni di build del prodotto stesso che, ovviamente, possono anch'esse variare. Il patching di questi file avviene tramite il linguaggio sed (stream editor), utilizzato per applicare espressioni regolari.
+\paragraph{}
+Gli YAML che ora sono personalizzati con i dati e le configurazioni del nuovo utente possono ora essere finalmente dati in pasto a Kubernets, il quale installa i container di Docker e avvia i servizi del server e del relay, come vediamo in figura. \ref{fig:kubedashboard}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/kubedashboard}
+	\caption{Dashboard di Kubernetes}
+	\label{fig:kubedashboard}
+\end{figure}
+\paragraph{}
+Gli ultimi step da compiere sono quelli fornire un ip pubblico a questi servizi, in modo da renderli accessibili al cliente, e mandare una mail al cliente fornendo un comodo link per accedere ai servizi della suite BigFix SaaS. Come possiamo notare, dalla prospettiva dell'esperienza utente, è richiesto solamente che il cliente compili la form iniziale. Dopo una breve attesa i servizi sono pronti all'utilizzo direttamente dal dispositivo dal quale è stata compiuta la richiesta. Questo scenario può rappresentare una vera rivoluzione confrontandolo con l'analogo caso d'uso nella versione on premise di BigFix.
+ 
 \section{Scenario di upgrade del servizio}
-
+Questo scenario vede invece come attori del sistema il team di DevOps. E' anche questo uno scenario emblematico del passaggio al SaaS in quanto mostra le peculiarità di un aggiornamento del prodotto, o per meglio dire una parte di esso, ovvero i microservizi.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/upgradescenarioScheda}
+	\caption{Scheda dello scenario di onboarding}
+	\label{fig:upgradescenarioscheda}
+\end{figure}
+\paragraph{}
+scrivere qui
 \section{Automazione del Testing}
 \subsection{Functional Test}
 \subsubsection{JUnit}

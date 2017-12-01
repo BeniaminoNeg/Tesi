@@ -183,35 +183,41 @@
 \contentsline {paragraph}{}{78}{section*.149}
 \contentsline {paragraph}{}{78}{section*.150}
 \contentsline {paragraph}{}{78}{section*.151}
-\contentsline {subsection}{\numberline {7.8.4}UrbanCode Deploy e code promotion}{78}{subsection.7.8.4}
+\contentsline {subsection}{\numberline {7.8.4}UrbanCode Deploy e code promotion}{79}{subsection.7.8.4}
 \contentsline {paragraph}{}{79}{section*.152}
-\contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{80}{section.7.9}
-\contentsline {section}{\numberline {7.10}Scenario di upgrade del servizio}{80}{section.7.10}
-\contentsline {section}{\numberline {7.11}Automazione del Testing}{80}{section.7.11}
-\contentsline {subsection}{\numberline {7.11.1}Functional Test}{80}{subsection.7.11.1}
-\contentsline {subsubsection}{JUnit}{80}{section*.154}
-\contentsline {subsubsection}{JUTAA}{80}{section*.155}
-\contentsline {subsection}{\numberline {7.11.2}Security Test}{80}{subsection.7.11.2}
-\contentsline {subsubsection}{AppScan}{80}{section*.156}
-\contentsline {subsubsection}{Image Compliance}{80}{section*.157}
-\contentsline {subsection}{\numberline {7.11.3}Performance Test}{80}{subsection.7.11.3}
-\contentsline {subsection}{\numberline {7.11.4}Penetration Test}{80}{subsection.7.11.4}
-\contentsline {subsection}{\numberline {7.11.5}Rielaborazione degli output del testing}{80}{subsection.7.11.5}
-\contentsline {section}{\numberline {7.12}Scenario di testing}{80}{section.7.12}
-\contentsline {section}{\numberline {7.13}Il passaggio all'ambiente di produzione}{80}{section.7.13}
-\contentsline {chapter}{\numberline {8}Conclusioni}{81}{chapter.8}
-\contentsline {section}{\numberline {8.1}Sviluppi futuri}{81}{section.8.1}
-\contentsline {section}{\numberline {8.2}Considerazioni}{81}{section.8.2}
-\contentsline {chapter}{\numberline {9}Ringraziamenti}{82}{chapter.9}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{83}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{84}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{84}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{84}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{84}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{84}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{85}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{85}{section*.159}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{85}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{85}{section*.160}
-\contentsline {subsubsection}{Google Chrome}{85}{section*.161}
-\contentsline {subsubsection}{Responsive Testing}{85}{section*.162}
+\contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{79}{section.7.9}
+\contentsline {paragraph}{}{80}{section*.155}
+\contentsline {paragraph}{}{80}{section*.157}
+\contentsline {paragraph}{}{80}{section*.158}
+\contentsline {paragraph}{}{80}{section*.159}
+\contentsline {paragraph}{}{81}{section*.161}
+\contentsline {section}{\numberline {7.10}Scenario di upgrade del servizio}{82}{section.7.10}
+\contentsline {paragraph}{}{82}{section*.163}
+\contentsline {section}{\numberline {7.11}Automazione del Testing}{83}{section.7.11}
+\contentsline {subsection}{\numberline {7.11.1}Functional Test}{83}{subsection.7.11.1}
+\contentsline {subsubsection}{JUnit}{83}{section*.164}
+\contentsline {subsubsection}{JUTAA}{83}{section*.165}
+\contentsline {subsection}{\numberline {7.11.2}Security Test}{83}{subsection.7.11.2}
+\contentsline {subsubsection}{AppScan}{83}{section*.166}
+\contentsline {subsubsection}{Image Compliance}{83}{section*.167}
+\contentsline {subsection}{\numberline {7.11.3}Performance Test}{83}{subsection.7.11.3}
+\contentsline {subsection}{\numberline {7.11.4}Penetration Test}{83}{subsection.7.11.4}
+\contentsline {subsection}{\numberline {7.11.5}Rielaborazione degli output del testing}{83}{subsection.7.11.5}
+\contentsline {section}{\numberline {7.12}Scenario di testing}{83}{section.7.12}
+\contentsline {section}{\numberline {7.13}Il passaggio all'ambiente di produzione}{83}{section.7.13}
+\contentsline {chapter}{\numberline {8}Conclusioni}{84}{chapter.8}
+\contentsline {section}{\numberline {8.1}Sviluppi futuri}{84}{section.8.1}
+\contentsline {section}{\numberline {8.2}Considerazioni}{84}{section.8.2}
+\contentsline {chapter}{\numberline {9}Ringraziamenti}{85}{chapter.9}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{86}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{87}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{87}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{87}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{87}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{87}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{88}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{88}{section*.169}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{88}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{88}{section*.170}
+\contentsline {subsubsection}{Google Chrome}{88}{section*.171}
+\contentsline {subsubsection}{Responsive Testing}{88}{section*.172}

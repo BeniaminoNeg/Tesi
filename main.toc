@@ -200,27 +200,27 @@
 \contentsline {paragraph}{Step per eseguire un test con JUTAA}{83}{section*.167}
 \contentsline {subsection}{\numberline {7.10.2}Pre-production environment}{84}{subsection.7.10.2}
 \contentsline {subsection}{\numberline {7.10.3}Security Test}{84}{subsection.7.10.3}
-\contentsline {subsubsection}{AppScan}{85}{section*.168}
-\contentsline {subsubsection}{Image Compliance}{85}{section*.169}
-\contentsline {subsection}{\numberline {7.10.4}Performance Test}{85}{subsection.7.10.4}
-\contentsline {subsection}{\numberline {7.10.5}Penetration Test}{85}{subsection.7.10.5}
-\contentsline {subsection}{\numberline {7.10.6}Rielaborazione degli output del testing}{85}{subsection.7.10.6}
-\contentsline {section}{\numberline {7.11}Scenario di upgrade del servizio}{85}{section.7.11}
-\contentsline {paragraph}{}{85}{section*.171}
-\contentsline {section}{\numberline {7.12}Il passaggio all'ambiente di produzione}{86}{section.7.12}
-\contentsline {chapter}{\numberline {8}Conclusioni}{87}{chapter.8}
-\contentsline {section}{\numberline {8.1}Sviluppi futuri}{87}{section.8.1}
-\contentsline {section}{\numberline {8.2}Considerazioni}{87}{section.8.2}
-\contentsline {chapter}{\numberline {9}Ringraziamenti}{88}{chapter.9}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{89}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{90}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{90}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Framework}{90}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{90}{section.Alph1.4}
-\contentsline {subsection}{\numberline {A.4.1}Eclipse}{90}{subsection.Alph1.4.1}
-\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{91}{subsection.Alph1.4.2}
-\contentsline {subsubsection}{XAMPP}{91}{section*.173}
-\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{91}{subsection.Alph1.4.3}
-\contentsline {subsubsection}{Mozilla Firefox}{91}{section*.174}
-\contentsline {subsubsection}{Google Chrome}{91}{section*.175}
-\contentsline {subsubsection}{Responsive Testing}{91}{section*.176}
+\contentsline {subsubsection}{Image Compliance}{85}{section*.168}
+\contentsline {subsubsection}{AppScan}{85}{section*.170}
+\contentsline {subsection}{\numberline {7.10.4}Performance Test}{86}{subsection.7.10.4}
+\contentsline {subsection}{\numberline {7.10.5}Penetration Test}{86}{subsection.7.10.5}
+\contentsline {subsection}{\numberline {7.10.6}Rielaborazione degli output del testing}{86}{subsection.7.10.6}
+\contentsline {section}{\numberline {7.11}Scenario di upgrade del servizio}{86}{section.7.11}
+\contentsline {paragraph}{}{87}{section*.173}
+\contentsline {section}{\numberline {7.12}Il passaggio all'ambiente di produzione}{87}{section.7.12}
+\contentsline {chapter}{\numberline {8}Conclusioni}{88}{chapter.8}
+\contentsline {section}{\numberline {8.1}Sviluppi futuri}{88}{section.8.1}
+\contentsline {section}{\numberline {8.2}Considerazioni}{88}{section.8.2}
+\contentsline {chapter}{\numberline {9}Ringraziamenti}{89}{chapter.9}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate(template di prova - ANCORA DA SCRIVERE)}{90}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{91}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e Stile}{91}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Framework}{91}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Ambiente di Sviluppo}{91}{section.Alph1.4}
+\contentsline {subsection}{\numberline {A.4.1}Eclipse}{91}{subsection.Alph1.4.1}
+\contentsline {subsection}{\numberline {A.4.2}Piattaforma Web}{92}{subsection.Alph1.4.2}
+\contentsline {subsubsection}{XAMPP}{92}{section*.175}
+\contentsline {subsection}{\numberline {A.4.3}Browser Testing}{92}{subsection.Alph1.4.3}
+\contentsline {subsubsection}{Mozilla Firefox}{92}{section*.176}
+\contentsline {subsubsection}{Google Chrome}{92}{section*.177}
+\contentsline {subsubsection}{Responsive Testing}{92}{section*.178}

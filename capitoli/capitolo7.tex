@@ -172,18 +172,38 @@ JUTAA (Java Unified Test Automation Architecture) estende proprio JUnit. Presso 
 	JUTAA presenta una struttura modulare. E' possibile assemblare ad hoc i test di cui si ha bisogno tramite due file di configurazione in xml: env.xml e suite.xml. 
 	\item Test execution\\
 	Tramite un main.java viene lanciata la suite di test precedentemente dichiarata. Il framework scarica automaticamente il software più aggiornato da una repository.
-	\item Test results analisys
+	\item Test results analisys \\
 	Tramite opportuni accorgimenti si raccolgono e si visualizzano i risultati dei test, determinando eventuali malfunzionamenti.
 \end{itemize}
 \subsection{Pre-production environment}
-A questo punto il software è pronto per passare nell'ambiente di pre-production. Quì i servizi devono superare gli ultimi ostacoli, ossia i test qualitativi. In sequenza verranno effettuati test di security, di performance e di penetration.
+A questo punto il software è pronto per passare nell'ambiente di pre-production. Quì i servizi devono superare gli ultimi ostacoli, ossia i test qualitativi. In sequenza verranno effettuati test di security, di performance e di penetration al termine dei quali il prodotto entra in rolling release. Questo ambiente è curato dagli esperti di Quality Assurance che utilizzano metodi consolidati di testing come andremo a vedere nelle prossime sezioni.
 \subsection{Security Test}
-Un test fondamentale per un servizio SaaS è quello di security. Questo in relatà è composto di due test che compiono indagini differenti. Una riguarda le exposure di sicurezza e una la riservatezza dei dati.
-\subsubsection{AppScan}
+Una tematice di testing fondamentale per un servizio SaaS è quella di security. In questo ambito, per BigFix SaaS si compiono due tipi di indagini differenti. Una riguarda le exposure di sicurezza e una la riservatezza dei dati.
 \subsubsection{Image Compliance}
+Il concetto di base è che ogni componente o tecnologia che man mano si aggiunge al progetto ha delle vulnerabilità ben note. Il test si basa su una precisa descrizione e ctalogazione di queste vulnerabilità. All'aggiunta di un nuovo componente software, Image compliance va a controllare se questo componente potrebbe esporre il prodotto a qualche vulnerabilità. Nel caso affermativo si va a controllare se quela vulnerabilità è stata adeguatamente coperta in modo da renderne ilservizio immune. Questo compito è svolto da un tool di un progetto open source denominato clair.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{capitoli/imgs/clair}
+	\caption{Clair}
+	\label{fig:clair}
+\end{figure}
+\subsubsection{AppScan}
+AppScan è un prodotto di IBM che ha come finalità quella di monitorare la vulnerabilità dei dati sensibili. Nel caso specifico di BigFix occorre porre molta attenzione a questa tematica in quanto i dati delle singole aziende clienti sono molto sensibili e la filosofia del multitenancy espone a notevoli rischi. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{capitoli/imgs/ibm-appscan-logo}
+	\caption{IBM AppScan}
+	\label{fig:ibm-appscan-logo}
+\end{figure}
+
 \subsection{Performance Test}
+I test di performance devono stabilire se il prodotto è conforme a dei parametri che sono stati definiti in fase di progettazione. Per fare ciò si sono implementati in IBM Security dei simulatori che, mediante l'utilizzo di hardware molto potente, riesce a simulare l'utilizzo del prodotto con un carico di lavoro considerevole. Questi simulatori sfruttano diverse tecnologie per rendere la simulazione più fedele possibile ad un utilizzo reale.
+
 \subsection{Penetration Test}
+Il penetration test per il prodotto BigFix SaaS è ancora in fase di studio. Questi tipi di test sono quelli relativamente più complessi in quanto si basano sulla simulazione di attacchi da parte di utenti malintenzioanti. E' in corso una fase di studio nell'individuazione di tecniche e tool di automation di questi tipi di test che, se volgliamo, possono essere i più ardui da automatizzare in quanto si basano su comportamenti umani meno prevedibili rispetto alle dinamiche delle altre tipogie di test.
+
 \subsection{Rielaborazione degli output del testing}
+Gli output di questa grande mole di test occorre che siano approfonditamente analizzati e interpretati per decretare se una nuova modifica del prodotto che si esegue nei continui cicli di produzione possa essere distribuita presso i clienti. Per questo è necessario svilupare un componente che sia in grado di prendere decisioni riguardo al passaggio tra i diversi ambienti di produzione del prodotto e possa presentare i risultati rielaborati al personale incaricato.
 
 \section{Scenario di upgrade del servizio}
 Questo scenario vede come attori del sistema il team di DevOps. E' anche questo uno scenario emblematico del passaggio al SaaS in quanto mostra le peculiarità di un aggiornamento del prodotto, o per meglio dire una parte di esso, ovvero i microservizi.
@@ -198,5 +218,6 @@ La problematica principale da risolvere è quella mantenera un'alta availability
 
 \section{Il passaggio all'ambiente di produzione}
 kubernetes -> ip pubblico, dns
+portare questo sezione nel deployment
 
 

@@ -149,13 +149,36 @@ Gli ultimi step da compiere sono quelli fornire un ip pubblico a questi servizi,
  
 
 \section{Automazione del Testing}
-Quella del test automation è un'attività molto importante nel contesto di un progetto SaaS. Non si può pensare infatti di fare continuous integration delle continue modifiche che si apportano ai microservizi effettuato un collaudo manuale del software. Occorre che un processo automatico si sostituisca all'uomo e effettui test approfonditi sia dal punto di vista funzionale che qualitativo al termine dei quali si prendono provvedimenti o si portano le modifiche il produzione in modo che siano fruibili da tutti. Il test non fa altro che comparare i risultati ottenuti dalle sue simulazioni con i risultati attesi dal prodotto. Al termine di ogni test è necessario che venga prodotto un report che possa essere consultabile dai team di operations. Alcuni progetti danno tanta importanza al test automation da sviluppare il realtà prima i test e poi il prodotto stesso. Si sviluppa poi il prodotto guidati dall'obiettivo di far superare tali test. Questa tecnica è chamata viluppo guidato dal test.
-\paragraph{Rolling update}
-Nel nostro caso.. parlare prima dei tre step e poi di rolling
+Quella del test automation è un'attività molto importante nel contesto di un progetto SaaS. Non si può pensare infatti di fare continuous integration delle frequenti modifiche che si apportano ai microservizi effettuando un collaudo manuale del software. Occorre che un processo automatico si sostituisca all'uomo e effettui test approfonditi sia dal punto di vista sia funzionale che qualitativo, al termine dei quali si prendono provvedimenti o si portano le modifiche in produzione in modo che siano fruibili da tutti gli utenti. Il test non fa altro che comparare i risultati ottenuti dalle sue simulazioni con i risultati attesi dal prodotto. Al termine di ogni test è necessario che venga prodotto un report che possa essere consultabile dai team di operations. Alcuni progetti danno tanta importanza al test automation da sviluppare il realtà prima i test e poi il prodotto stesso. Si sviluppa poi il prodotto guidati dall'obiettivo di far superare tali test. Questa tecnica è chamata viluppo guidato dal test.
+\paragraph{Continuous delivery}
+In questo progetto si vuole che le modifiche che il team apporta al codice attraversiono un a serie di controlli prima di giungere alla totalità dei clienti. Le nuove modifiche infatti, entrano in un processo automatico composto di numerosi test. Dapprima vengono effettuati dei test funzionali, per appurare che le nuove modifiche non abbiano intaccato le funzionalità del prodoto, il nuovo codice guinge poi in un ambiente di Quality Assurance (QA) dove, sempre automaticamente vengono effettuati test di performance e di security a cascata. Se i nuovi componenti passano tutti i test previsti dal flusso automatico guingono finalmente in ambiente di produzione, ossia sono fruibili dai clienti. 
+\paragraph{}
+Anche questo ultimo passaggio, però, non è immediato. Sostituendo simultaneamente tutte le repliche del microservizio aggiornato si incorrerebbe in una non availability dell'intero sistema. Ciò non è accettabile in un servizio SaaS. Occorre aggiornare i container quindi un po' alla volta, redirigendo opportunamente il traffico su quei container ancora attivi o già aggiornati e riavviati. L'esperienza utente in questo modo non risentirà di nessun disservizio.
 \subsection{Functional Test}
+Come detto poc'anzi, i primi test in cui un nuovo microservizio deve fare i conti sono quelli funzionali. Presso IBM Security si sono canonizzati una collezione di test cases che verificano peculiaramente tutte le specifiche di BigFix nella sua versione onpremise. Questi test vengono svolti mediante un tool sviluppato nel team in cui lavorato che si basa su JUnit, un framework Java per compiere unit testing.
 \subsubsection{JUnit}
+JUnit è il più diffuso framework Java per compiere unit testing. Lo unit test rappresenta l'attività di testare singoli moduli software compiuta direttamente dagli stessi sviluppatori per testare singole porzioni di codice appena implementate. Lo scopo è quello di individuare eventuali bug da correggere prima di integrare le modifiche. JUnit consente di estendere le classi che intendiamo testare e tramite delle annotations indichiamo quali sono i metodi da invocare nei test cases.
 \subsubsection{JUTAA}
+JUTAA (Java Unified Test Automation Architecture) estende proprio JUnit. Presso IBM si è realizzato questo tool per migliorare la qualità dei test effettuati su BigFix e aumentarne il riuso. L'architettura è relativamente semplice. Una macchina funge da JUTAA master è può interagire sia con i server di BigFix che con i relay in modo da far girare su di essi i test case. Questi sono opportunamente raggruppati e catalogati. Per comunicare con le macchine slave JUTAA utilizza un'altro componente IBM, denominato STAF (Software Testing Automation Framework). Vediamo nella figura \ref{fig:jutaaarchitecture} una schematizzazione dell'architettura di JUTAA.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{capitoli/imgs/jutaaarchitecture}
+	\caption{Architettura di JUTAA}
+	\label{fig:jutaaarchitecture}
+\end{figure}
+\paragraph{Step per eseguire un test con JUTAA}
+\begin{itemize}
+	\item Test costruction \\
+	JUTAA presenta una struttura modulare. E' possibile assemblare ad hoc i test di cui si ha bisogno tramite due file di configurazione in xml: env.xml e suite.xml. 
+	\item Test execution\\
+	Tramite un main.java viene lanciata la suite di test precedentemente dichiarata. Il framework scarica automaticamente il software più aggiornato da una repository.
+	\item Test results analisys
+	Tramite opportuni accorgimenti si raccolgono e si visualizzano i risultati dei test, determinando eventuali malfunzionamenti.
+\end{itemize}
+\subsection{Pre-production environment}
+A questo punto il software è pronto per passare nell'ambiente di pre-production. Quì i servizi devono superare gli ultimi ostacoli, ossia i test qualitativi. In sequenza verranno effettuati test di security, di performance e di penetration.
 \subsection{Security Test}
+Un test fondamentale per un servizio SaaS è quello di security. Questo in relatà è composto di due test che compiono indagini differenti. Una riguarda le exposure di sicurezza e una la riservatezza dei dati.
 \subsubsection{AppScan}
 \subsubsection{Image Compliance}
 \subsection{Performance Test}

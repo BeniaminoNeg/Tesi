@@ -74,21 +74,22 @@
 \BOOKMARK [1][-]{section.7.9}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 74
 \BOOKMARK [1][-]{section.7.10}{Automazione del Testing}{chapter.7}% 75
 \BOOKMARK [2][-]{subsection.7.10.1}{Functional Test}{section.7.10}% 76
-\BOOKMARK [2][-]{subsection.7.10.2}{Security Test}{section.7.10}% 77
-\BOOKMARK [2][-]{subsection.7.10.3}{Performance Test}{section.7.10}% 78
-\BOOKMARK [2][-]{subsection.7.10.4}{Penetration Test}{section.7.10}% 79
-\BOOKMARK [2][-]{subsection.7.10.5}{Rielaborazione degli output del testing}{section.7.10}% 80
-\BOOKMARK [1][-]{section.7.11}{Scenario di upgrade del servizio}{chapter.7}% 81
-\BOOKMARK [1][-]{section.7.12}{Il passaggio all'ambiente di produzione}{chapter.7}% 82
-\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 83
-\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 84
-\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 85
-\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 86
-\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 87
-\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 88
-\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 89
-\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 90
-\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 91
-\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 92
-\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 93
-\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 94
+\BOOKMARK [2][-]{subsection.7.10.2}{Pre-production environment}{section.7.10}% 77
+\BOOKMARK [2][-]{subsection.7.10.3}{Security Test}{section.7.10}% 78
+\BOOKMARK [2][-]{subsection.7.10.4}{Performance Test}{section.7.10}% 79
+\BOOKMARK [2][-]{subsection.7.10.5}{Penetration Test}{section.7.10}% 80
+\BOOKMARK [2][-]{subsection.7.10.6}{Rielaborazione degli output del testing}{section.7.10}% 81
+\BOOKMARK [1][-]{section.7.11}{Scenario di upgrade del servizio}{chapter.7}% 82
+\BOOKMARK [1][-]{section.7.12}{Il passaggio all'ambiente di produzione}{chapter.7}% 83
+\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 84
+\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 85
+\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 86
+\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 87
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate\(template di prova - ANCORA DA SCRIVERE\)}{}% 88
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 89
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e Stile}{appendix.Alph1}% 90
+\BOOKMARK [1][-]{section.Alph1.3}{Framework}{appendix.Alph1}% 91
+\BOOKMARK [1][-]{section.Alph1.4}{Ambiente di Sviluppo}{appendix.Alph1}% 92
+\BOOKMARK [2][-]{subsection.Alph1.4.1}{Eclipse}{section.Alph1.4}% 93
+\BOOKMARK [2][-]{subsection.Alph1.4.2}{Piattaforma Web}{section.Alph1.4}% 94
+\BOOKMARK [2][-]{subsection.Alph1.4.3}{Browser Testing}{section.Alph1.4}% 95

@@ -1,0 +1,94 @@
+\BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [0][-]{chapter.2}{IBM BigFix}{}% 2
+\BOOKMARK [1][-]{section.2.1}{BigFix}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Architettura}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{BigFix Platform}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{BigFix Applications}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.4}{Fixlets}{section.2.1}% 7
+\BOOKMARK [1][-]{section.2.2}{IBM}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{SaaS Exploration Project}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.3.1}{Il framework SCRUM}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.2}{Sistemi di controllo di versione}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.3}{RTC}{section.2.3}% 12
+\BOOKMARK [0][-]{chapter.3}{Il Cloud e le sue sfaccettature}{}% 13
+\BOOKMARK [1][-]{section.3.1}{Cloud Computing}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.1.1}{Vantaggi del Cloud Computing}{section.3.1}% 15
+\BOOKMARK [1][-]{section.3.2}{Tipologie di servizi Cloud}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.2.1}{IaaS, Infrastructure as a Service}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.2}{PaaS, Platform as a Service}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.3}{SaaS, Software as a Service}{section.3.2}% 19
+\BOOKMARK [1][-]{section.3.3}{SOA, Service Oriented Architecture}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Il software On Premise}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{SaaS e i suoi requisiti}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Availability}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Reliability}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.3}{Dependability}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.3.1}{Availability e Reliability nel contesto Cloud}{section.4.3}% 26
+\BOOKMARK [1][-]{section.4.4}{Scalability}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.5}{Monitoring}{chapter.4}% 28
+\BOOKMARK [0][-]{chapter.5}{SaaS, le tecnologie che ne consentono la realizzazione}{}% 29
+\BOOKMARK [1][-]{section.5.1}{Microservizi}{chapter.5}% 30
+\BOOKMARK [2][-]{subsection.5.1.1}{Il modello monolitico a layer }{section.5.1}% 31
+\BOOKMARK [2][-]{subsection.5.1.2}{Confronto tra l'architettura a microservizi e il modello monolitico}{section.5.1}% 32
+\BOOKMARK [2][-]{subsection.5.1.3}{Vantaggi e svantaggi di un'architettura a microservizi}{section.5.1}% 33
+\BOOKMARK [1][-]{section.5.2}{Containers}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.5.2.1}{I containers e le Macchine Virtuali}{section.5.2}% 35
+\BOOKMARK [2][-]{subsection.5.2.2}{Vantaggi dei container}{section.5.2}% 36
+\BOOKMARK [2][-]{subsection.5.2.3}{I container e i microservizi}{section.5.2}% 37
+\BOOKMARK [2][-]{subsection.5.2.4}{Docker}{section.5.2}% 38
+\BOOKMARK [2][-]{subsection.5.2.5}{Kubernetes}{section.5.2}% 39
+\BOOKMARK [1][-]{section.5.3}{Multitenancy}{chapter.5}% 40
+\BOOKMARK [1][-]{section.5.4}{DevOps, Continuous Delivery e Continuous Integration}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.5}{Monitoring Tools}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.5.1}{Prometheus}{section.5.5}% 43
+\BOOKMARK [2][-]{subsection.5.5.2}{Grafana}{section.5.5}% 44
+\BOOKMARK [1][-]{section.5.6}{BlueMix Services}{chapter.5}% 45
+\BOOKMARK [0][-]{chapter.6}{IBM BigFix on SaaS, la progettazione}{}% 46
+\BOOKMARK [1][-]{section.6.1}{Interaction Design}{chapter.6}% 47
+\BOOKMARK [2][-]{subsection.6.1.1}{Design Thinking}{section.6.1}% 48
+\BOOKMARK [2][-]{subsection.6.1.2}{BigFix SaaS Interaction Design}{section.6.1}% 49
+\BOOKMARK [1][-]{section.6.2}{Requisiti Non Funzionali}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.2.1}{Dependability}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.2}{Scalabilit\340}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.3}{Monitoring}{section.6.2}% 53
+\BOOKMARK [1][-]{section.6.3}{Gap con il prodotto on premise}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.4}{Scelta dei tool e dei servizi da utilizzare}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.5}{Definizione Architetturale}{chapter.6}% 56
+\BOOKMARK [2][-]{subsection.6.5.1}{Viste architetturali}{section.6.5}% 57
+\BOOKMARK [1][-]{section.6.6}{Definizione dei processi di gestione}{chapter.6}% 58
+\BOOKMARK [2][-]{subsection.6.6.1}{Novit\340 rispetto al prodotto gi\340 esistente}{section.6.6}% 59
+\BOOKMARK [2][-]{subsection.6.6.2}{Disaster Recovering}{section.6.6}% 60
+\BOOKMARK [0][-]{chapter.7}{IBM BigFix on SaaS, l'implementazione del prototipo}{}% 61
+\BOOKMARK [1][-]{section.7.1}{Container e microservizi di BigFix}{chapter.7}% 62
+\BOOKMARK [1][-]{section.7.2}{Gli ambienti di sviluppo }{chapter.7}% 63
+\BOOKMARK [1][-]{section.7.3}{Costruzione dell'ambiente e installazione di Docker e Kubernetes}{chapter.7}% 64
+\BOOKMARK [1][-]{section.7.4}{Re-working degli installer del server e del relay di BigFix}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.5}{Le immagini Docker}{chapter.7}% 66
+\BOOKMARK [1][-]{section.7.6}{Docker containers, Pods e services}{chapter.7}% 67
+\BOOKMARK [1][-]{section.7.7}{Modifiche al relay necessarie per la versione SaaS}{chapter.7}% 68
+\BOOKMARK [1][-]{section.7.8}{Automazione del Deployment}{chapter.7}% 69
+\BOOKMARK [2][-]{subsection.7.8.1}{Bash Scripting}{section.7.8}% 70
+\BOOKMARK [2][-]{subsection.7.8.2}{Jenkins}{section.7.8}% 71
+\BOOKMARK [2][-]{subsection.7.8.3}{Ansible}{section.7.8}% 72
+\BOOKMARK [2][-]{subsection.7.8.4}{UrbanCode Deploy e code promotion}{section.7.8}% 73
+\BOOKMARK [1][-]{section.7.9}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 74
+\BOOKMARK [1][-]{section.7.10}{Il passaggio all'ambiente di produzione}{chapter.7}% 75
+\BOOKMARK [1][-]{section.7.11}{Automazione del Testing}{chapter.7}% 76
+\BOOKMARK [2][-]{subsection.7.11.1}{Functional Test}{section.7.11}% 77
+\BOOKMARK [2][-]{subsection.7.11.2}{Pre-production environment}{section.7.11}% 78
+\BOOKMARK [2][-]{subsection.7.11.3}{Security Test}{section.7.11}% 79
+\BOOKMARK [2][-]{subsection.7.11.4}{Performance Test}{section.7.11}% 80
+\BOOKMARK [2][-]{subsection.7.11.5}{Penetration Test}{section.7.11}% 81
+\BOOKMARK [2][-]{subsection.7.11.6}{Rielaborazione degli output del testing}{section.7.11}% 82
+\BOOKMARK [1][-]{section.7.12}{Scenario di upgrade del servizio}{chapter.7}% 83
+\BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 84
+\BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 85
+\BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 86
+\BOOKMARK [0][-]{chapter.9}{Ringraziamenti}{}% 87
+\BOOKMARK [0][-]{appendix.Alph1}{Tecnologie Utilizzate}{}% 88
+\BOOKMARK [1][-]{section.Alph1.1}{Linguaggi di programmazione}{appendix.Alph1}% 89
+\BOOKMARK [1][-]{section.Alph1.2}{Linguaggi di Markup e di serializzazione}{appendix.Alph1}% 90
+\BOOKMARK [1][-]{section.Alph1.3}{Tool di sviluppo}{appendix.Alph1}% 91
+\BOOKMARK [1][-]{section.Alph1.4}{Framework agili}{appendix.Alph1}% 92
+\BOOKMARK [1][-]{section.Alph1.5}{Code Editors}{appendix.Alph1}% 93
+\BOOKMARK [1][-]{section.Alph1.6}{Sistemi operativi}{appendix.Alph1}% 94

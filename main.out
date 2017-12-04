@@ -72,15 +72,15 @@
 \BOOKMARK [2][-]{subsection.7.8.3}{Ansible}{section.7.8}% 72
 \BOOKMARK [2][-]{subsection.7.8.4}{UrbanCode Deploy e code promotion}{section.7.8}% 73
 \BOOKMARK [1][-]{section.7.9}{Scenario di onboarding di un nuovo cliente}{chapter.7}% 74
-\BOOKMARK [1][-]{section.7.10}{Automazione del Testing}{chapter.7}% 75
-\BOOKMARK [2][-]{subsection.7.10.1}{Functional Test}{section.7.10}% 76
-\BOOKMARK [2][-]{subsection.7.10.2}{Pre-production environment}{section.7.10}% 77
-\BOOKMARK [2][-]{subsection.7.10.3}{Security Test}{section.7.10}% 78
-\BOOKMARK [2][-]{subsection.7.10.4}{Performance Test}{section.7.10}% 79
-\BOOKMARK [2][-]{subsection.7.10.5}{Penetration Test}{section.7.10}% 80
-\BOOKMARK [2][-]{subsection.7.10.6}{Rielaborazione degli output del testing}{section.7.10}% 81
-\BOOKMARK [1][-]{section.7.11}{Scenario di upgrade del servizio}{chapter.7}% 82
-\BOOKMARK [1][-]{section.7.12}{Il passaggio all'ambiente di produzione}{chapter.7}% 83
+\BOOKMARK [1][-]{section.7.10}{Il passaggio all'ambiente di produzione}{chapter.7}% 75
+\BOOKMARK [1][-]{section.7.11}{Automazione del Testing}{chapter.7}% 76
+\BOOKMARK [2][-]{subsection.7.11.1}{Functional Test}{section.7.11}% 77
+\BOOKMARK [2][-]{subsection.7.11.2}{Pre-production environment}{section.7.11}% 78
+\BOOKMARK [2][-]{subsection.7.11.3}{Security Test}{section.7.11}% 79
+\BOOKMARK [2][-]{subsection.7.11.4}{Performance Test}{section.7.11}% 80
+\BOOKMARK [2][-]{subsection.7.11.5}{Penetration Test}{section.7.11}% 81
+\BOOKMARK [2][-]{subsection.7.11.6}{Rielaborazione degli output del testing}{section.7.11}% 82
+\BOOKMARK [1][-]{section.7.12}{Scenario di upgrade del servizio}{chapter.7}% 83
 \BOOKMARK [0][-]{chapter.8}{Conclusioni}{}% 84
 \BOOKMARK [1][-]{section.8.1}{Sviluppi futuri}{chapter.8}% 85
 \BOOKMARK [1][-]{section.8.2}{Considerazioni}{chapter.8}% 86

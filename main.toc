@@ -8,215 +8,216 @@
 \contentsline {paragraph}{La diffusione del Cloud Computing}{8}{section*.6}
 \contentsline {paragraph}{}{8}{section*.7}
 \contentsline {paragraph}{}{8}{section*.8}
+\contentsline {paragraph}{}{8}{section*.9}
 \contentsline {chapter}{\numberline {2}IBM BigFix}{9}{chapter.2}
 \contentsline {section}{\numberline {2.1}BigFix}{9}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Architettura}{9}{subsection.2.1.1}
-\contentsline {paragraph}{}{9}{section*.10}
-\contentsline {paragraph}{Servers}{10}{section*.12}
-\contentsline {paragraph}{Relays}{10}{section*.13}
-\contentsline {paragraph}{Agents}{11}{section*.14}
-\contentsline {paragraph}{Web Reports}{12}{section*.15}
-\contentsline {paragraph}{Consoles}{12}{section*.16}
-\contentsline {paragraph}{Content Server}{12}{section*.17}
-\contentsline {paragraph}{}{12}{section*.18}
+\contentsline {paragraph}{}{9}{section*.11}
+\contentsline {paragraph}{Servers}{10}{section*.13}
+\contentsline {paragraph}{Relays}{10}{section*.14}
+\contentsline {paragraph}{Agents}{11}{section*.15}
+\contentsline {paragraph}{Web Reports}{12}{section*.16}
+\contentsline {paragraph}{Consoles}{12}{section*.17}
+\contentsline {paragraph}{Content Server (BES SUpport)}{12}{section*.18}
+\contentsline {paragraph}{}{12}{section*.19}
 \contentsline {subsection}{\numberline {2.1.2}BigFix Platform}{12}{subsection.2.1.2}
 \contentsline {subsection}{\numberline {2.1.3}BigFix Applications}{12}{subsection.2.1.3}
-\contentsline {paragraph}{BigFix Lifecycle}{13}{section*.19}
-\contentsline {paragraph}{BigFix Patch}{13}{section*.20}
-\contentsline {paragraph}{BigFix Compliance}{13}{section*.21}
-\contentsline {paragraph}{BigFix Protection}{13}{section*.22}
-\contentsline {paragraph}{BigFix Inventory}{13}{section*.23}
+\contentsline {paragraph}{BigFix Lifecycle}{13}{section*.20}
+\contentsline {paragraph}{BigFix Patch}{13}{section*.21}
+\contentsline {paragraph}{BigFix Compliance}{13}{section*.22}
+\contentsline {paragraph}{BigFix Protection}{13}{section*.23}
+\contentsline {paragraph}{BigFix Inventory}{13}{section*.24}
 \contentsline {subsection}{\numberline {2.1.4}Fixlets}{13}{subsection.2.1.4}
-\contentsline {subsubsection}{Il linguaggio Relevance}{13}{section*.24}
+\contentsline {subsubsection}{Il linguaggio Relevance}{13}{section*.25}
 \contentsline {section}{\numberline {2.2}IBM}{14}{section.2.2}
-\contentsline {paragraph}{}{14}{section*.25}
-\contentsline {paragraph}{IBM Security}{14}{section*.26}
+\contentsline {paragraph}{}{14}{section*.26}
+\contentsline {paragraph}{IBM Security}{14}{section*.27}
 \contentsline {section}{\numberline {2.3}SaaS Exploration Project}{14}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Il framework SCRUM}{15}{subsection.2.3.1}
-\contentsline {paragraph}{}{15}{section*.27}
 \contentsline {paragraph}{}{15}{section*.28}
 \contentsline {paragraph}{}{15}{section*.29}
+\contentsline {paragraph}{}{15}{section*.30}
 \contentsline {subsection}{\numberline {2.3.2}Sistemi di controllo di versione}{15}{subsection.2.3.2}
-\contentsline {paragraph}{GitLab}{16}{section*.30}
-\contentsline {paragraph}{}{16}{section*.32}
+\contentsline {paragraph}{GitLab}{16}{section*.31}
+\contentsline {paragraph}{}{16}{section*.33}
 \contentsline {subsection}{\numberline {2.3.3}RTC}{16}{subsection.2.3.3}
 \contentsline {chapter}{\numberline {3}Il Cloud e le sue sfaccettature}{18}{chapter.3}
 \contentsline {section}{\numberline {3.1}Cloud Computing}{18}{section.3.1}
-\contentsline {paragraph}{}{18}{section*.34}
+\contentsline {paragraph}{}{18}{section*.35}
 \contentsline {subsection}{\numberline {3.1.1}Vantaggi del Cloud Computing}{19}{subsection.3.1.1}
 \contentsline {section}{\numberline {3.2}Tipologie di servizi Cloud}{20}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}IaaS, Infrastructure as a Service}{20}{subsection.3.2.1}
-\contentsline {paragraph}{Vantaggi}{21}{section*.37}
+\contentsline {paragraph}{Vantaggi}{21}{section*.38}
 \contentsline {subsection}{\numberline {3.2.2}PaaS, Platform as a Service}{21}{subsection.3.2.2}
-\contentsline {paragraph}{Vantaggi}{22}{section*.38}
-\contentsline {subsubsection}{IBM Bluemix}{22}{section*.39}
-\contentsline {subsubsection}{IBM Watson}{22}{section*.41}
+\contentsline {paragraph}{Vantaggi}{22}{section*.39}
+\contentsline {subsubsection}{IBM Bluemix}{22}{section*.40}
+\contentsline {subsubsection}{IBM Watson}{22}{section*.42}
 \contentsline {subsection}{\numberline {3.2.3}SaaS, Software as a Service}{22}{subsection.3.2.3}
-\contentsline {paragraph}{}{23}{section*.43}
 \contentsline {paragraph}{}{23}{section*.44}
-\contentsline {subsubsection}{Vantaggi}{24}{section*.45}
-\contentsline {paragraph}{}{24}{section*.46}
+\contentsline {paragraph}{}{23}{section*.45}
+\contentsline {subsubsection}{Vantaggi}{24}{section*.46}
 \contentsline {paragraph}{}{24}{section*.47}
-\contentsline {paragraph}{}{25}{section*.48}
+\contentsline {paragraph}{}{24}{section*.48}
 \contentsline {paragraph}{}{25}{section*.49}
 \contentsline {paragraph}{}{25}{section*.50}
-\contentsline {subsubsection}{Svantaggi}{25}{section*.51}
-\contentsline {paragraph}{}{25}{section*.52}
+\contentsline {paragraph}{}{25}{section*.51}
+\contentsline {subsubsection}{Svantaggi}{25}{section*.52}
 \contentsline {paragraph}{}{25}{section*.53}
-\contentsline {paragraph}{}{26}{section*.54}
+\contentsline {paragraph}{}{25}{section*.54}
+\contentsline {paragraph}{}{26}{section*.55}
 \contentsline {section}{\numberline {3.3}SOA, Service Oriented Architecture}{26}{section.3.3}
 \contentsline {section}{\numberline {3.4}Il software On Premise}{27}{section.3.4}
-\contentsline {paragraph}{Vantaggi del Software On Premise}{27}{section*.56}
-\contentsline {paragraph}{}{27}{section*.57}
+\contentsline {paragraph}{Vantaggi del Software On Premise}{27}{section*.57}
 \contentsline {paragraph}{}{27}{section*.58}
+\contentsline {paragraph}{}{27}{section*.59}
 \contentsline {chapter}{\numberline {4}SaaS e i suoi requisiti}{28}{chapter.4}
 \contentsline {section}{\numberline {4.1}Availability}{28}{section.4.1}
-\contentsline {paragraph}{}{28}{section*.59}
+\contentsline {paragraph}{}{28}{section*.60}
 \contentsline {section}{\numberline {4.2}Reliability}{29}{section.4.2}
 \contentsline {section}{\numberline {4.3}Dependability}{29}{section.4.3}
-\contentsline {paragraph}{MTTF, Mean Time To Failure}{29}{section*.60}
-\contentsline {paragraph}{POFOD, Probability Of Failure On Demand}{29}{section*.61}
+\contentsline {paragraph}{MTTF, Mean Time To Failure}{29}{section*.61}
+\contentsline {paragraph}{POFOD, Probability Of Failure On Demand}{29}{section*.62}
 \contentsline {subsection}{\numberline {4.3.1}Availability e Reliability nel contesto Cloud}{30}{subsection.4.3.1}
-\contentsline {paragraph}{Upgrade}{30}{section*.62}
+\contentsline {paragraph}{Upgrade}{30}{section*.63}
 \contentsline {section}{\numberline {4.4}Scalability}{30}{section.4.4}
-\contentsline {paragraph}{}{31}{section*.63}
-\contentsline {section}{\numberline {4.5}Monitoring}{31}{section.4.5}
 \contentsline {paragraph}{}{31}{section*.64}
+\contentsline {section}{\numberline {4.5}Monitoring}{31}{section.4.5}
+\contentsline {paragraph}{}{31}{section*.65}
 \contentsline {chapter}{\numberline {5}SaaS, le tecnologie che ne consentono la realizzazione}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Microservizi}{33}{section.5.1}
-\contentsline {paragraph}{}{33}{section*.65}
+\contentsline {paragraph}{}{33}{section*.66}
 \contentsline {subsection}{\numberline {5.1.1}Il modello monolitico a layer }{34}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Confronto tra l'architettura a microservizi e il modello monolitico}{35}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Vantaggi e svantaggi di un'architettura a microservizi}{35}{subsection.5.1.3}
-\contentsline {subsubsection}{Vantaggi}{35}{section*.68}
-\contentsline {subsubsection}{Svantaggi}{37}{section*.69}
+\contentsline {subsubsection}{Vantaggi}{35}{section*.69}
+\contentsline {subsubsection}{Svantaggi}{37}{section*.70}
 \contentsline {section}{\numberline {5.2}Containers}{38}{section.5.2}
-\contentsline {paragraph}{}{38}{section*.71}
-\contentsline {paragraph}{}{39}{section*.72}
+\contentsline {paragraph}{}{38}{section*.72}
+\contentsline {paragraph}{}{39}{section*.73}
 \contentsline {subsection}{\numberline {5.2.1}I containers e le Macchine Virtuali}{39}{subsection.5.2.1}
-\contentsline {paragraph}{}{40}{section*.74}
+\contentsline {paragraph}{}{40}{section*.75}
 \contentsline {subsection}{\numberline {5.2.2}Vantaggi dei container}{40}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}I container e i microservizi}{41}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Docker}{41}{subsection.5.2.4}
-\contentsline {paragraph}{}{41}{section*.77}
-\contentsline {paragraph}{}{42}{section*.78}
-\contentsline {paragraph}{Docker Engine}{42}{section*.79}
-\contentsline {paragraph}{Architettura di Docker}{42}{section*.81}
-\contentsline {paragraph}{}{43}{section*.83}
+\contentsline {paragraph}{}{41}{section*.78}
+\contentsline {paragraph}{}{42}{section*.79}
+\contentsline {paragraph}{Docker Engine}{42}{section*.80}
+\contentsline {paragraph}{Architettura di Docker}{42}{section*.82}
+\contentsline {paragraph}{}{43}{section*.84}
 \contentsline {subsection}{\numberline {5.2.5}Kubernetes}{45}{subsection.5.2.5}
-\contentsline {paragraph}{}{45}{section*.85}
 \contentsline {paragraph}{}{45}{section*.86}
-\contentsline {paragraph}{Perch\IeC {\'e} utilizzare Kubernetes?}{45}{section*.87}
-\contentsline {paragraph}{I Pod di Kubernetes, cosa sono?}{46}{section*.89}
-\contentsline {paragraph}{Architettura di Kubernetes}{46}{figure.caption.91}
-\contentsline {paragraph}{E Docker?}{48}{section*.92}
+\contentsline {paragraph}{}{45}{section*.87}
+\contentsline {paragraph}{Perch\IeC {\'e} utilizzare Kubernetes?}{45}{section*.88}
+\contentsline {paragraph}{I Pod di Kubernetes, cosa sono?}{46}{section*.90}
+\contentsline {paragraph}{Architettura di Kubernetes}{46}{figure.caption.92}
+\contentsline {paragraph}{E Docker?}{48}{section*.93}
 \contentsline {section}{\numberline {5.3}Multitenancy}{48}{section.5.3}
-\contentsline {paragraph}{Vantaggi della Multitenancy}{48}{section*.94}
-\contentsline {paragraph}{Requisiti}{49}{section*.95}
+\contentsline {paragraph}{Vantaggi della Multitenancy}{48}{section*.95}
+\contentsline {paragraph}{Requisiti}{49}{section*.96}
 \contentsline {section}{\numberline {5.4}DevOps, Continuous Delivery e Continuous Integration}{49}{section.5.4}
-\contentsline {paragraph}{}{50}{section*.96}
-\contentsline {paragraph}{Continuous Delivery e Continuous Integration}{50}{section*.98}
-\contentsline {paragraph}{}{51}{section*.99}
+\contentsline {paragraph}{}{50}{section*.97}
+\contentsline {paragraph}{Continuous Delivery e Continuous Integration}{50}{section*.99}
+\contentsline {paragraph}{}{51}{section*.100}
 \contentsline {section}{\numberline {5.5}Monitoring Tools}{51}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Prometheus}{51}{subsection.5.5.1}
-\contentsline {paragraph}{}{51}{section*.101}
+\contentsline {paragraph}{}{51}{section*.102}
 \contentsline {subsection}{\numberline {5.5.2}Grafana}{52}{subsection.5.5.2}
 \contentsline {section}{\numberline {5.6}BlueMix Services}{53}{section.5.6}
-\contentsline {paragraph}{}{53}{section*.105}
+\contentsline {paragraph}{}{53}{section*.106}
 \contentsline {chapter}{\numberline {6}IBM BigFix on SaaS, la progettazione}{55}{chapter.6}
 \contentsline {section}{\numberline {6.1}Interaction Design}{55}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Design Thinking}{56}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}BigFix SaaS Interaction Design}{57}{subsection.6.1.2}
-\contentsline {paragraph}{Stakeholder Map}{57}{section*.107}
-\contentsline {paragraph}{User Research}{57}{section*.109}
-\contentsline {paragraph}{Nascita delle personas}{58}{section*.110}
-\contentsline {paragraph}{Empathy Map}{59}{section*.111}
-\contentsline {paragraph}{Scenario Map}{60}{section*.114}
-\contentsline {paragraph}{}{60}{section*.116}
-\contentsline {paragraph}{}{62}{section*.118}
+\contentsline {paragraph}{Stakeholder Map}{57}{section*.108}
+\contentsline {paragraph}{User Research}{57}{section*.110}
+\contentsline {paragraph}{Nascita delle personas}{58}{section*.111}
+\contentsline {paragraph}{Empathy Map}{59}{section*.112}
+\contentsline {paragraph}{Scenario Map}{60}{section*.115}
+\contentsline {paragraph}{}{60}{section*.117}
+\contentsline {paragraph}{}{62}{section*.119}
 \contentsline {section}{\numberline {6.2}Requisiti Non Funzionali}{62}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Dependability}{62}{subsection.6.2.1}
-\contentsline {paragraph}{Microservizi e container}{63}{section*.120}
-\contentsline {subsubsection}{Rolling Update}{63}{section*.121}
-\contentsline {subsubsection}{Utilizzo di DB2}{63}{section*.122}
-\contentsline {paragraph}{}{64}{section*.124}
+\contentsline {paragraph}{Microservizi e container}{63}{section*.121}
+\contentsline {subsubsection}{Rolling Update}{63}{section*.122}
+\contentsline {subsubsection}{Utilizzo di DB2}{63}{section*.123}
+\contentsline {paragraph}{}{64}{section*.125}
 \contentsline {subsection}{\numberline {6.2.2}Scalabilit\IeC {\`a}}{64}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Monitoring}{65}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Gap con il prodotto on premise}{65}{section.6.3}
-\contentsline {paragraph}{Introduzione della multitenancy}{65}{section*.125}
-\contentsline {paragraph}{Introduzione dei microservizi}{66}{section*.126}
+\contentsline {paragraph}{Introduzione della multitenancy}{65}{section*.126}
+\contentsline {paragraph}{Introduzione dei microservizi}{66}{section*.127}
 \contentsline {section}{\numberline {6.4}Scelta dei tool e dei servizi da utilizzare}{66}{section.6.4}
-\contentsline {paragraph}{}{66}{section*.127}
-\contentsline {paragraph}{}{67}{section*.128}
+\contentsline {paragraph}{}{66}{section*.128}
+\contentsline {paragraph}{}{67}{section*.129}
 \contentsline {section}{\numberline {6.5}Definizione Architetturale}{67}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Viste architetturali}{67}{subsection.6.5.1}
-\contentsline {subsubsection}{Vista sull'architettura fisica e sui container}{67}{section*.129}
-\contentsline {subsubsection}{Viewpoint dell'utente utilizzatore}{69}{section*.131}
+\contentsline {subsubsection}{Vista sull'architettura fisica e sui container}{67}{section*.130}
+\contentsline {subsubsection}{Viewpoint dell'utente utilizzatore}{69}{section*.132}
 \contentsline {section}{\numberline {6.6}Definizione dei processi di gestione}{69}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Novit\IeC {\`a} rispetto al prodotto gi\IeC {\`a} esistente}{69}{subsection.6.6.1}
-\contentsline {paragraph}{Onboarding}{69}{section*.133}
-\contentsline {paragraph}{Monitoring}{70}{section*.134}
+\contentsline {paragraph}{Onboarding}{69}{section*.134}
+\contentsline {paragraph}{Monitoring}{70}{section*.135}
 \contentsline {subsection}{\numberline {6.6.2}Disaster Recovering}{71}{subsection.6.6.2}
 \contentsline {chapter}{\numberline {7}IBM BigFix on SaaS, l'implementazione del prototipo}{72}{chapter.7}
 \contentsline {section}{\numberline {7.1}Container e microservizi di BigFix}{72}{section.7.1}
 \contentsline {section}{\numberline {7.2}Gli ambienti di sviluppo }{73}{section.7.2}
 \contentsline {section}{\numberline {7.3}Costruzione dell'ambiente e installazione di Docker e Kubernetes}{73}{section.7.3}
-\contentsline {paragraph}{}{74}{section*.136}
-\contentsline {paragraph}{DB2}{74}{section*.137}
-\contentsline {paragraph}{Network File System (NFS)}{74}{section*.138}
+\contentsline {paragraph}{}{74}{section*.137}
+\contentsline {paragraph}{DB2}{74}{section*.138}
+\contentsline {paragraph}{Network File System (NFS)}{74}{section*.139}
 \contentsline {section}{\numberline {7.4}Re-working degli installer del server e del relay di BigFix}{75}{section.7.4}
 \contentsline {section}{\numberline {7.5}Le immagini Docker}{75}{section.7.5}
-\contentsline {paragraph}{}{76}{section*.140}
-\contentsline {section}{\numberline {7.6}Docker containers, Pods e services}{76}{section.7.6}
 \contentsline {paragraph}{}{76}{section*.141}
-\contentsline {paragraph}{YAML}{76}{section*.142}
+\contentsline {section}{\numberline {7.6}Docker containers, Pods e services}{76}{section.7.6}
+\contentsline {paragraph}{}{76}{section*.142}
+\contentsline {paragraph}{YAML}{76}{section*.143}
 \contentsline {section}{\numberline {7.7}Modifiche al relay necessarie per la versione SaaS}{77}{section.7.7}
-\contentsline {paragraph}{Relay scaling}{77}{section*.144}
-\contentsline {paragraph}{Air-gap}{78}{section*.145}
+\contentsline {paragraph}{Relay scaling}{77}{section*.145}
+\contentsline {paragraph}{Air-gap}{78}{section*.146}
 \contentsline {section}{\numberline {7.8}Automazione del Deployment}{78}{section.7.8}
-\contentsline {paragraph}{}{78}{section*.146}
-\contentsline {paragraph}{}{79}{section*.147}
-\contentsline {subsection}{\numberline {7.8.1}Bash Scripting}{79}{subsection.7.8.1}
+\contentsline {paragraph}{}{78}{section*.147}
 \contentsline {paragraph}{}{79}{section*.148}
-\contentsline {paragraph}{Utilizzo degli script Bash nel progetto}{79}{section*.149}
+\contentsline {subsection}{\numberline {7.8.1}Bash Scripting}{79}{subsection.7.8.1}
+\contentsline {paragraph}{}{79}{section*.149}
+\contentsline {paragraph}{Utilizzo degli script Bash nel progetto}{79}{section*.150}
 \contentsline {subsection}{\numberline {7.8.2}Jenkins}{79}{subsection.7.8.2}
-\contentsline {paragraph}{}{80}{section*.150}
 \contentsline {paragraph}{}{80}{section*.151}
 \contentsline {paragraph}{}{80}{section*.152}
 \contentsline {paragraph}{}{80}{section*.153}
 \contentsline {paragraph}{}{80}{section*.154}
+\contentsline {paragraph}{}{80}{section*.155}
 \contentsline {subsection}{\numberline {7.8.3}Ansible}{81}{subsection.7.8.3}
-\contentsline {paragraph}{}{81}{section*.156}
 \contentsline {paragraph}{}{81}{section*.157}
 \contentsline {paragraph}{}{81}{section*.158}
+\contentsline {paragraph}{}{81}{section*.159}
 \contentsline {subsection}{\numberline {7.8.4}UrbanCode Deploy e code promotion}{82}{subsection.7.8.4}
-\contentsline {paragraph}{}{82}{section*.159}
+\contentsline {paragraph}{}{82}{section*.160}
 \contentsline {section}{\numberline {7.9}Scenario di onboarding di un nuovo cliente}{82}{section.7.9}
-\contentsline {paragraph}{}{83}{section*.162}
-\contentsline {paragraph}{}{83}{section*.164}
+\contentsline {paragraph}{}{83}{section*.163}
 \contentsline {paragraph}{}{83}{section*.165}
 \contentsline {paragraph}{}{83}{section*.166}
-\contentsline {paragraph}{}{84}{section*.168}
+\contentsline {paragraph}{}{83}{section*.167}
+\contentsline {paragraph}{}{84}{section*.169}
 \contentsline {section}{\numberline {7.10}Il passaggio all'ambiente di produzione}{85}{section.7.10}
 \contentsline {section}{\numberline {7.11}Automazione del Testing}{85}{section.7.11}
-\contentsline {paragraph}{Continuous Delivery}{85}{section*.169}
-\contentsline {paragraph}{}{86}{section*.170}
+\contentsline {paragraph}{Continuous Delivery}{85}{section*.170}
+\contentsline {paragraph}{}{86}{section*.171}
 \contentsline {subsection}{\numberline {7.11.1}Functional Test}{86}{subsection.7.11.1}
-\contentsline {subsubsection}{JUnit}{86}{section*.171}
-\contentsline {subsubsection}{JUTAA}{86}{section*.172}
-\contentsline {paragraph}{}{87}{section*.173}
-\contentsline {paragraph}{Step per eseguire un test con JUTAA}{87}{section*.175}
+\contentsline {subsubsection}{JUnit}{86}{section*.172}
+\contentsline {subsubsection}{JUTAA}{86}{section*.173}
+\contentsline {paragraph}{}{87}{section*.174}
+\contentsline {paragraph}{Step per eseguire un test con JUTAA}{87}{section*.176}
 \contentsline {subsection}{\numberline {7.11.2}Pre-production environment}{88}{subsection.7.11.2}
 \contentsline {subsection}{\numberline {7.11.3}Security Test}{88}{subsection.7.11.3}
-\contentsline {subsubsection}{Image Compliance}{88}{section*.176}
-\contentsline {subsubsection}{AppScan}{89}{section*.178}
+\contentsline {subsubsection}{Image Compliance}{88}{section*.177}
+\contentsline {subsubsection}{AppScan}{89}{section*.179}
 \contentsline {subsection}{\numberline {7.11.4}Performance Test}{89}{subsection.7.11.4}
 \contentsline {subsection}{\numberline {7.11.5}Penetration Test}{90}{subsection.7.11.5}
 \contentsline {subsection}{\numberline {7.11.6}Rielaborazione degli output del testing}{90}{subsection.7.11.6}
 \contentsline {section}{\numberline {7.12}Scenario di upgrade del servizio}{90}{section.7.12}
-\contentsline {paragraph}{}{90}{section*.181}
-\contentsline {paragraph}{}{91}{section*.182}
+\contentsline {paragraph}{}{90}{section*.182}
 \contentsline {paragraph}{}{91}{section*.183}
+\contentsline {paragraph}{}{91}{section*.184}
 \contentsline {chapter}{\numberline {8}Conclusioni}{92}{chapter.8}
 \contentsline {section}{\numberline {8.1}Sviluppi futuri}{92}{section.8.1}
 \contentsline {section}{\numberline {8.2}Considerazioni}{92}{section.8.2}

@@ -1,5 +1,13 @@
 \chapter{Conclusioni}
-parlare della valenza del prototipo all'interno dell'azienda ibm
+
+Questo lavoro di tesi ha visto la realizzazione, nel corso dei mesi, di un Software as a Service per l'azienda IBM. Una suite di servizi su cloud che permettesse di rivoluzionare i tool di IBM facenti parte della famiglia BigFix, una serie di prodotti per la security aziendale. Questi strumenti erano accessibili solamente nella tradizionale versione on premise. Il cliente doveva avere a disposizione una infrastruttura hardware notevole per poter permettere a BigFix di funzionare. Questo relegava il prodotto solo a clienti di grandi dimensioni che potevano permetterselo. 
+\paragraph{}
+Con la versione cloud di IBM BigFix, invece, l'unico componente che deve risiedere fisicamente presso il cliente è un agent installato su ogni endpoint fisico da controllare. Tutta la logica di controllo e le infrastrutture necessarie sono spostate presso il provider del servizio cloud, ovvero IBM stessa.
+
+\paragraph{}
+Per adottare questa nuova filosofia p stato necessario riprogettare completamente il prodotto. Il lavoro ha visto una corposa fase di design, coinvolgendo molti stackeholders come potenziali clienti, ma anche personale IBM come sviluppatori e futuri addetti all'assistenza. Adottando framework di progettazione e sviluppo come il "Design Thinking" e lo SCRUM con un processo agile iterativo e incrementale, si è definita un architettura dall'alto livello qualitativo e si è realizzato un prototipo di prodotto pronto per essere provato e messo sul mercato.
+\paragraph{}
+Si è scomposto il prodotto in un'architettura a microservizi e si sono utilizzate le più affermate tecnologie cloud come Docker e Kubernetes. E' stato fondamentale in tal senso adottare l'utilizzo di software container per rendere indipendenti i singoli servizi. In una seconda fase poi è stato necessario orchestrare tutte le componenti seguendo pratiche di DevOps e continuous integration
 \section{Sviluppi futuri}
 \section{Considerazioni}
 

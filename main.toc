@@ -244,10 +244,19 @@
 \contentsline {paragraph}{}{97}{section*.205}
 \contentsline {paragraph}{}{97}{section*.206}
 \contentsline {chapter}{\numberline {9}Ringraziamenti}{99}{chapter.9}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{100}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{100}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e di serializzazione}{100}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Tool di sviluppo}{101}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Framework agili}{102}{section.Alph1.4}
-\contentsline {section}{\numberline {A.5}Code Editors}{102}{section.Alph1.5}
-\contentsline {section}{\numberline {A.6}Sistemi operativi}{102}{section.Alph1.6}
+\contentsline {paragraph}{}{99}{section*.207}
+\contentsline {paragraph}{}{99}{section*.208}
+\contentsline {paragraph}{}{99}{section*.209}
+\contentsline {paragraph}{}{100}{section*.210}
+\contentsline {paragraph}{}{100}{section*.211}
+\contentsline {paragraph}{}{100}{section*.212}
+\contentsline {paragraph}{}{100}{section*.213}
+\contentsline {paragraph}{}{100}{section*.214}
+\contentsline {paragraph}{}{100}{section*.215}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{101}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{101}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e di serializzazione}{101}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Tool di sviluppo}{102}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Framework agili}{103}{section.Alph1.4}
+\contentsline {section}{\numberline {A.5}Code Editors}{103}{section.Alph1.5}
+\contentsline {section}{\numberline {A.6}Sistemi operativi}{103}{section.Alph1.6}

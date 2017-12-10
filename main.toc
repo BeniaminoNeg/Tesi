@@ -14,12 +14,12 @@
 \contentsline {paragraph}{}{9}{section*.12}
 \contentsline {paragraph}{L'approccio alla soluzione}{9}{section*.13}
 \contentsline {paragraph}{}{9}{section*.14}
-\contentsline {paragraph}{}{9}{section*.15}
+\contentsline {paragraph}{}{10}{section*.15}
 \contentsline {paragraph}{La soluzione}{10}{section*.16}
 \contentsline {paragraph}{}{10}{section*.17}
 \contentsline {paragraph}{}{10}{section*.18}
 \contentsline {paragraph}{Per orientarsi nella consultazione di questa tesi}{10}{section*.19}
-\contentsline {paragraph}{}{10}{section*.20}
+\contentsline {paragraph}{}{11}{section*.20}
 \contentsline {paragraph}{}{11}{section*.21}
 \contentsline {chapter}{\numberline {2}IBM BigFix}{12}{chapter.2}
 \contentsline {section}{\numberline {2.1}BigFix}{12}{section.2.1}
@@ -242,7 +242,7 @@
 \contentsline {paragraph}{}{97}{section*.203}
 \contentsline {paragraph}{}{97}{section*.204}
 \contentsline {paragraph}{}{97}{section*.205}
-\contentsline {paragraph}{}{97}{section*.206}
+\contentsline {paragraph}{}{98}{section*.206}
 \contentsline {chapter}{\numberline {9}Ringraziamenti}{99}{chapter.9}
 \contentsline {paragraph}{}{99}{section*.207}
 \contentsline {paragraph}{}{99}{section*.208}
@@ -252,11 +252,11 @@
 \contentsline {paragraph}{}{100}{section*.212}
 \contentsline {paragraph}{}{100}{section*.213}
 \contentsline {paragraph}{}{100}{section*.214}
-\contentsline {paragraph}{}{100}{section*.215}
-\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{101}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{101}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Linguaggi di Markup e di serializzazione}{101}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Tool di sviluppo}{102}{section.Alph1.3}
-\contentsline {section}{\numberline {A.4}Framework agili}{103}{section.Alph1.4}
-\contentsline {section}{\numberline {A.5}Code Editors}{103}{section.Alph1.5}
-\contentsline {section}{\numberline {A.6}Sistemi operativi}{103}{section.Alph1.6}
+\contentsline {paragraph}{}{101}{section*.215}
+\contentsline {chapter}{\numberline {A}Tecnologie Utilizzate}{102}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Linguaggi di programmazione}{102}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Linguaggi di Markup e di serializzazione}{102}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Tool di sviluppo}{103}{section.Alph1.3}
+\contentsline {section}{\numberline {A.4}Framework agili}{104}{section.Alph1.4}
+\contentsline {section}{\numberline {A.5}Code Editors}{104}{section.Alph1.5}
+\contentsline {section}{\numberline {A.6}Sistemi operativi}{104}{section.Alph1.6}
